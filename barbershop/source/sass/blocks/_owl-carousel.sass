@@ -1,0 +1,100 @@
+// Styling dots (owl-carousel)
+.owl-carousel
+	.owl-nav.disabled + .owl-dots
+		padding: 30px 0 23px 23px
+
+	.owl-dots
+		text-align: center
+
+		.owl-dot
+			display: inline-block
+			zoom: 1
+			outline: none
+			margin: 0
+
+			span
+				box-sizing: border-box
+				font-size: 0
+				width: 10px
+				height: 10px
+				margin: 0 23px 0 0
+				display: inline-block
+				transition: opacity 200ms ease
+				transform: rotate(45deg)
+
+// advantages slider
+.advantages__list
+	.owl-dot
+		span
+			border: 1px solid $c-white
+			background-color: $c-black
+		&.active
+			span
+				background: $c-white
+		&:hover
+			span
+				background: $c-white-03
+
+// reviews slider
+.reviews__list
+	.owl-dot
+		span
+			border: 1px solid $c-black
+			background-color: $c-white
+		&.active
+			span
+				background: $c-black
+		&:hover
+			span
+				background: $c-black-03
+
+// change position dots
+.reviews__list
+	.owl-dots
+		+from-to(768px, 1200px)
+			position: relative
+			width: 99px
+			bottom: 10px
+			margin: 0 auto
+			padding-left: 25px
+			padding-right: 2px
+			background-color: $c-news-bg
+
+// owl nav buttons
+.reviews__list.owl-carousel
+	.owl-nav
+		.owl-prev,
+		.owl-next
+			position: absolute
+			top: 0
+			display: block
+			width: 50px
+			height: calc(100% - 20px)
+			border: 1px solid $c-reviews-border
+			outline: none
+			+lg-block()
+				height: calc(100% - 62px)
+			&:after
+				content: ""
+				width: 0
+				height: 0
+				border-top: 6px solid transparent
+				border-bottom: 6px solid transparent
+				position: absolute
+				top: 50%
+				right: 50%
+				margin-right: -6px
+			&:hover
+				border: 1px solid $c-button-hover
+			&:active
+				border: none
+				background-color: $c-button-hover
+
+		.owl-prev
+			left: 0
+			&:after
+				border-right: 12px solid $c-black
+		.owl-next
+			right: 0
+			&:after
+				border-left: 12px solid $c-black

@@ -1,0 +1,107 @@
+.reviews
+	background-color: $c-news-bg
+	font-family: PT Sans Narrow, Arial, sans-serif
+	padding-top: 30px
+	margin-bottom: -20px
+	+md-block()
+		margin: 0
+		padding-top: 37px
+		padding-bottom: 72px
+	+lg-block()
+		padding-top: 43px
+		padding-bottom: 45px
+
+.reviews__wrapper
+	+md-block()
+		display: flex
+		flex-wrap: wrap
+		width: 640px
+		margin: 0 auto
+	+lg-block()
+		width: 960px
+
+.reviews__title
+	font-family: PT Sans Narrow Bold, Arial, sans-serif
+	font-size: 30px
+	line-height: 30px
+	text-transform: uppercase
+	width: 100%
+	text-align: center
+	margin-bottom: 30px
+	+md-block()
+		text-align: left
+		font-size: 40px
+		line-height: 40px
+		width: 70%
+		margin-bottom: 45px
+	+lg-block()
+		padding-left: 70px
+
+.reviews__write
+	display: none
+	+md-block()
+		display: flex
+		margin: 0
+		margin-left: auto
+		margin-bottom: auto
+
+.reviews__list
+	+md-block()
+		position: relative
+		box-sizing: border-box
+		padding-right: 50px
+		padding-left: 50px
+	+lg-block()
+		padding-right: 71px
+		padding-left: 71px
+
+
+.reviews__item
+	margin: 0 20px
+	display: flex
+	padding-top: 15px
+	+md-block()
+		min-height: 160px
+		box-sizing: border-box
+		margin: 0
+		border: 1px solid $c-reviews-border
+		padding-top: 40px
+		padding-bottom: 30px
+	+lg-block()
+		padding: 0
+		margin-bottom: 42px
+
+
+.reviews__author-picture
+	min-width: 50px
+	height: auto
+	img
+		+md-block()
+			border-radius: 50px
+		+lg-block()
+			border-radius: 0
+	+md-block()
+		min-width: 80px
+		padding-left: 30px
+	+lg-block()
+		min-width: 249px
+		padding: 0
+
+.reviews__cite-wrapper
+	box-sizing: border-box
+	padding-left: 30px
+	margin-top: -15px
+	+lg-block()
+		padding: 35px 70px 35px 70px
+		margin: 0
+
+.reviews__author-name
+	display: block
+	font-size: 24px
+	line-height: 27px
+	font-weight: 700
+	padding-bottom: 10px
+
+.reviews__text
+	font-size: 18px
+	line-height: 27px

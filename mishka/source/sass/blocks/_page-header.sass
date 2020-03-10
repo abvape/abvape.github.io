@@ -1,0 +1,111 @@
+.page-header
+	+fw()
+	width: 320px
+	min-height: 79px
+	margin: 0 auto
+	+md-block()
+		position: relative
+		width: 768px
+		padding: 0 50px
+		box-sizing: border-box
+		border-bottom: 1px solid $c-main-nav-shadow
+	+lg-block()
+		width: 1250px
+		padding: 0 100px
+
+.page-header__logo
+	+fw()
+	justify-content: center
+	align-items: center
+	width: 320px
+	height: 79px
+	box-sizing: border-box
+	border-bottom: 1px solid $c-main-nav-shadow
+	font-size: 0
+	+md-block()
+		width: auto
+		margin-right: auto
+		justify-content: flex-start
+		min-height: 88px
+		border-bottom: none
+		&:hover
+			opacity: 0.6
+		&:active
+			opacity: 0.3
+	+lg-block()
+		width: 150px
+		margin: 0 auto
+		order: 2
+
+.page-header__logo-icon
+	width: 86px
+	height: 35px
+	+md-block()
+		width: 112px
+		height: 46px
+	+lg-block()
+		width: 149px
+		height: 72px
+
+.page-haeder__nav
+	position: relative
+	width: 320px
+	margin: 0 auto
+	+md-block()
+		width: 348px
+		margin: 0
+	+lg-block()
+		width: 400px
+		position: absolute
+
+.page-header__submenu
+	display: none
+	+lg-block()
+		+fw()
+		position: absolute
+		z-index: 99
+		top: 88px
+		left: 100px
+		max-width: 600px
+
+.page-header__submenu-item
+	+lg-block()
+		padding-right: 30px
+		padding-left: 30px
+		&:first-child
+			padding-left: 0
+		&:last-child
+			padding-right: 0
+
+.page-header__submenu-link
+	+lg-block()
+		font-family: OpenSans-Bold, Arial, sans-serif
+		font-size: 15px
+		line-height: 24px
+		text-decoration: none
+		display: block
+		color: $c-black
+		padding: 18px 0
+		&[href]
+			&:hover
+				opacity: 0.6
+			&:active
+				opacity: 0.3
+
+.page-header__delivery-info
+	display: none
+	+md-block()
+		font-family: OpenSans-Regular, Arial, sans-serif
+		font-size: 15px
+		line-height: 24px
+		color: $c-text
+		display: block
+		position: absolute
+		max-width: 310px
+		padding: 18px 0
+		top: 88px
+		right: 50px
+		z-index: 99
+	+lg-block()
+		max-width: 350px
+		right: 100px

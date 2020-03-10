@@ -1,0 +1,54 @@
+.site-list
+	+md-block()
+		+fw()
+		position: absolute
+		order: 2
+		z-index: 99
+		top: 88px
+		left: -320px
+		max-width: 340px
+	+lg-block()
+		max-width: 400px
+		width: 400px
+		top: 0
+		left: 0
+
+.site-list__item
+	box-sizing: border-box
+	box-shadow: 0px 1px 0px 0px $c-main-nav-shadow
+	+md-block()
+		box-shadow: none
+		padding-right: 30px
+		&:last-child
+			padding-right: 0
+	+lg-block()
+		padding-right: 35px
+		padding-left: 34px
+		border-right: 1px solid $c-main-nav-shadow
+		&:first-child
+			padding-left: 0
+		&:last-child
+			padding-right: 0
+			border-right: none
+
+.site-list__link
+	font-family: OpenSans-Bold, Arial, sans-serif
+	font-size: 17px
+	line-height: 24px
+	text-decoration: none
+	display: block
+	color: $c-black
+	padding: 20px 0
+	padding-left: 75px
+	+md-block()
+		font-size: 15px
+		padding: 18px 0
+		box-sizing: border-box
+		&[href]
+			&:hover
+				opacity: 0.6
+			&:active
+				opacity: 0.3
+	+lg-block()
+		font-size: 17px
+		padding: 32px 0

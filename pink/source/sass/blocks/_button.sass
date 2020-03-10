@@ -1,0 +1,27 @@
+.button
+	font-family: OpenSans-Bold, Arial, sans-serif
+	font-size: 18px
+	line-height: 18px
+	color: $c-white
+	display: flex
+	width: 100%
+	background-color: transparent
+	border: 3px solid $c-white
+	padding: 15px 20px 16px 20px
+	box-sizing: border-box
+	border-radius: 55px
+	justify-content: center
+	cursor: pointer
+	+md-block()
+		&:hover
+			background-color: $c-white
+			color: $c-button-hover
+			transition: 0.2s
+		&:active
+			background-color: $c-white
+			color: $c-button-active
+			transition: 0.2s
+	+lg-block()
+		font-size: 21px
+		line-height: 21px
+		padding: 14px 20px 14px 20px

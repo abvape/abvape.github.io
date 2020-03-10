@@ -1,0 +1,45 @@
+.page-title
+	width: 320px
+	margin: 0 auto
+	background-color: $c-page-title-bg
+	+md-block()
+		width: 768px
+		position: relative
+		&:after
+			content: ""
+			position: absolute
+			display: block
+			min-width: 768px
+			height: 22px
+			bottom: -12px
+			left: 0
+			background-size: 768px 22px
+			background-image: url("../img/zigzag-fill.svg")
+	+lg-block()
+		width: 1250px
+		&:after
+			min-width: 1250px
+			height: 34px
+			bottom: -20px
+			left: 0
+			background-size: 1250px 34px
+
+.page-title__title
+	font-family: OpenSans-Bold, Arial, sans-serif
+	font-size: 27px
+	line-height: 30px
+	text-align: center
+	padding-top: 71px
+	padding-right: 30px
+	padding-bottom: 76px
+	padding-left: 30px
+	+md-block()
+		font-size: 43px
+		line-height: 50px
+		padding-top: 95px
+		padding-right: 50px
+		padding-left: 50px
+	+lg-block()
+		font-size: 53px
+		line-height: 57px
+		padding-bottom: 98px

@@ -1,0 +1,208 @@
+.form-application
+	padding: 0 20px
+	color: $c-text-black
+	margin-bottom: 32px
+	+md-block()
+		padding: 0 40px
+		margin-bottom: 73px
+	+lg-block()
+		padding: 0
+		margin-bottom: 82px
+
+.form-application__title
+	font-family: Oswald Regular, Arial, sans-serif
+	font-size: 14px
+	line-height: 18px
+	text-transform: uppercase
+	margin-bottom: 36px
+	+md-block()
+		font-size: 20px
+		line-height: 30px
+		margin-bottom: 66px
+
+.form-application__content
+	font-family: Oswald Regular, Arial, sans-serif
+	font-size: 16px
+	line-height: 18px
+	text-transform: uppercase
+	+md-block()
+		font-size: 20px
+		line-height: 20px
+	+lg-block()
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+
+.form-application__cat-data
+	display: flex
+	flex-wrap: wrap
+	margin-bottom: 9px
+	+md-block()
+		margin-bottom: 52px
+	+lg-block()
+		width: 610px
+		padding-right: 40px
+		margin-bottom: 49px
+		box-sizing: border-box
+
+.form-application__label
+	display: flex
+	align-items: center
+	position: relative
+	width: 100%
+	margin-bottom: 14px
+	&:hover
+		.form-application__field
+			border: 1px solid $c-form-application-input-border
+	&:active
+		.form-application__field
+			outline: 2px solid $c-form-application-input-border-active
+	+md-block()
+		margin-bottom: 20px
+
+.form-application__field
+	display: flex
+	flex-grow: 1
+	width: 100%
+	text-transform: uppercase
+	box-sizing: border-box
+	border: 1px solid $c-form-application-input-border-05
+	padding: 10px 14px 9px 14px
+	margin-left: 15px
+	&:focus
+		outline: 2px solid $c-form-application-input-border-active
+	+md-block()
+		padding: 10px 20px 10px 20px
+
+.form-application__field--error
+	outline: 2px solid $c-form-application-input-border-error
+
+.form-application__field--error + .form-application__icon
+		fill: $c-form-application-input-border-error
+
+.form-application__field--icon
+	padding-right: 40px
+	&:focus + .form-application__icon
+		fill: $c-form-application-green
+
+.form-application__program
+	padding-top: 20px
+	padding-bottom: 10px
+	margin-bottom: 28px
+	border-top: 1px solid $c-form-application-border
+	border-bottom: 1px solid $c-form-application-border
+	+md-block()
+		box-sizing: border-box
+		padding: 24px 20px 11px 28px
+		margin-bottom: 75px
+		border: 1px solid $c-form-application-input-border-05
+	+lg-block()
+		width: 570px
+		margin-left: 40px
+		margin-bottom: auto
+
+.form-application__subtitle
+	text-transform: none
+	margin-bottom: 34px
+	padding-right: 20px
+	+md-block()
+		left: -38px
+		margin-bottom: 76px
+	+lg-block()
+		left: 0
+
+.form-application__owner-data
+	margin-bottom: 28px
+	+md-block()
+		margin-bottom: 65px
+	+lg-block()
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		margin-bottom: 47px
+
+.form-application__owner-data > .form-application__label
+	+lg-block()
+		width: 570px
+
+.form-application__icon
+	display: block
+	position: absolute
+	z-index: 99
+	right: 16px
+	fill: $c-form-application-icon
+	+lg-block()
+		right: 20px
+
+.form-application__icon--email
+	width: 17px
+	height: 13px
+
+.form-application__icon--tel
+	width: 20px
+	height: 20px
+	right: 13px
+	+lg-block()
+		right: 19px
+
+.form-application__comment
+	width: 100%
+	height: 150px
+	padding-left: 12px
+	padding-right: 12px
+	margin: 0
+	margin-bottom: 28px
+	&:hover
+		border: 1px solid $c-form-application-input-border
+	+md-block()
+		height: 174px
+		margin-bottom: 65px
+	+lg-block()
+		margin-bottom: 67px
+
+.form-application__extra
+	margin-bottom: 21px
+	+md-block()
+		margin-top: -19px
+		margin-bottom: 22px
+	+lg-block()
+		width: 100%
+		margin-bottom: 29px
+
+.form-application__control
+	+md-block()
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+	+lg-block()
+		width: 100%
+
+.form-application__button
+	width: 100%
+	font-size: 16px
+	line-height: 20px
+	padding-top: 10px
+	padding-bottom: 10px
+	margin-bottom: 21px
+	+md-block()
+		width: 283px
+		margin-bottom: 0
+	+lg-block()
+		width: 570px
+
+.form-application__note
+	font-family: Arial, sans-serif
+	font-size: 14px
+	line-height: 16px
+	color: $c-text
+	text-transform: none
+	display: block
+	text-align: center
+	+md-block()
+		font-size: 16px
+		width: 283px
+		text-align: left
+	+lg-block()
+		width: 570px

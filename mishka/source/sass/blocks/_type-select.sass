@@ -1,0 +1,63 @@
+.type-select
+	+fw()
+
+.type-select__label
+	font-family: OpenSans-Bold, Arial, sans-serif
+	font-size: 17px
+	line-height: 18px
+	display: flex
+	align-items: center
+	width: 100%
+	margin-bottom: 20px
+	+md-block()
+		font-size: 19px
+		line-height: 19px
+		width: 501px
+		margin-left: auto
+		margin-bottom: 25px
+	+lg-block()
+		width: 875px
+
+.type-select__radio-indicator
+	display: inline-block
+	position: relative
+	flex: 0 0 auto
+	width: 40px
+	height: 40px
+	border: 2px solid $c-form-application-input-border
+	border-radius: 100%
+	background-color: $c-white
+	box-sizing: border-box
+	margin-right: 23px
+	+md-block()
+		width: 51px
+		height: 51px
+		margin-right: 29px
+
+.type-select__label input[type="radio"]:focus + .type-select__radio-indicator
+	box-shadow: 0px 0px 2px 1px $c-outline
+
+.type-select__label input[type="radio"]:checked + .type-select__radio-indicator:after
+	content: ""
+	position: absolute
+	width: 15px
+	height: 15px
+	top: 11px
+	left: 11px
+	display: block
+	border-radius: 100%
+	background-color: $c-site-green
+	transition: 0.2s
+	+md-block()
+		width: 20px
+		height: 20px
+		top: 14px
+		left: 14px
+
+.type-select__label input[type="radio"]:hover + .type-select__radio-indicator
+	border: 2px solid $c-site-green
+	transition: 0.2s
+
+.type-select__label input[type="radio"]:active + .type-select__radio-indicator
+	border: 2px solid $c-form-application-input-border-03
+	transition: 0.2s

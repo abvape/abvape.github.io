@@ -1,0 +1,217 @@
+.image-comparison__wrapper
+	position: relative
+	min-height: 210px
+	padding-bottom: 52px
+	+md-block()
+		width: 100%
+		min-height: 517px
+		padding-bottom: 14px
+		z-index: 9
+
+.image-comparison__image
+	position: absolute
+	height: 210px
+	+md-block()
+		height: 517px
+
+.image-comparison__image--second
+	top: 0
+	left: 60px
+	height: 205px
+	+md-block()
+		height: 470px
+		top: 30px
+		left: 138px
+	+lg-block()
+		left: 98px
+
+.image-comparison__image--first
+	top: 0
+	left: 0
+	clip: rect(0px, 156.8px, 210px, 0px)
+	+md-block()
+		clip: rect(0px, 354px, 517px, 0px)
+	+lg-block()
+		clip: rect(0px, 323px, 517px, 0px)
+
+.image-comparison__range
+	position: relative
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	align-items: center
+	z-index: 9
+	+lg-block()
+		padding-left: 20px
+
+.image-comparison__range-wrapper
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	padding-bottom: 16px
+	padding-left: 10px
+	padding-right: 10px
+	width: 114px
+	position: relative
+	+md-block()
+		width: 428px
+		padding-left: 22px
+		padding-right: 22px
+		padding-top: 10px
+
+.image-comparison__scale
+	position: absolute
+	display: flex
+	justify-content: start
+	align-items: center
+	width: 112px
+	height: 14px
+	border: 1px solid $c-example-border
+	border-radius: 14px
+	padding: 0 6px
+	box-sizing: border-box
+	+md-block()
+		width: 428px
+		height: 6px
+		border: none
+		padding: 0
+
+.image-comparison__scale-point
+	display: none
+	+md-block()
+		display: flex
+		position: absolute
+		width: 34px
+		height: 34px
+		top: -15px
+		left: 197px
+		z-index: 9
+		box-sizing: border-box
+		background-color: $c-white
+		border: 1px solid $c-example-border
+		box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15)
+		border-radius: 100%
+		&:after
+			content: ""
+			display: block
+			width: 8px
+			height: 8px
+			background-color: $c-example-indicator-mob
+			border-radius: 100%
+			position: absolute
+			top: 12px
+			left: 12px
+	+lg-block()
+		left: 209px
+
+.image-comparison__scale-indicator
+	width: 50px
+	border-bottom: 6px solid $c-example-indicator-mob
+	border-radius: 6px
+	+md-block()
+		width: 428px
+		border-bottom: 6px solid $c-example-indicator-tablet
+
+.image-comparison__range-button
+	font-family: Oswald Regular, Arial, sans-serif
+	font-size: 16px
+	line-height: 20px
+	text-transform: uppercase
+	background-color: $c-example-bg
+	padding: 0
+	border: none
+	outline: none
+	cursor: pointer
+	+md-block()
+		font-size: 20px
+		padding-bottom: 6px
+		border-bottom: 1px dotted $c-example-button-border
+		&:hover
+			border-bottom: 1px solid $c-example-button-border
+			transition: 0.2s
+		&:active
+			padding-bottom: 7px
+			border-bottom: none
+
+.image-comparison__range-button--after
+	+md-block()
+		background-color: $c-example-bg-2
+
+.image-comparison__range-input
+	-webkit-appearance: none
+	width: 100px
+	height: 0
+	top: 7px
+	outline: none
+	position: relative
+	z-index: 99
+	cursor: pointer
+	+md-block()
+		width: 428px
+		top: 3px
+
+.image-comparison__range-input::-webkit-slider-thumb
+	-webkit-appearance: none
+	background: $c-example-indicator-mob
+	width: 6px
+	height: 6px
+	border-radius: 100%
+	cursor: pointer
+	+md-block()
+		width: 34px
+		height: 34px
+		background: transparent
+
+.image-comparison__range-input::-moz-range-track
+	-moz-appearance: none
+	width: 100px
+	height: 0
+	top: 7px
+	outline: none
+	position: relative
+	z-index: 99
+	cursor: pointer
+
+.image-comparison__range-input::-moz-range-thumb
+	-moz-appearance: none
+	background: $c-example-indicator-mob
+	width: 6px
+	height: 6px
+	border-radius: 6px
+	cursor: pointer
+
+// for ie   ???
+.image-comparison__range-input::-ms-thumb
+	-ms-appearance: none
+	background: $c-example-indicator-mob
+	width: 6px
+	height: 6px
+	border-radius: 6px
+	cursor: pointer
+.image-comparison__range-input::-ms-track
+	-ms-appearance: none
+	width: 100px
+	height: 0
+	top: 7px
+	outline: none
+	position: relative
+	z-index: 99
+	cursor: pointer
+.image-comparison__range-input::-ms-fill-lower
+	-ms-appearance: none
+	width: 100px
+	height: 0
+	top: 7px
+	outline: none
+	position: relative
+	z-index: 99
+	cursor: pointer
+.image-comparison__range-input::-ms-fill-upper
+	-ms-appearance: none
+	width: 100px
+	height: 0
+	top: 7px
+	outline: none
+	position: relative
+	z-index: 99
+	cursor: pointer

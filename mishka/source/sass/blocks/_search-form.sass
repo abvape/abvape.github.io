@@ -1,0 +1,54 @@
+.search-form
+	position: absolute
+	width: 320px
+	height: 64px
+	top: 0
+	left: 0
+	box-sizing: border-box
+	+md-block()
+		width: 450px
+		height: 88px
+		top: 0
+		left: -370px
+	+lg-block()
+		width: 882px
+		left: -801px
+
+.search-form__field
+	box-sizing: border-box
+	border: 1px solid $c-main-nav-shadow
+	background-color: $c-main-nav-shadow
+	z-index: 999
+	width: 256px
+	height: 64px
+	font-family: OpenSans-Bold, Arial, sans-serif
+	font-size: 17px
+	line-height: 17px
+	padding-left: 30px
+	padding-right: 30px
+	padding-top: 20px
+	padding-bottom: 20px
+	+md-block()
+		width: 370px
+		height: 88px
+		padding-left: 50px
+		padding-right: 50px
+	+lg-block()
+		width: 802px
+
+.search-form__button
+	width: 64px
+	height: 64px
+	background-color: $c-white
+	border: 1px solid $c-main-nav-shadow
+	font-size: 0
+	cursor: pointer
+	+md-block()
+		width: 80px
+		height: 88px
+		&:hover
+			.search-form__button-icon
+				fill: $c-site-green
+
+.search-form__button-icon
+	pointer-events: none

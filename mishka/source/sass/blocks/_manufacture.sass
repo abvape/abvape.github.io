@@ -1,0 +1,123 @@
+.manufacture
+	width: 320px
+	padding-right: 30px
+	padding-left: 30px
+	margin: 0 auto
+	box-sizing: border-box
+	margin-bottom: 58px
+	+md-block()
+		width: 768px
+		padding-right: 50px
+		padding-left: 50px
+		margin-bottom: 63px
+	+lg-block()
+		width: 1250px
+		padding-right: 100px
+		padding-left: 100px
+		margin-bottom: 106px
+
+.manufacture__wrapper
+	+fw()
+	border: 1px solid $c-manufacture-border
+	+lg-block()
+		position: relative
+		min-height: 455px
+
+.manufacture__title
+	font-family: OpenSans-Bold, Arial, sans-serif
+	font-size: 17px
+	line-height: 24px
+	display: flex
+	position: relative
+	align-items: center
+	width: 260px
+	padding-top: 24px
+	padding-left: 90px
+	margin-bottom: 24px
+	&:before
+		content: ""
+		display: block
+		position: absolute
+		width: 37px
+		height: 33px
+		left: 30px
+		background-repeat: no-repeat
+		background-size: 37px 33px
+		background-image: url("../img/video.svg")
+	+md-block()
+		font-size: 20px
+		padding-top: 0
+		padding-left: 105px
+		margin-bottom: 32px
+		order: 1
+		&:before
+			left: 38px
+	+lg-block()
+		margin-left: 682px
+		padding-top: 93px
+		padding-right: 57px
+		padding-left: 78px
+		margin-bottom: 26px
+		&:before
+			top: 43px
+			left: 77px
+
+.manufacture__image-wrapper
+	margin-bottom: 28px
+	+md-block()
+		order: 0
+		width: 100%
+		height: auto
+		margin-bottom: 38px
+	+lg-block()
+		position: absolute
+		width: 682px
+		height: 455px
+		top: 0
+		left: 0
+		margin-bottom: 0
+
+.manufacture__image
+	+md-block()
+		width: 100%
+	+lg-block()
+		width: 682px
+		height: 455px
+		position: relative
+		top: 0
+		left: 0
+		margin-bottom: 0
+
+
+.manufacture__description
+	font-family: OpenSans-Regular, Arial, sans-serif
+	font-size: 13px
+	line-height: 24px
+	color: $c-text
+	padding-right: 33px
+	padding-left: 33px
+	margin-bottom: 25px
+	+md-block()
+		font-size: 15px
+		line-height: 30px
+		padding-right: 39px
+		padding-left: 39px
+		margin-bottom: 35px
+		order: 2
+	+lg-block()
+		margin-left: 682px
+		padding-right: 57px
+		padding-left: 78px
+
+.manufacture__button
+	width: 192px
+	margin: 0 auto
+	margin-bottom: 32px
+	+md-block()
+		width: 584px
+		margin-bottom: 45px
+		order: 3
+	+lg-block()
+		margin-left: 761px
+		width: 230px
+		align-self: center

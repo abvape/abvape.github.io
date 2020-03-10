@@ -1,0 +1,61 @@
+.color-select
+	+fw()
+
+.color-select__item
+	font-family: OpenSans-Bold, Arial, sans-serif
+	font-size: 17px
+	line-height: 18px
+	display: flex
+	align-items: center
+	width: 100%
+	line-height: 30px
+	margin-bottom: 22px
+	+md-block()
+		margin-bottom: 24px
+
+.color-select__checkbox-indicator
+	display: block
+	position: relative
+	flex: 0 0 auto
+	top: 0
+	left: 0
+	width: 40px
+	height: 39px
+	box-sizing: border-box
+	background-color: $c-white
+	border: 2px solid $c-form-application-input-border
+	margin-right: 23px
+	+md-block()
+		width: 54px
+		height: 52px
+
+.color-select__item input[type="checkbox"]:focus + .color-select__checkbox-indicator
+	outline: thin dotted
+	outline: 5px auto -webkit-focus-ring-color
+
+.color-select__item input[type="checkbox"]:checked + .color-select__checkbox-indicator:after
+	content: ""
+	display: block
+	position: absolute
+	width: 20px
+	height: 11px
+	top: 7px
+	left: 7px
+	z-index: 9
+	border-left: 2px solid $c-black
+	border-bottom: 2px solid $c-black
+	transform: rotate(-45deg)
+	transition: 0.2s
+	+md-block()
+		width: 25px
+		height: 12px
+		top: 10px
+		left: 11px
+
+.color-select__item input[type="checkbox"]:hover + .color-select__checkbox-indicator
+	border: 2px solid $c-site-green
+	transition: 0.2s
+
+.color-select__item input[type="checkbox"]:active + .color-select__checkbox-indicator
+	border: 2px solid $c-form-application-input-border-03
+	transition: 0.2s

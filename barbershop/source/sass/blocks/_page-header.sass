@@ -1,0 +1,26 @@
+.page-haeder
+	background-color: $c-bg-header
+	display: flex
+	flex-direction: column
+	align-items: center
+	+md-block()
+		background: url("../img/index-bg-img.jpg")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+		height: 470px
+	+lg-block()
+		height: 720px
+
+.page-haeder__logo
+	box-sizing: border-box
+	height: 85px
+	width: 226px
+	padding-top: 29px
+	font-size: 0
+	+md-block()
+		order: 2
+		width: auto
+		padding-top: 39px
+	+lg-block()
+		padding-top: 57px

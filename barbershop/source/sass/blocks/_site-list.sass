@@ -1,0 +1,68 @@
+.site-list
+	+md-block()
+		justify-content: center
+		width: 570px
+	+lg-block()
+		width: 780px
+
+.site-list__item
+	+md-block()
+		margin-right: 32px
+		&:last-child
+			margin-right: 0
+		&--active
+			position: relative
+			&:after
+				content: ""
+				position: absolute
+				right: 0
+				bottom: -3px
+				left: 0
+				height: 3px
+				background-color: $c-bg-menu-mob
+	+lg-block()
+		margin-right: 0
+		&--active:after
+			right: 30px
+			left: 30px
+
+.site-list__link
+	display: block
+	color: $c-white
+	text-transform: uppercase
+	text-decoration: none
+	font-family: PT Sans Narrow Bold, Arial, sans-serif
+	line-height: 24px
+	font-size: 18px
+	padding: 12px 21px 13px 21px
+	background-color: $c-bg-menu-mob
+	border-top: 1px solid #886e5b
+	border-bottom: 1px solid #71543f
+	+md-block()
+		line-height: 72px
+		padding: 0px
+		background-color: $c-black
+		border: none
+	+lg-block()
+		padding-right: 31px
+		padding-left: 31px
+	&[href]
+		&:hover
+			background-color: $c-bg-menu-mob-hover
+		&:active
+			background-color: $c-bg-menu-mob-active
+		+md-block()
+			&:hover
+				background-color: $c-black
+				color: $c-bg-menu-mob
+			&:active
+				background-color: $c-black
+				color: $c-bg-menu-toggle-t
+		+lg-block()
+			&:hover
+				background-color: $c-white
+				color: $c-black
+			&:active
+				background-color: $c-white
+				color: $c-stats-note
+

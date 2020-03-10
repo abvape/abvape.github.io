@@ -1,0 +1,271 @@
+.package
+	width: 320px
+	margin: 0 auto
+	background-color: $c-package-bg
+	padding-top: 97px
+	padding-bottom: 46px
+	margin-bottom: 42px
+	+md-block()
+		width: 660px
+		padding-top: 86px
+		margin-bottom: 45px
+	+lg-block()
+		width: 1200px
+		padding-top: 150px
+		margin-bottom: 64px
+
+.package
+	.package__slider.owl-carousel
+		+md-block()
+			display: none
+
+.package__table
+	+fw()
+	width: 320px
+	position: relative
+	cursor: pointer
+	margin-bottom: 35px
+	+md-block()
+		width: 620px
+		margin-bottom: 22px
+	+lg-block()
+		width: 940px
+		margin-bottom: 49px
+
+.package__table-head
+	width: 320px
+	background-color: $c-text
+	box-sizing: border-box
+	padding-right: 20px
+	padding-left: 20px
+	+md-block()
+		width: 620px
+		padding: 0
+	+lg-block()
+		width: 940px
+
+.package__table-top
+	+fw()
+	width: 280px
+	position: relative
+	box-sizing: border-box
+	color: $c-white
+	text-transform: uppercase
+	padding-top: 19px
+	padding-bottom: 19px
+	overflow: hidden
+	&:before
+		content: ""
+		display: block
+		position: absolute
+		width: 2px
+		height: 98px
+		left: 0px
+		top: 0
+		box-sizing: border-box
+		border-left: 2px solid $c-package-border
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		width: 2px
+		height: 98px
+		right: 0px
+		top: 0
+		box-sizing: border-box
+		border-left: 2px solid $c-package-border
+	+md-block()
+		width: 620px
+		padding: 0
+		&:before
+			display: none
+		&:after
+			display: none
+	+lg-block()
+		width: 940px
+
+.package__table-title
+	font-family: OpenSans-Bold, Arial, sans-serif
+	font-size: 18px
+	line-height: 30px
+	text-align: center
+	width: 100%
+	+md-block()
+		+fw()
+		width: 155px
+		justify-content: center
+		font-size: 16px
+		box-sizing: border-box
+		padding-top: 10px
+		padding-bottom: 9px
+		border-right: 2px solid $c-package-border
+		&:last-child
+			border-right: none
+	+lg-block()
+		width: 235px
+		font-size: 18px
+		padding-top: 19px
+		padding-bottom: 19px
+
+.package__table-title--bestseller
+	&:after
+		content: "хит"
+		display: block
+		position: absolute
+		font-family: OpenSans-Regular, Arial, sans-serif
+		font-size: 14px
+		line-height: 30px
+		background-color: $c-package-bestseller
+		color: $c-white
+		text-transform: uppercase
+		box-sizing: border-box
+		transform: rotate(-45deg)
+		padding-left: 40px
+		padding-right: 40px
+		top: 12px
+		left: -29px
+	+md-block()
+		position: relative
+		overflow: hidden
+		&:after
+			top: 4px
+			left: -33px
+	+lg-block()
+		&:after
+			top: 11px
+			left: -28px
+
+.package__table-title--null
+	+md-block()
+		background-color: $c-package-bg
+		border-bottom: 2px solid $c-package-border
+
+.package__table-price
+	font-family: OpenSans-Light, Arial, sans-serif
+	font-size: 	24px
+	line-height: 30px
+	text-align: center
+	width: 100%
+	+md-block()
+		font-size: 18px
+	+lg-block()
+		font-size: 24px
+
+.package__table-body
+	width: 320px
+	background-color: $c-white
+	+md-block()
+		width: 620px
+		box-sizing: border-box
+	+lg-block()
+		width: 940px
+
+.package__table-row
+	+fw()
+	width: 320px
+	position: relative
+	box-sizing: border-box
+	justify-content: space-between
+	padding-top: 15px
+	padding-right: 20px
+	padding-bottom: 14px
+	padding-left: 20px
+	border-bottom: 2px solid $c-package-border
+	&:before
+		content: ""
+		display: block
+		position: absolute
+		width: 2px
+		height: 59px
+		left: 20px
+		top: 0
+		box-sizing: border-box
+		border-left: 2px solid $c-package-border
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		width: 2px
+		height: 59px
+		right: 20px
+		top: 0
+		box-sizing: border-box
+		border-left: 2px solid $c-package-border
+	+md-block()
+		width: 620px
+		padding: 0
+		&:before
+			display: none
+		&:after
+			display: none
+	+lg-block()
+		width: 940px
+
+.package__table-field
+	font-family: OpenSans-Regular, Arial, sans-serif
+	font-size: 14px
+	line-height: 30px
+	text-transform: uppercase
+	color: $c-text
+	padding-left: 23px
+	+md-block()
+		width: 155px
+		text-transform: none
+		box-sizing: border-box
+		padding-top: 7px
+		padding-bottom: 8px
+		padding-left: 15px
+		border-right: 2px solid $c-package-border
+		border-left: 2px solid $c-package-border
+	+lg-block()
+		width: 235px
+		font-size: 18px
+		padding-top: 14px
+		padding-bottom: 15px
+		padding-left: 20px
+
+.package__table-value
+	font-size: 0
+	position: relative
+	width: 70px
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		width: 31px
+		height: 26px
+		left: 20px
+		top: 0
+		background-repeat: no-repeat
+	+md-block()
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 155px
+		box-sizing: border-box
+		padding-top: 7px
+		padding-bottom: 7px
+		border-right: 2px solid $c-package-border
+		&:after
+			position: relative
+			left: 0
+	+lg-block()
+		width: 235px
+
+.package__table-value--true
+	&:after
+		top: 5px
+		background-size: 31px 21px
+		background-image: url("../img/true.svg")
+
+.package__table-value--false
+	&:after
+		left: 22px
+		background-size: 27px 26px
+		background-image: url("../img/false.svg")
+
+.package__data
+	display: none
+	+md-block()
+		display: flex
+		justify-content: center

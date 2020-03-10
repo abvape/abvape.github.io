@@ -1,0 +1,159 @@
+.extra
+	+lg-block()
+		display: flex
+		flex-wrap: wrap
+		margin-bottom: 85px
+
+.extra__title
+	margin-bottom: 34px
+	padding-right: 22px
+	padding-left: 20px
+	+md-block()
+		margin-bottom: 80px
+
+.extra__wrapper
+	+md-block()
+		margin-bottom: 69px
+	+lg-block()
+		width: 895px
+		margin-right: 80px
+		margin-bottom: 0
+
+.extra__item
+	padding-top: 13px
+	padding-bottom: 17px
+	margin: 0 20px
+	border-top: 1px solid $c-extra-border
+	&:last-child
+		border-bottom: 1px solid $c-extra-border
+	+md-block()
+		display: flex
+		flex-wrap: wrap
+		width: 708px
+		margin: 0 auto
+		padding-top: 25px
+		padding-right: 38px
+		padding-bottom: 27px
+		padding-left: 38px
+		border: 1px solid $c-extra-border
+		border-bottom: none
+		box-sizing: border-box
+	+lg-block()
+		width: 100%
+		margin: 0
+		border: none
+		border-top: 1px solid $c-extra-border
+		padding-right: 0
+		padding-left: 0
+		padding-top: 16px
+		padding-bottom: 15px
+		justify-content: space-between
+		align-items: center
+
+.extra__item-title
+	font-family: Oswald Regular, Arial, sans-serif
+	font-size: 16px
+	line-height: 16px
+	text-transform: uppercase
+	margin-bottom: 13px
+	+md-block()
+		font-size: 20px
+		line-height: 20px
+		width: 50%
+		margin-bottom: 26px
+	+lg-block()
+		width: 290px
+		margin: 0
+
+.extra__data
+	font-family: Arial, sans-serif
+	font-size: 14px
+	line-height: 14px
+	width: 100%
+	margin-bottom: 15px
+	+md-block()
+		font-size: 16px
+		line-height: 20px
+		width: 50%
+		margin-bottom: auto
+	+lg-block()
+		width: 300px
+		margin: 0
+
+.extra__data-quantity
+	+md-block()
+		text-align: right
+	+lg-block()
+		text-align: left
+
+.extra__data-price
+	text-align: right
+	+md-block()
+		width: 90px
+
+.extra__button
+	width: 100%
+	font-size: 16px
+	+md-block()
+		font-size: 16px
+		padding-top: 10px
+		padding-bottom: 10px
+	+lg-block()
+		width: 245px
+
+.extra__gift
+	display: flex
+	position: relative
+	justify-content: center
+	margin: 0 20px
+	margin-top: 40px
+	margin-bottom: 35px
+	width: 280px
+	height: 289px
+	background-image: url('../img/gift-photo-mobile.jpg')
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		width: 55px
+		height: 60px
+		left: 113px
+		top: 65px
+		background-size: 55px 60px
+		background-image: url('../img/gift.svg')
+	+md-block()
+		justify-content: unset
+		width: 708px
+		height: 200px
+		margin: 0 auto
+		background-image: url('../img/gift-photo-tablet.jpg')
+		margin-bottom: 76px
+		&:after
+			left: 91px
+	+lg-block()
+		justify-content: center
+		align-items: flex-end
+		box-sizing: border-box
+		padding-bottom: 42px
+		width: 245px
+		height: 289px
+		margin: 0
+		background-image: url('../img/gift-photo-desktop.jpg')
+		&:after
+			left: 96px
+
+.extra__gift-condition
+	font-family: Arial, sans-serif
+	font-size: 16px
+	line-height: 20px
+	text-align: center
+	color: $c-white
+	width: 170px
+	padding-top: 187px
+	+md-block()
+		text-align: left
+		padding-top: 72px
+		padding-left: 423px
+	+lg-block()
+		padding: 0
+		text-align: center

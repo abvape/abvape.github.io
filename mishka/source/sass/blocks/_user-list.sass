@@ -1,0 +1,76 @@
+.user-list
+	+md-block()
+		+fw()
+		order: 1
+	+lg-block()
+		position: absolute
+		z-index: 99
+		width: 350px
+		top: 0
+		left: 700px
+
+.user-list__item
+	box-sizing: border-box
+	box-shadow: 0px 1px 0px 0px $c-main-nav-shadow
+	+md-block()
+		box-shadow: none
+
+.user-list__item--search
+	position: relative
+	+md-block()
+		box-sizing: border-box
+		border-right: 1px solid $c-main-nav-shadow
+		border-left: 1px solid $c-main-nav-shadow
+
+.user-list__link
+	font-family: OpenSans-Bold, Arial, sans-serif
+	font-size: 17px
+	line-height: 24px
+	text-decoration: none
+	display: block
+	color: $c-black
+	padding: 20px 0
+	padding-left: 75px
+	position: relative
+	+md-block()
+		padding: 32px 0
+		display: flex
+		align-items: center
+		&[href]
+			&:hover
+				color: $c-black-06
+				.user-list__icon
+					fill: $c-site-green
+			&:active
+				opacity: 0.3
+
+.user-list__link--search
+	+md-block()
+		font-size: 0
+		padding-right: 40px
+		padding-left: 40px
+
+.user-list__icon--search
+	pointer-events: none
+
+.user-list__item--search-opened
+	.search-form
+		display: flex
+		+md-block()
+			animation-name: bounce
+			animation-duration: 0.6s
+
+.user-list__item--search-closed
+	.search-form
+		display: none
+
+.user-list__link--cart
+	+md-block()
+		padding-left: 83px
+
+.user-list__icon
+	position: absolute
+	display: block
+	left: 30px
+	fill: $c-main-nav-icon
+

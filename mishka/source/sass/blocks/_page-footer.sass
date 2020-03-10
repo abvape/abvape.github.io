@@ -1,0 +1,64 @@
+.page-footer
+	+fw()
+	width: 320px
+	box-sizing: border-box
+	padding: 0 30px
+	margin: 0 auto
+	padding-bottom: 5px
+	background-color: $c-footer-bg
+	+md-block()
+		width: 768px
+		padding-right: 50px
+		padding-left: 50px
+		padding-top: 32px
+		padding-bottom: 31px
+		justify-content: space-between
+		align-items: center
+	+lg-block()
+		width: 1250px
+		padding-right: 100px
+		padding-left: 100px
+
+.page-footer__logo
+	display: none
+	+md-block()
+		display: flex
+		width: 220px
+		padding-top: 20px
+		padding-bottom: 20px
+
+.page-footer__logo-link
+	+md-block()
+		font-size: 0
+		&:hover
+			.page-footer__logo-img
+				fill: $c-footer-hover
+				transition: 0.2s
+		&:active
+			.page-footer__logo-img
+				opacity: 0.3
+				transition: 0.1s
+
+.page-footer__logo-img
+	width: 102px
+	height: 34px
+	fill: $c-footer-logo
+
+.page-footer__social
+	width: 260px
+	box-sizing: border-box
+	border-bottom: 1px solid $c-footer-divider
+	padding-top: 26px
+	padding-bottom: 26px
+	+md-block()
+		border: none
+		width: 220px
+
+.page-footer__copyright
+	width: 260px
+	padding-top: 20px
+	padding-bottom: 20px
+	+md-block()
+		width: 220px
+	+lg-block()
+		padding-top: 29px

@@ -1,0 +1,81 @@
+.model-bread
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+
+.model-bread__title
+	text-align: center
+	position: relative
+	padding: 0 20px
+	background-color: $c-works-bg
+	z-index: 9
+
+.model-bread__radiobread
+	display: flex
+	flex-direction: column
+	position: relative
+	cursor: pointer
+	box-sizing: border-box
+	margin-bottom: 12px
+	align-items: center
+	text-transform: lowercase
+	+md-block()
+		margin-bottom: 28px
+
+.model-bread__radio-indicator
+	display: block
+	position: relative
+	width: 50px
+	height: 50px
+	border: 1px solid $c-form-application-radio
+	border-radius: 50px
+	background-color: $c-white
+	box-sizing: border-box
+	margin-bottom: 11px
+	+md-block()
+		margin-bottom: 24px
+
+.model-bread__bread-icon
+	margin-top: 10px
+	+md-block()
+		margin-top: 30px
+
+.model-bread__radiobread input[type="radio"]:focus + .model-bread__radio-indicator
+	box-shadow: 0px 0px 2px 1px $c-outline
+
+.model-bread__radiobread input[type="radio"]:checked + .model-bread__radio-indicator:after
+	content: ""
+	position: absolute
+	top: 14px
+	left: 14px
+	display: block
+	width: 18px
+	height: 18px
+	border: 1px solid $c-form-application-radio
+	border-radius: 17px
+	background-color: $c-white
+
+.model-bread__radiobread input[type="radio"]:hover + .model-bread__radio-indicator
+	border: 1px solid $c-form-application-radio-hover
+
+.model-bread__radiobread input[type="radio"]:active + .model-bread__radio-indicator
+	background-color: $c-form-application-radio-hover
+	border: none
+	&:after
+		content: ""
+		position: absolute
+		top: 15px
+		left: 15px
+		display: block
+		width: 18px
+		height: 18px
+		border: 1px solid $c-form-application-radio
+		border-radius: 17px
+		background-color: $c-white
+
+.model-bread__radiobread input[type="radio"]:checked:active + .model-bread__radio-indicator
+	border: none
+	background-color: $c-form-application-radio-hover
+	&:after
+		content: ""
+		display: none

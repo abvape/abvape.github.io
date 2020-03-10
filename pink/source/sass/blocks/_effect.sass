@@ -1,0 +1,112 @@
+.effect
+	display: none
+	+md-block()
+		+fw()
+		position: relative
+		width: 660px
+		justify-content: space-between
+		box-sizing: border-box
+		background-color: $c-white
+		padding-top: 59px
+		padding-right: 20px
+		padding-left: 20px
+		padding-bottom: 67px
+		margin: 0 auto
+		margin-top: -65px
+		margin-bottom: 31px
+		z-index: 99
+	+lg-block()
+		width: 1200px
+		background-color: $c-advantages-bg
+		margin-top: 0
+		padding-top: 31px
+		padding-right: 130px
+		padding-left: 130px
+
+.effect__image
+	+md-block()
+		width: 238px
+		height: 276px
+		position: relative
+		background-repeat: no-repeat
+		background-size: 238px 276px
+		background-image: url("../img/timer.svg")
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			width: 202px
+			height: 202px
+			top: 55px
+			left: 19px
+			border: 15px solid $c-effect-timer-red
+			border-radius: 100%
+			box-sizing: border-box
+		&:after
+			content: "24"
+			display: block
+			position: absolute
+			font-family: OpenSans-Bold, Arial, sans-serif
+			font-size: 96px
+			line-height: 149px
+			color: $c-effect-timer-red
+			top: 76px
+			left: 64px
+	+lg-block()
+		width: 298px
+		height: 345px
+		background-size: 298px 345px
+		&:before
+			width: 253px
+			height: 253px
+			top: 69px
+			left: 23px
+			border: 16px solid $c-effect-timer-red
+		&:after
+			font-size: 120px
+			line-height: 187px
+			top: 95px
+			left: 80px
+
+.effect__data
+	+md-block()
+		width: 310px
+		padding-top: 37px
+	+lg-block()
+		width: 573px
+		padding-top: 91px
+
+.effect__title
+	+md-block()
+		font-family: OpenSans-Bold, Arial, sans-serif
+		font-size: 30px
+		line-height: 36px
+		margin-bottom: 10px
+	+lg-block()
+		margin-bottom: 22px
+		br
+			display: none
+
+.effect__description
+	+md-block()
+		font-family: OpenSans-Regular, Arial, sans-serif
+		font-size: 14px
+		line-height: 24px
+		color: $c-text
+		padding-right: 10px
+		margin-bottom: 10px
+	+lg-block()
+		font-size: 18px
+		line-height: 30px
+		padding-right: 50px
+		margin-bottom: 29px
+
+.effect__link
+	+md-block()
+		font-family: OpenSans-Regular, Arial, sans-serif
+		font-size: 14px
+		line-height: 24px
+		color: $c-effect-timer-red
+	+lg-block()
+		font-size: 18px
+		line-height: 30px

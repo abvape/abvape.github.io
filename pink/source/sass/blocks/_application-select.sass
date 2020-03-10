@@ -1,0 +1,62 @@
+.application-select
+	+fw()
+
+.application-select__label
+	font-family: OpenSans-Regular, Arial, sans-serif
+	font-size: 18px
+	line-height: 30px
+	display: flex
+	align-items: center
+	color: $c-text
+	width: 100%
+	margin-bottom: 36px
+	&:last-child
+		margin-bottom: 0
+	+lg-block()
+		margin-bottom: 35px
+
+.application-select__radio-indicator
+	display: inline-block
+	position: relative
+	flex: 0 0 auto
+	width: 39px
+	height: 39px
+	border: 2px solid $c-form-application-border
+	border-radius: 100%
+	background-color: $c-white
+	box-sizing: border-box
+	margin-right: 30px
+	+md-block()
+		margin-right: 20px
+
+.application-select__label input[type="radio"]:focus + .application-select__radio-indicator
+	box-shadow: 0px 0px 2px 1px $c-outline
+
+.application-select__label input[type="radio"]:checked + .application-select__radio-indicator:after
+	content: ""
+	position: absolute
+	width: 14px
+	height: 14px
+	top: 11px
+	left: 11px
+	display: block
+	border-radius: 100%
+	background-color: $c-site-red
+
+.application-select__label input[type="radio"]:hover + .application-select__radio-indicator
+	border: 2px solid $c-text
+	transition: 0.2s
+
+.application-select__label input[type="radio"]:active + .application-select__radio-indicator
+	border: 2px solid $c-site-red
+	transition: 0.2s
+	&:after
+		content: ""
+		position: absolute
+		width: 14px
+		height: 14px
+		top: 11px
+		left: 11px
+		display: block
+		border-radius: 100%
+		background-color: $c-site-red

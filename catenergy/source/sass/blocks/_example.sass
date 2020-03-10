@@ -1,0 +1,182 @@
+.example
+	+lg-block()
+		margin-bottom: -75px
+
+.example__wrapper
+	box-sizing: border-box
+	width: 320px
+	margin-left: -20px
+	padding-left: 20px
+	padding-right: 20px
+	padding-bottom: 32px
+	background-color: $c-example-bg
+	+md-block()
+		display: flex
+		flex-wrap: wrap
+		background-color: $c-white
+		width: 708px
+		margin: 0
+		padding: 0
+	+lg-block()
+		width: 1220px
+
+.example__content
+	+md-block()
+		display: flex
+		flex-wrap: wrap
+	+lg-block()
+		position: relative
+		width: 610px
+		flex-direction: column
+		z-index: 99
+
+.example__title
+	font-family: Oswald Regular, Arial, sans-serif
+	font-size: 36px
+	line-height: 44px
+	padding-top: 45px
+	margin-bottom: 31px
+	color: $c-text-black
+	+md-block()
+		font-size: 60px
+		line-height: 60px
+		margin-bottom: 61px
+	+lg-block()
+		margin-bottom: 147px
+
+.example__text
+	font-family: Arial, sans-serif
+	font-size: 14px
+	line-height: 18px
+	color: $c-text
+	margin-bottom: 24px
+	+md-block()
+		font-size: 16px
+		line-height: 24px
+		margin-bottom: 52px
+	+lg-block()
+		padding-right: 175px
+		margin-bottom: 69px
+
+.example__data-wrapper
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	margin-bottom: 35px
+	+md-block()
+		width: 366px
+		margin: 0
+	+lg-block()
+		margin-bottom: 54px
+
+.example__data
+	position: relative
+	z-index: 1
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	width: 123px
+	min-height: 56px
+	border: 1px solid $c-example-border
+	+md-block()
+		width: 162px
+		min-height: 72px
+
+.example__data-field
+	font-family: Oswald Regular, Arial, sans-serif
+	font-size: 24px
+	line-height: 24px
+	text-transform: uppercase
+	width: 100%
+	text-align: center
+	padding-top: 14px
+	box-sizing: border-box
+	color: $c-text-black
+	+md-block()
+		font-size: 30px
+		line-height: 37px
+
+.example__data-desc
+	display: inline-block
+	position: absolute
+	z-index: 2
+	bottom: -15px
+	font-family: Arial, sans-serif
+	font-size: 12px
+	line-height: 12px
+	text-transform: lowercase
+	color: $c-text
+	text-align: center
+	padding-left: 8px
+	padding-right: 8px
+	background-color: $c-example-bg
+	+md-block()
+		font-size: 14px
+		line-height: 14px
+		background-color: $c-white
+		bottom: -6px
+		br
+			display: none
+	+lg-block()
+		background-color: $c-example-bg
+
+
+.example__cost
+	font-family: Oswald Regular, Arial, sans-serif
+	font-size: 14px
+	line-height: 20px
+	text-transform: uppercase
+	text-align: center
+	margin-bottom: 43px
+	color: $c-text-black
+	+md-block()
+		align-self: center
+		font-size: 20px
+		line-height: 27px
+		width: 175px
+		margin: 0
+		margin-left: auto
+		text-align: right
+	+lg-block()
+		width: 100%
+		text-align: left
+
+.example__cost-rate
+	+lg-block()
+		padding-left: 60px
+
+.example__image
+	+md-block()
+		width: 708px
+		position: relative
+		padding-top: 90px
+		padding-bottom: 68px
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			z-index: 0
+			width: 384px
+			height: 462px
+			bottom: 0
+			left: -30px
+			background-color: $c-example-bg
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			z-index: 0
+			width: 384px
+			height: 462px
+			bottom: 0
+			right: -30px
+			background-color: $c-example-bg-2
+	+lg-block()
+		width: 610px
+		top: -75px
+		&:before
+			width: 1045px
+			left: -720px
+		&:after
+			width: 395px
+			right: -110px

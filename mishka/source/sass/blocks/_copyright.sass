@@ -1,0 +1,33 @@
+.copyright
+
+.copyright__link
+	text-decoration: none
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+	+md-block()
+		justify-content: flex-end
+		&:hover
+			.copyright__icon
+				fill: $c-footer-hover
+				transition: 0.2s
+		&:active
+			.copyright__icon
+				opacity: 0.3
+				transition: 0.1s
+			.copyright__text
+				opacity: 0.3
+				transition: 0.1s
+
+.copyright__text
+	font-family: OpenSans-Bold, Arial, sans-serif
+	font-size: 19px
+	line-height: 19px
+	color: $c-black
+	padding-right: 28px
+
+.copyright__icon
+	width: 27px
+	height: 34px
+	fill: $c-site-green

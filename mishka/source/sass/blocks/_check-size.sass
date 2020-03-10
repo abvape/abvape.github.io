@@ -1,0 +1,35 @@
+.check-size
+	+fw()
+	justify-content: space-between
+
+.check-size__label
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+
+.check-size__radio-indicator
+	display: inline-block
+	position: relative
+	box-sizing: border-box
+	width: 82px
+	height: 53px
+	border: 2px solid $c-modal-radio-border
+	+md-block()
+		width: 112px
+
+.check-size__legend
+	font-family: OpenSans-Bold, Arial, sans-serif
+	font-size: 17px
+	line-height: 17px
+	text-transform: uppercase
+	position: absolute
+
+.check-size__label input[type="radio"]:focus + .check-size__radio-indicator
+	box-shadow: 0px 0px 2px 1px $c-outline
+
+.check-size__label input[type="radio"]:checked + .check-size__radio-indicator
+	border: 2px solid $c-site-green
+
+.check-size__label input[type="radio"]:hover + .check-size__radio-indicator
+	border: 2px solid $c-modal-radio-border-hover

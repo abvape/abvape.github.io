@@ -1,0 +1,120 @@
+.intro
+	width: 320px
+	margin: 0 auto
+	position: relative
+	+md-block()
+		width: 660px
+	+lg-block()
+		width: 1200px
+
+.intro__bg
+	position: absolute
+	display: block
+	width: 320px
+	height: 286px
+	top: -286px
+	left: 0
+	background-repeat: no-repeat
+	background-image: url("../img/iphone-in-hand-mobile.png")
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		width: 111px
+		height: 197px
+		left: 104px
+		top: 33px
+		background-repeat: no-repeat
+		background-image: url("../img/intro-screen-mobile.jpg")
+	+md-block()
+		width: 660px
+		height: 545px
+		top: -545px
+		left: 0
+		background-image: url("../img/iphone-in-hand-tablet.png")
+		&:after
+			width: 195px
+			height: 346px
+			left: 371px
+			top: 53px
+			background-image: url("../img/intro-screen-tablet.jpg")
+	+lg-block()
+		width: 1050px
+		height: 645px
+		top: -645px
+		left: 146px
+		background-image: url("../img/iphone-in-hand-desktop.png")
+		&:after
+			width: 230px
+			height: 408px
+			left: 570px
+			top: 64px
+			background-image: url("../img/intro-screen-desktop.jpg")
+
+
+.intro__wrapper
+	+fw()
+	background-color: $c-intro-bg
+	padding: 28px 20px 30px 20px
+	+md-block()
+		width: 340px
+		box-sizing: border-box
+		position: absolute
+		top: -545px
+		left: 0
+		background-color: transparent
+		padding-top: 19px
+	+lg-block()
+		width: 450px
+		padding-left: 130px
+		top: -645px
+		padding-top: 10px
+
+.intro__title
+	display: none
+	+md-block()
+		display: block
+		font-family: OpenSans-Light, Arial, sans-serif
+		font-size: 40px
+		line-height: 48px
+		text-align: center
+		color: $c-white
+		padding-right: 50px
+		padding-left: 50px
+		margin-bottom: 31px
+	+lg-block()
+		font-size: 50px
+		line-height: 60px
+		padding-right: 30px
+		padding-left: 30px
+		margin-bottom: 52px
+
+.intro__button
+	margin-bottom: 35px
+	+md-block()
+		margin-bottom: 50px
+	+lg-block()
+		margin-bottom: 70px
+
+.intro__support-list
+	+fw()
+	justify-content: space-around
+	align-items: center
+	width: 280px
+	margin-bottom: 19px
+	+md-block()
+		margin-bottom: 32px
+	+md-block()
+		margin-bottom: 52px
+
+.intro__support-item
+	font-size: 0
+
+.intro__description
+	font-family: OpenSans-Light, Arial, sans-serif
+	font-size: 14px
+	line-height: 24px
+	color: $c-white
+	text-align: center
+	+md-block()
+		font-size: 18px

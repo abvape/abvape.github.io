@@ -1,0 +1,303 @@
+.form-application
+	width: 320px
+	box-sizing: border-box
+	padding-right: 30px
+	padding-left: 30px
+	margin: 0 auto
+	margin-top: 22px
+	margin-bottom: 55px
+	+md-block()
+		width: 768px
+		padding-right: 50px
+		padding-left: 50px
+		margin-top: 76px
+		margin-bottom: 50px
+	+lg-block()
+		width: 1250px
+		padding-right: 100px
+		padding-left: 100px
+		margin-top: 125px
+
+.form-application__title
+	font-family: OpenSans-Regular, Arial, sans-serif
+	font-size: 13px
+	line-height: 24px
+	color: $c-text
+	margin-bottom: 23px
+	+md-block()
+		font-size: 17px
+		line-height: 30px
+		margin-bottom: 57px
+	+lg-block()
+		padding-left: 175px
+		padding-right: 175px
+
+.form-application__subtitle
+	font-family: OpenSans-Bold, Arial, sans-serif
+	font-size: 17px
+	line-height: 17px
+	text-transform: uppercase
+	color: $c-site-green
+	background-color: $c-white
+	display: inline-block
+	position: relative
+	padding-right: 26px
+	margin-bottom: 25px
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		width: 260px
+		left: 0
+		top: 9px
+		border-bottom: 1px solid $c-site-green
+		z-index: -1
+	+md-block()
+		width: 167px
+		display: flex
+		padding-right: 0
+		padding-top: 16px
+		margin-bottom: auto
+		background-color: transparent
+		&:after
+			display: none
+	+lg-block()
+		width: 175px
+		justify-content: center
+
+.form-application__subtitle--full-name
+	margin-bottom: 29px
+
+.form-application__subtitle--phone
+	margin-bottom: 7px
+
+.form-application__subtitle--email
+	margin-bottom: 7px
+
+.form-application__type
+	margin-bottom: 10px
+	+md-block()
+		+fw()
+		margin-bottom: 26px
+	+lg-block()
+		margin-bottom: 25px
+
+.form-application__color
+	margin-bottom: 9px
+	+md-block()
+		padding-top: 50px
+		padding-bottom: 26px
+		margin-bottom: 50px
+
+.form-application__bg
+	+md-block()
+		position: relative
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			z-index: -1
+			width: 768px
+			top: 0
+			bottom: 0
+			left: -50px
+			height: auto
+			background-color: $c-form-application-bg
+	+lg-block()
+		&:after
+			width: 1250px
+			left: -100px
+
+.form-application__color-item
+	+md-block()
+		&:nth-child(odd)
+			width: 240px
+		&:nth-child(even)
+			width: 260px
+			margin-left: auto
+	+lg-block()
+		&:nth-child(odd)
+			width: calc(875px / 3)
+		&:nth-child(even)
+			width: calc(875px / 3)
+			margin-left: 0
+		&:nth-child(3n+2)
+			margin-left: auto
+
+.form-application__full-name
+	+fw()
+	margin-bottom: 8px
+	+md-block()
+		margin-bottom: 26px
+	+lg-block()
+		padding-right: 175px
+
+.form-application__label
+	font-family: OpenSans-Bold, Arial, sans-serif
+	font-size: 17px
+	line-height: 18px
+	margin-bottom: 22px
+	position: relative
+	+md-block()
+		+fw()
+		align-items: center
+		width: 501px
+		font-size: 19px
+		line-height: 19px
+		margin-left: auto
+		margin-bottom: 24px
+		&:hover
+			.form-application__field
+				border-bottom: 2px solid $c-site-green
+				transition: 0.2s
+		&:active
+			.form-application__field
+				border-bottom: 2px solid $c-site-green
+				transition: 0.2s
+	+lg-block()
+		width: 700px
+
+.form-application__field
+	font-family: OpenSans-Regular, Arial, sans-serif
+	font-size: 19px
+	line-height: 19px
+	padding-top: 11px
+	padding-bottom: 13px
+	box-sizing: border-box
+	background-color: $c-white
+	border: none
+	border-bottom: 2px solid $c-form-application-input-border
+	width: 260px
+	+md-block()
+		display: flex
+		flex-grow: 1
+		padding-left: 15px
+		&:focus
+			border-bottom: 2px solid $c-site-green
+			outline: none
+
+.form-application__field--bg
+	+md-block()
+		background-color: $c-form-application-bg
+
+.form-application__field--shift
+	+md-block()
+		margin-left: 25px
+
+.form-application__field--error
+	border-bottom: 2px solid $c-form-application-input-error
+
+.form-application__field--error + .form-application__icon
+	fill: $c-form-application-input-error
+
+.form-application__phone
+	+fw()
+	margin-bottom: 9px
+	+md-block()
+		margin-bottom: 0
+		padding-top: 50px
+	+lg-block()
+		padding-right: 175px
+
+.form-application__icon
+	display: block
+	position: absolute
+	z-index: 99
+	fill: $c-black-02
+
+.form-application__field--icon
+	+md-block()
+		&:hover + .form-application__icon
+			fill: $c-site-green
+			transition: 0.2s
+		&:active .form-application__icon
+			fill: $c-site-green
+			transition: 0.2s
+		&:focus + .form-application__icon
+			fill: $c-site-green
+
+.form-application__icon--tel
+	width: 25px
+	height: 24px
+	bottom: 17px
+	right: 8px
+	+md-block()
+		right: 26px
+	+lg-block()
+		right: 8px
+
+.form-application__icon--email
+	+fw()
+	width: 32px
+	height: 21px
+	bottom: 15px
+	right: 4px
+	+md-block()
+		right: 22px
+	+lg-block()
+		right: 4px
+
+.form-application__email
+	+fw()
+	margin-bottom: 9px
+	+md-block()
+		padding-bottom: 26px
+		margin-bottom: 50px
+	+lg-block()
+		padding-right: 175px
+
+.form-application__comment
+	margin-bottom: 11px
+	+md-block()
+		+fw()
+		margin-bottom: 53px
+	+lg-block()
+		padding-right: 175px
+		margin-bottom: 49px
+
+.form-application__comment-field
+	height: 142px
+	padding-top: 18px
+	padding-right: 17px
+	padding-bottom: 18px
+	padding-left: 17px
+	border: 2px solid $c-form-application-input-border
+	+md-block()
+		&:hover
+			border: 2px solid $c-site-green
+			transition: 0.2s
+		&:active
+			border: 2px solid $c-site-green
+			transition: 0.2s
+		&:focus
+			border: 2px solid $c-site-green
+			transition: 0.2s
+
+.form-application__control
+	+fw()
+	+md-block()
+		justify-content: space-between
+	+lg-block()
+		padding-right: 175px
+		padding-left: 175px
+
+.form-application__button
+	order: 1
+	+md-block()
+		width: 230px
+		order: 0
+
+.form-application__note
+	font-family: OpenSans-Regular, Arial, sans-serif
+	font-size: 14px
+	line-height: 16px
+	color: $c-text
+	display: flex
+	order: 0
+	margin-bottom: 32px
+	+md-block()
+		font-size: 17px
+		line-height: 30px
+		margin-top: auto
+		margin-bottom: auto
+		order: 1

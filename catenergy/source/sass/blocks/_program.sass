@@ -1,0 +1,180 @@
+.program
+	padding-bottom: 2px
+	+md-block()
+		padding-bottom: 13px
+	+lg-block()
+		display: flex
+		flex-wrap: wrap
+		padding-bottom: 42px
+
+.program__item
+	display: flex
+	flex-wrap: wrap
+	position: relative
+	background-color: $c-program-bg
+	padding: 22px 21px 14px 21px
+	margin-bottom: 20px
+	+md-block()
+		padding-top: 76px
+		padding-right: 50px
+		padding-left: 52px
+		padding-bottom: 52px
+		margin-bottom: 30px
+	+lg-block()
+		width: 570px
+		box-sizing: border-box
+		padding-top: 46px
+		margin-bottom: 30px
+		&:nth-child(even)
+			margin-right: 80px
+
+.program__icon
+	display: block
+	position: absolute
+	width: 50px
+	height: 50px
+	border-radius: 100%
+	background-color: $c-program-icon-bg
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		background-repeat: no-repeat
+	+md-block()
+		position: relative
+		width: 200px
+		height: 200px
+		box-sizing: border-box
+		margin-top: 15px
+		order: 2
+	+lg-block()
+		width: 100px
+		height: 100px
+		position: absolute
+		margin: 0
+		order: 1
+
+.program__icon--slim:after
+		width: 35px
+		height: 49px
+		top: 0
+		left: 8px
+		background-size: 35px 49px
+		background-image: url("../img/icon-cat-1.svg")
+		transform: scale(-1, 1)
+		+md-block()
+			width: 140px
+			height: 194px
+			top: -11px
+			left: 28px
+			background-size: 140px 194px
+		+lg-block()
+			width: 70px
+			height: 97px
+			top: -6px
+			left: 14px
+			background-size: 70px 97px
+
+.program__icon--strong:after
+		width: 67px
+		height: 28px
+		top: 12px
+		left: -9px
+		background-size: 67px 28px
+		background-image: url("../img/icon-cat-2.svg")
+		+md-block()
+			width: 268px
+			height: 112px
+			top: 43px
+			left: -36px
+			background-size: 268px 112px
+		+lg-block()
+			width: 134px
+			height: 56px
+			top: 22px
+			left: -18px
+			background-size: 134px 56px
+
+.program__item-content
+	+md-block()
+		display: flex
+		flex-wrap: wrap
+		width: 396px
+		box-sizing: border-box
+		padding-right: 20px
+		order: 1
+	+lg-block()
+		width: 100%
+		order: 2
+
+.program__title
+	font-family: Oswald Regular, Arial, sans-serif
+	font-size: 24px
+	line-height: 37px
+	text-transform: uppercase
+	color: $c-text-black
+	padding: 7px 0 29px 70px
+	+md-block()
+		font-size: 36px
+		line-height: 37px
+		padding: 0
+		margin-bottom: 25px
+	+lg-block()
+		padding-top: 29px
+		padding-bottom: 49px
+		padding-left: 162px
+
+.program__description
+	font-family: Arial, sans-serif
+	font-size: 14px
+	line-height: 18px
+	color: $c-text
+	padding-bottom: 22px
+	border-bottom: 1px solid $c-program-border
+	+md-block()
+		font-size: 16px
+		line-height: 24px
+		border: none
+		padding: 0
+		margin-bottom: 50px
+	+lg-block()
+		margin-bottom: 25px
+
+.program__link
+	text-decoration: none
+	padding: 7px 0
+	margin-top: 12px
+	display: block
+	width: 100%
+	+md-block()
+		margin: 0
+
+.program__link-text
+	font-family: Oswald Regular, Arial, sans-serif
+	font-size: 16px
+	line-height: 16px
+	text-transform: uppercase
+	color: $c-text-black
+	position: relative
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		width: 24px
+		height: 11px
+		top: 8px
+		right: -36px
+		background-repeat: no-repeat
+		background-size: 24px 11px
+		background-image: url("../img/icon-arrow.svg")
+	&:hover:after
+		width: 33px
+		right: -45px
+		background-size: 33px 11px
+		background-image: url("../img/icon-arrow-long.svg")
+		transition: 0.1s
+	&:active
+		opacity: 0.3
+	+md-block()
+		font-size: 20px
+		line-height: 20px

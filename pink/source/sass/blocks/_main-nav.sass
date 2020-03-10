@@ -1,0 +1,199 @@
+.main-nav
+	position: relative
+	width: 320px
+	margin: 0 auto
+	+md-block()
+		width: 660px
+	+lg-block()
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		box-sizing: border-box
+		width: 920px
+		height: 110px
+		min-height: 110px
+		margin: 0
+		padding-right: 130px
+		padding-left: 130px
+		margin-bottom: auto
+
+.main-nav__wrapper
+	background-color: $c-main-nav-bg
+	position: relative
+	+lg-block()
+		background-color: transparent
+		width: 100%
+
+.main-nav__toggle
+	position: absolute
+	top: -66px
+	right: 0
+	z-index: 2
+	display: block
+	width: 80px
+	height: 66px
+	box-sizing: border-box
+	cursor: pointer
+	border: none
+	background-color: transparent
+	+md-block()
+		top: -110px
+		height: 110px
+	+lg-block()
+		display: none
+
+// main menu closed
+.main-nav--closed
+	.main-nav__toggle:before
+		content: ""
+		position: absolute
+		top: 20px
+		left: 10px
+		width: 50px
+		height: 4px
+		background-color: $c-white
+		box-shadow: 0 10px 0 0 $c-white, 0 20px 0 0 $c-white
+		+md-block()
+			top: 44px
+	.main-nav__toggle
+		&:hover:before
+			background-color: $c-main-nav-hover
+			box-shadow: 0 10px 0 0 $c-main-nav-hover, 0 20px 0 0 $c-main-nav-hover
+			transition: 0.2s
+		&:active:before
+			background-color: $c-main-nav-hover
+			box-shadow: 0 10px 0 0 $c-main-nav-hover, 0 20px 0 0 $c-main-nav-hover
+			opacity: 0.3
+			transition: 0.2s
+
+// main menu opened
+.main-nav--opened
+	&:before
+		content: ""
+		display: block
+		position: absolute
+		background-color: $c-main-nav-bg
+		width: 240px
+		height: 66px
+		top: -66px
+		left: 0
+		z-index: 1
+		+md-block()
+			width: 580px
+			height: 110px
+			top: -110px
+	.main-nav__toggle
+		background-color: $c-main-nav-bg
+		&:before,
+		&:after
+			content: ""
+			position: absolute
+			top: 30px
+			left: 34px
+			width: 30px
+			height: 4px
+			background-color: $c-white
+			+md-block()
+				top: 54px
+		&:before
+			transform: rotate(45deg)
+		&:after
+			transform: rotate(-45deg)
+		&:hover:before,
+		&:hover:after,
+			background-color: $c-main-nav-hover
+			transition: 0.2s
+		&:active:before,
+		&:active:after,
+			background-color: $c-main-nav-hover
+			opacity: 0.3
+			transition: 0.1s
+	.main-nav__wrapper
+		display: block
+		position: absolute
+		width: 100%
+		z-index: 99
+		+lg-block()
+			position: relative
+			display: flex
+			width: 100%
+
+.main-nav__list
+	+lg-block()
+		+fw()
+		width: 100%
+		box-sizing: border-box
+		justify-content: space-between
+
+.main-nav__item
+	display: flex
+	width: 100%
+	box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.15), 0px 1px 0px 0px rgba(0, 0, 0, 1)
+	box-sizing: border-box
+	padding-right: 20px
+	padding-left: 20px
+	&:first-child
+		box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.15), 0px 1px 0px 0px rgba(0, 0, 0, 1), 0px -1px 0px 0px rgba(255, 255, 255, 0.15), 0px -1px 0px 0px rgba(0, 0, 0, 1)
+	+lg-block()
+		box-shadow: none
+		width: auto
+		&:first-child
+			box-shadow: none
+		&:last-child
+			padding-right: 0
+
+.main-nav__item--active a
+	+lg-block()
+		position: relative
+		&:after
+			content: ""
+			position: absolute
+			right: 0
+			bottom: 3px
+			left: 0
+			height: 2px
+			background-color: $c-white
+
+.main-nav__link
+	font-family: OpenSans-Bold, Arial, sans-serif
+	font-size: 18px
+	line-height: 32px
+	text-transform: uppercase
+	text-decoration: none
+	text-align: center
+	display: block
+	width: 100%
+	color: $c-white
+	padding-top: 17px
+	padding-bottom: 16px
+	&[href]
+		&:hover
+			color: $c-main-nav-hover
+			transition: 0.2s
+		&:active
+			color: $c-main-nav-hover
+			opacity: 0.3
+			transition: 0.1s
+	+lg-block()
+		font-family: OpenSans-Regular, Arial, sans-serif
+		font-size: 18px
+		line-height: 18px
+		text-transform: none
+		&[href]
+			&:active
+				color: $c-white-03
+				transition: 0.1s
+
+// main menu if js is not supported
+.main-nav.main-nav--nojs
+	z-index: 9
+	.main-nav__toggle
+		display: none
+
+	.main-nav__wrapper
+		position: static
+		display: block
+
+@media screen and (max-width: $mobile-and-tablet-width)
+	.main-nav--closed .main-nav__wrapper
+		display: none

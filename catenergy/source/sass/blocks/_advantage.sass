@@ -1,0 +1,94 @@
+.advantage
+	+md-block()
+		display: flex
+		flex-wrap: wrap
+		border-bottom: 1px solid $c-advantage-number
+		counter-reset: advantage__item
+	+lg-block()
+		border: none
+		margin-bottom: -23px
+
+.advantage__title
+	font-family: Oswald Regular, Arial, sans-serif
+	font-size: 36px
+	line-height: 44px
+	color: $c-text-black
+	margin-bottom: 38px
+	+md-block()
+		font-size: 60px
+		line-height: 60px
+		width: 100%
+		margin-bottom: 72px
+
+.advantage__item
+	display: flex
+	flex-wrap: wrap
+	margin-bottom: 20px
+	+md-block()
+		width: 324px
+		position: relative
+		flex-direction: column
+		min-height: 288px
+		margin-bottom: 28px
+		&:after
+			position: absolute
+			counter-increment: advantage__item
+			content: counter(advantage__item)
+			font-family: Oswald Regular, Arial, sans-serif
+			font-size: 281px
+			line-height: 281px
+			top: -40px
+			left: 114px
+			color: $c-advantage-number
+			z-index: -1
+		&:nth-child(even)
+			margin-right: 60px
+		&:nth-last-child(-n+2)
+			margin-bottom: 0
+	+lg-block()
+		width: 245px
+		margin: 0
+		margin-right: 80px
+		&:nth-child(even)
+			margin-right: 80px
+		&:last-child
+			margin-right: 0
+
+.advantage__icon
+	display: block
+	width: 60px
+	height: 60px
+	background-color: $c-advantage-icon-bg
+	background-position: 50% 50%
+	background-repeat: no-repeat
+	+md-block()
+		width: 80px
+		height: 80px
+		margin-bottom: 33px
+
+
+.advantage__icon--1
+	background-image: url("../img/advantage-1.png")
+
+.advantage__icon--2
+	background-image: url("../img/advantage-2.png")
+
+.advantage__icon--3
+	background-image: url("../img/advantage-3.png")
+
+.advantage__icon--4
+	background-image: url("../img/advantage-4.png")
+
+.advantage__text
+	font-family: Arial, sans-serif
+	font-size: 14px
+	line-height: 18px
+	color: $c-text
+	width: calc(100% - 60px)
+	box-sizing: border-box
+	padding-left: 20px
+	+md-block()
+		font-size: 16px
+		line-height: 24px
+		width: 245px
+		padding: 0

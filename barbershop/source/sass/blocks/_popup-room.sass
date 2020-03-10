@@ -1,0 +1,180 @@
+.popup-room__wrapper
+	display: flex
+	flex-wrap: wrap
+	position: relative
+	box-sizing: border-box
+	width: 320px
+	font-family: PT Sans Narrow, Arial, sans-serif
+	font-size: 18px
+	background-color: $c-popup-room-bg
+	box-shadow: 0px 30px 50px 0px rgba(0, 1, 1, 0.75)
+	padding: 0 20px
+	padding-bottom: 37px
+	+md-block()
+		width: 460px
+		padding: 0 70px
+		padding-bottom: 57px
+
+.popup-room__title
+	font-family: PT Sans Narrow Bold, Arial, sans-serif
+	font-size: 30px
+	line-height: 30px
+	text-transform: uppercase
+	text-align: center
+	padding-top: 31px
+	padding-bottom: 20px
+	margin: 0 auto
+	+md-block()
+		font-size: 40px
+		line-height: 40px
+
+.popup-room__subtitle
+	line-height: 27px
+	text-align: center
+	padding-bottom: 27px
+	margin: 0 auto
+
+.popup-room__form
+	display: flex
+	flex-wrap: wrap
+
+.popup-room__value
+	font-size: 18px
+	position: relative
+	width: 100%
+	box-sizing: border-box
+	border: 1px solid $c-popup-room-border
+	padding: 12px 35px 13px 18px
+	background-position: 95% center
+	background-repeat: no-repeat
+	background-size: 15px 15px
+	margin-bottom: 6px
+	+md-block()
+		font-size: 24px
+		line-height: 30px
+		padding: 17px 40px 18px 24px
+
+.popup-room__value--user
+	background-image: url("../img/icon-user.svg")
+
+.popup-room__value--password
+	background-image: url("../img/icon-lock.svg")
+
+.popup-room__remember
+	position: relative
+	display: flex
+	line-height: 33px
+	cursor: pointer
+	padding-left: 50px
+	margin-top: 25px
+
+.popup-room__remember input[type="checkbox"] + .checkbox-indicator
+	position: absolute
+	top: 0
+	left: 0
+	width: 33px
+	height: 33px
+	background-color: $c-white
+	border: 1px solid $c-popup-room-border
+
+.popup-room__remember input[type="checkbox"]:focus + .checkbox-indicator
+	outline: thin dotted
+	outline: 5px auto -webkit-focus-ring-color
+
+.popup-room__remember input[type="checkbox"]:checked + .checkbox-indicator:after
+	content: ""
+	display: block
+	position: absolute
+	top: 6px
+	left: 6px
+	z-index: 20
+	width: 20px
+	height: 14px
+	border-left: 2px solid #000
+	border-bottom: 2px solid #000
+	transform: rotate(-45deg)
+
+
+.popup-room__forgot
+	display: flex
+	line-height: 33px
+	color: $c-black
+	margin-left: auto
+	margin-top: auto
+
+.popup-room__button
+	font-family: PT Sans Narrow Bold, Arial, sans-serif
+	display: flex
+	justify-content: center
+	flex-basis: 130px
+	font-size: 18px
+	line-height: 24px
+	text-transform: uppercase
+	cursor: pointer
+	margin-top: 30px
+	margin-left: 0
+	margin-right: 0
+	padding: 14px 0
+	span
+		display: none
+		+md-block()
+			display: block
+
+.popup-room__button--enter
+	background-color: $c-popup-room-enter-bg
+	color: $c-white
+	border: none
+	margin-right: 20px
+	&:hover
+		background-color: $c-popup-room-enter-hover
+	&:active
+		background-color: $c-popup-room-enter-hover
+		color: $c-white-03
+	+md-block()
+		flex-basis: 100%
+		margin-right: 0
+
+.popup-room__button--close
+	background-color: $c-white
+	color: $c-black
+	border: 1px solid $c-popup-room-border
+	&:hover
+		border: 1px solid $c-button-hover
+	&:active
+		background-color: $c-button-hover
+		color: $c-black-03
+	+md-block()
+		position: absolute
+		width: 30px
+		height: 30px
+		background-color: transparent
+		border: none
+		outline: none
+		margin: 0
+		padding: 0
+		top: 10px
+		right: -35px
+		font-size: 0
+		&:before,
+		&:after
+			content: ""
+			position: absolute
+			width: 38px
+			height: 3px
+			top: 50%
+			left: 0
+			background-color: $c-white
+		&:before
+			transform: rotate(45deg)
+		&:after
+			transform: rotate(-45deg)
+		&:hover
+			border: none
+		&:active
+			background-color: transparent
+		&:hover:before,
+		&:hover:after
+			background-color: $c-popup-room-border
+		&:active:before,
+		&:active:after
+			background-color: $c-white-03

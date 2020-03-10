@@ -1,0 +1,60 @@
+.social
+
+.social__list
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	padding-top: 18px
+	padding-bottom: 15px
+	border-top: 1px solid $c-footer-border
+	border-bottom: 1px solid $c-footer-border
+	box-sizing: border-box
+	+md-block()
+		border: none
+		padding-top: 52px
+	+lg-block()
+		padding-top: 55px
+
+.social__item
+	width: 40px
+	height: 30px
+	margin-left: 7px
+	margin-right: 7px
+
+.social__link
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+	height: 100%
+	font-size: 0
+	&:hover
+		.social__icon
+			fill: $c-footer-icon-hover
+	&:active
+		.social__icon
+			fill: $c-footer-icon-active
+
+.social__icon
+	fill: $c-footer-icon
+
+.social__icon--vk
+	width: 22px
+	height: 12px
+	+md-block()
+		width: 30px
+		height: 16px
+
+.social__icon--in
+	width: 16px
+	height: 16px
+	+md-block()
+		width: 23px
+		height: 23px
+
+.social__icon--fb
+	width: 10px
+	height: 19px
+	+md-block()
+		width: 14px
+		height: 28px

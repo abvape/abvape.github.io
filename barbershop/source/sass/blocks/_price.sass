@@ -1,0 +1,164 @@
+.price
+	background-color: $c-price-bg
+	position: relative
+
+.price__wrapper
+	display: flex
+	flex-wrap: wrap
+	padding: 0 20px
+	margin: 0 auto
+	padding-top: 40px
+	padding-bottom: 21px
+	+md-block()
+		width: 640px
+		padding: 0
+		padding-bottom: 56px
+	+lg-block()
+		width: 960px
+		padding-bottom: 83px
+
+.price__title
+	font-family: PT Sans Narrow Bold, Arial, sans-serif
+	font-size: 30px
+	line-height: 30px
+	text-transform: uppercase
+	color: $c-white
+	width: 100%
+	text-align: center
+	padding-top: 25px
+	margin-bottom: 20px
+	+md-block()
+		font-size: 40px
+		line-height: 40px
+		text-align: left
+		padding-top: 85px
+		margin-bottom: 47px
+	+lg-block()
+		padding-top: 80px
+
+.price__columns
+	width: 100%
+	+lg-block()
+		display: flex
+		flex-wrap: nowrap
+
+.price__table
+	display: flex
+	width: 100%
+	font-family: PT Sans Narrow, Arial, sans-serif
+	font-size: 20px
+	line-height: 27px
+	color: $c-white
+	+md-block()
+		margin-bottom: 14px
+	+lg-block()
+		width: 630px
+		margin: 0
+
+.price__table
+	margin-bottom: 10px
+	tbody
+		width: 100%
+
+.price__table-row
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	margin-bottom: 16px
+	+md-block()
+		margin: 0
+		flex-wrap: nowrap
+
+.price__table-cell
+	+md-block()
+		box-sizing: border-box
+		border: 1px solid $c-price-border
+		padding: 13px 12px 13px 19px
+
+.price__table--number
+	display: none
+	+md-block()
+		display: table-cell
+		width: 70px
+		text-align: center
+		padding: 0
+		padding-top: 13px
+		padding-bottom: 13px
+
+.price__table--product
+	font-family: PT Sans Narrow Bold, Arial, sans-serif
+	+md-block()
+		width: 250px
+
+.price__table--note
+	width: 100%
+	order: 4
+	box-sizing: border-box
+	&:before
+		content: "("
+	&:after
+		content: ")"
+	+md-block()
+		order: 0
+		width: 160px
+		&:before,
+		&:after
+			content: ""
+
+.price__table--price
+	+md-block()
+		width: 160px
+	+lg-block()
+		width: 150px
+
+
+.price__discount
+	display: flex
+	width: 100%
+	font-family: PT Sans Narrow, Arial, sans-serif
+	font-size: 20px
+	line-height: 27px
+	color: $c-white
+	padding-top: 19px
+	padding-bottom: 15px
+	padding-right: 22px
+	padding-left: 40%
+	border: 2px solid $c-price-border
+	background-image: url("../img/clock.svg")
+	background-position: 10% 50%
+	background-repeat: no-repeat
+	background-size: 56px 56px
+	box-sizing: border-box
+	+md-block()
+		font-size: 30px
+		line-height: 37px
+		background-position: 5% 50%
+		background-size: 56px 56px
+		text-transform: uppercase
+		background-size: 71px 71px
+		padding-top: 30px
+		padding-bottom: 36px
+		padding-right: 40px
+		padding-left: 29%
+		br
+			display: none
+	+lg-block()
+		width: 270px
+		font-size: 20px
+		line-height: 27px
+		padding: 198px 60px 20px 60px
+		background-position: 50% 25%
+		background-size: 140px 140px
+		margin-left: auto
+		text-transform: none
+		text-align: center
+
+.price__triangle
+	position: absolute
+	width: 100%
+	height: 40px
+	display: block
+	transform: rotate(180deg)
+	fill: $c-works-bg
+	+lg-block()
+		display: none

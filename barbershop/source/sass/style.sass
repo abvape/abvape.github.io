@@ -1,0 +1,31 @@
+@import smartgrid
+@import variables
+@import mixins
+@import ie
+@import "blocks/*"
+@import "owl_carousel/*"
+
++reset()
+
+body
+	margin: 0
+	padding: 0
+
+img
+	max-width: 100%
+	height: auto
+
+.include-svg
+	display: none
+
+.visually-hidden
+	position: absolute
+	width: 1px
+	height: 1px
+	margin: -1px
+	padding: 0
+	border: 0
+	white-space: nowrap
+	clip-path: inset(100%)
+	clip: rect(0 0 0 0)
+	overflow: hidden

@@ -1,0 +1,34 @@
+// fix for ie
+// xs-block
+@media all and (-ms-high-contrast: none) and (min-width: $break_xs)
+	.reviews__list.owl-carousel
+		.owl-nav
+			.owl-prev,
+			.owl-next
+				&:after
+					top: 12px
+					left: 40px
+
+	.check-size__legend
+		top: 18px
+		left: 45%
+
+// md-block
+@media all and (-ms-high-contrast: none) and (min-width: $break_md)
+	.contacts__email-value
+		border-bottom: none
+
+	.reviews__list.owl-carousel
+		.owl-nav
+			.owl-prev,
+			.owl-next
+				&:after
+					left: 17px
+
+// lg-block
+@media all and (-ms-high-contrast: none) and (min-width: $break_lg)
+	.form-application__color-item
+		&:nth-child(odd)
+			width: 291px
+		&:nth-child(even)
+			width: 291px

@@ -1,0 +1,53 @@
+.program-selection
+	display: flex
+	flex-wrap: wrap
+
+.program-selection__label
+	display: flex
+	align-items: center
+	width: 100%
+	margin-bottom: 12px
+	&:active
+		opacity: 0.3
+		transition: 0.1s
+	+md-block()
+		margin-bottom: 13px
+
+.program-selection__radio-indicator
+	display: inline-block
+	position: relative
+	width: 30px
+	height: 30px
+	border: 1px solid $c-form-application-input-border
+	border-radius: 100%
+	background-color: $c-white
+	box-sizing: border-box
+	margin-right: 15px
+	+md-block()
+		width: 40px
+		height: 40px
+		margin-right: 19px
+
+.program-selection__label input[type="radio"]:focus + .program-selection__radio-indicator
+	box-shadow: 0px 0px 2px 1px $c-outline
+
+.program-selection__label input[type="radio"]:checked + .program-selection__radio-indicator:after
+	content: ""
+	position: absolute
+	width: 12px
+	height: 12px
+	top: 7px
+	left: 7px
+	display: block
+	border-radius: 100%
+	border: 1px solid $c-form-application-input-border
+	background-color: $c-form-application-green
+	transition: 0.2s
+	+md-block()
+		width: 18px
+		height: 18px
+		top: 9px
+		left: 9px
+
+.program-selection__label input[type="radio"]:hover + .program-selection__radio-indicator
+	border: 1px solid $c-form-application-input-border-hover

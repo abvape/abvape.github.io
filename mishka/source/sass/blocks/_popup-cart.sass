@@ -1,0 +1,73 @@
+.popup-cart__wrapper
+	+fw()
+	position: relative
+	box-sizing: border-box
+	width: 320px
+	background-color: $c-white
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25)
+	padding-top: 36px
+	padding-right: 30px
+	padding-left: 30px
+	padding-bottom: 46px
+	+md-block()
+		width: 566px
+		padding-top: 45px
+		padding-right: 100px
+		padding-left: 100px
+		padding-bottom: 46px
+
+.popup-cart__title
+	font-family: OpenSans-Bold, Arial, sans-serif
+	font-size: 25px
+	line-height: 30px
+	text-transform: uppercase
+	text-align: center
+	width: 100%
+	margin-bottom: 24px
+	+md-block()
+		font-size: 30px
+		line-height: 57px
+		margin-bottom: 14px
+
+.popup-cart__subtitle
+	font-family: OpenSans-Regular, Arial, sans-serif
+	font-size: 15px
+	line-height: 30px
+	text-align: center
+	color: $c-text
+	width: 100%
+	margin-bottom: 28px
+	+md-block()
+		font-size: 17px
+		margin-bottom: 20px
+
+.popup-cart__form
+	display: flex
+	flex-wrap: wrap
+	width: 100%
+
+.popup-cart__size
+	width: 100%
+	margin-bottom: 31px
+
+.popup-cart__button
+	font-family: OpenSans-Bold, Arial, sans-serif
+	display: flex
+	font-size: 17px
+	line-height: 18px
+	text-transform: uppercase
+	text-decoration: none
+	justify-content: center
+	align-items: center
+	border: none
+	padding: 17px 0
+	box-sizing: border-box
+	color: $c-white
+	background-color: $c-site-green
+	width: 100%
+	&:hover
+		background-color: $c-modal-button-hover
+		transition: 0.2s
+	&:active
+		opacity: 0.4
+		transition: 0.2s

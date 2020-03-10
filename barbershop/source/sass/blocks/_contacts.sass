@@ -1,0 +1,58 @@
+.contacts
+	display: flex
+	flex-wrap: wrap
+	text-align: center
+	+md-block()
+		text-align: left
+		flex-grow: 1
+
+.contacts__title
+	width: 100%
+	font-family: PT Sans Narrow Bold, Arial, sans-serif
+	font-size: 18px
+	line-height: 24px
+	margin-bottom: 15px
+	+md-block()
+		text-transform: uppercase
+
+.contacts__text
+	width: 100%
+	font-size: 18px
+	line-height: 24px
+
+.contacts__phone
+	font-family: PT Sans Narrow Bold, Arial, sans-serif
+	font-size: 18px
+	line-height: 27px
+	text-decoration: none
+	color: $c-white
+	height: 50px
+	display: flex
+	justify-content: center
+	align-items: center
+	border: 1px solid $c-footer-border
+	margin-top: 20px
+	box-sizing: border-box
+	&:hover
+		border: 1px solid $c-footer-border-hover
+	&:active
+		background-color: $c-footer-border-active-bg
+		border: none
+		color: $c-white-03
+	+md-block()
+		border: none
+		font-family: PT Sans Narrow, Arial, sans-serif
+		margin: 0
+		height: auto
+		justify-content: left
+		&:hover
+			border: none
+		&:active
+			background-color: $c-footer-bg
+			color: $c-white
+
+
+.contacts__phone-mobile
+	display: none
+	+md-block()
+		display: inline-block

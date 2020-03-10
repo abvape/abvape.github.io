@@ -1,0 +1,181 @@
+.contacts
+	+fw()
+	width: 320px
+	box-sizing: border-box
+	padding: 0 30px
+	margin: 0 auto
+	margin-bottom: 38px
+	+md-block()
+		width: 768px
+		padding: 0 50px
+		margin-bottom: 57px
+	+lg-block()
+		position: relative
+		width: 1250px
+		padding-right: 625px
+		padding-left: 275px
+		margin-bottom: 100px
+
+.contacts__title
+	font-family: OpenSans-Bold, Arial, sans-serif
+	font-size: 18px
+	line-height: 30px
+	margin-bottom: 25px
+	width: 100%
+	+md-block()
+		font-size: 43px
+		line-height: 50px
+		position: relative
+		margin-bottom: 48px
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			width: 47px
+			height: 81px
+			right: 3px
+			top: -15px
+			z-index: 9
+			background-size: 47px 81px
+			background-image: url("../img/flag.svg")
+			background-repeat: no-repeat
+	+lg-block()
+		font-size: 53px
+		line-height: 57px
+		width: 350px
+		&:after
+			left: -112px
+			top: -8px
+
+.contacts__email
+	font-family: OpenSans-Regular, Arial, sans-serif
+	font-size: 15px
+	line-height: 30px
+	color: $c-text
+	+fw()
+	width: 260px
+	margin-bottom: 30px
+	+md-block()
+		font-size: 17px
+		width: 314px
+		padding-right: 20px
+	+lg-block()
+		width: 350px
+
+.contacts__email-sign
+	width: 65px
+	padding-right: 10px
+	margin-bottom: auto
+
+.contacts__email-value
+	width: 185px
+	margin-bottom: auto
+	border-bottom: 1px solid $c-site-green
+	width: auto
+	cursor: pointer
+	&:hover
+		color: $c-contacts-email-hover
+		transition: 0.2s
+	&:active
+		opacity: 0.3
+		transition: 0.1s
+
+.contacts__address
+	font-family: OpenSans-Regular, Arial, sans-serif
+	font-size: 15px
+	line-height: 30px
+	color: $c-text
+	+fw()
+	width: 260px
+	margin-bottom: 38px
+	+md-block()
+		font-size: 17px
+		width: 334px
+		margin-bottom: 57px
+	+lg-block()
+		margin-bottom: 79px
+
+.contacts__address-sign
+	width: 65px
+	padding-right: 10px
+
+.contacts__address-value
+	width: 185px
+	+md-block()
+		width: 259px
+
+.contacts__map
+	position: relative
+	width: 100%
+	margin-bottom: 35px
+	&:after
+		content: ""
+		display: none
+		position: absolute
+		width: 67px
+		height: 100px
+		left: 108px
+		top: 145px
+		z-index: 99
+		background-size: 67px 100px
+		background-image: url("../img/map-pin.svg")
+		background-repeat: no-repeat
+	+md-block()
+		margin-bottom: 51px
+		&:after
+			left: 313px
+			top: 140px
+	+lg-block()
+		position: absolute
+		width: 525px
+		margin-bottom: 0
+		left: 624px
+		top: -70px
+		&:after
+			left: 239px
+			top: 146px
+
+.contacts__map-map
+	position: relative
+	width: 320px
+	height: 457px
+	top: 0
+	left: -30px
+	+md-block()
+		width: 768px
+		height: 457px
+		left: -50px
+	+lg-block()
+		width: 525px
+		height: 457px
+		left: 0
+
+.contacts__map-img
+	display: none
+	position: relative
+	top: 0
+	left: -30px
+	min-width: 320px
+	height: 457px
+	+md-block()
+		min-width: 768px
+		left: -50px
+	+lg-block()
+		min-width: 525px
+		left: 0
+
+.contacts__button
+	+md-block()
+		width: 230px
+		margin: 0 auto
+	+lg-block()
+		margin: 0
+
+// map if js is not supported
+.contacts__map--nojs
+	.contacts__map-map
+		display: none
+	.contacts__map-img
+		display: block
+	&:after
+		display: block

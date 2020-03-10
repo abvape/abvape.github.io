@@ -1,0 +1,60 @@
+.page-footer
+	width: 320px
+	box-sizing: border-box
+	padding-right: 20px
+	padding-left: 20px
+	padding-top: 40px
+	padding-bottom: 40px
+	margin: 0 auto
+	+md-block()
+		+fw()
+		justify-content: space-between
+		width: 660px
+		padding-top: 44px
+		padding-bottom: 44px
+	+lg-block()
+		width: 1200px
+		padding-right: 130px
+		padding-left: 130px
+		padding-top: 80px
+		padding-bottom: 77px
+
+.page-footer__logo
+	display: flex
+	justify-content: center
+	margin-bottom: 55px
+	+md-block()
+		justify-content: flex-start
+		margin-bottom: 0
+		width: calc(100% / 3)
+
+.page-footer__logo-link
+	font-size: 0
+	+md-block()
+		&:hover
+			.page-footer__logo-img
+				opacity: 0.6
+				transition: 0.2s
+		&:active
+			.page-footer__logo-img
+				opacity: 0.3
+				transition: 0.1s
+
+.page-footer__logo-img
+	+md-block()
+		width: 147px
+		height: 40px
+
+.page-footer__social
+	margin-bottom: 55px
+	+md-block()
+		+fw()
+		align-items: center
+		width: calc(100% / 3)
+		margin-bottom: 0
+
+.page-footer__copyright
+	+md-block()
+		+fw()
+		align-items: center
+		width: calc(100% / 3)

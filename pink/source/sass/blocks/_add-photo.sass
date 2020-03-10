@@ -1,0 +1,130 @@
+.add-photo
+	width: 320px
+	margin: 0 auto
+	+md-block()
+		width: 660px
+	+lg-block()
+		width: 1200px
+		box-sizing: border-box
+		padding-left: 130px
+		padding-right: 130px
+		margin-bottom: 26px
+
+.add-photo__title
+	font-family: OpenSans-Regular, Arial, sans-serif
+	font-size: 14px
+	line-height: 30px
+	color: $c-text
+	text-align: center
+	padding-left: 20px
+	padding-right: 20px
+	margin-bottom: 41px
+	+md-block()
+		font-size: 18px
+		margin-bottom: 69px
+	+lg-block()
+		padding: 0
+
+.add-photo__form
+	box-sizing: border-box
+	padding-top: 19px
+	padding-left: 20px
+	padding-right: 20px
+	padding-bottom: 41px
+	background-color: $c-photo-item-bg
+	+md-block()
+		padding-top: 57px
+		+fw()
+		justify-content: space-between
+		padding-bottom: 54px
+	+lg-block()
+		padding-left: 80px
+		padding-right: 60px
+		padding-top: 57px
+		padding-bottom: 57px
+
+.add-photo__image-container
+	position: relative
+	display: block
+	width: 280px
+	min-height: 374px
+	+md-block()
+		width: 300px
+		min-height: 400px
+
+.add-photo__image
+	display: block
+	position: absolute
+
+.add-photo__wrapper
+	+md-block()
+		+fw()
+		flex-direction: column
+		width: 300px
+		box-sizing: border-box
+		padding-left: 27px
+	+lg-block()
+		width: 410px
+		padding-left: 0
+
+.add-photo__list
+	+fw()
+	justify-content: space-between
+	align-items: center
+	box-sizing: border-box
+	padding-left: 40px
+	padding-right: 40px
+	padding-bottom: 73px
+	margin-top: 37px
+	margin-bottom: 38px
+	border-bottom: 1px solid $c-text-01
+	+md-block()
+		padding-left: 0
+		padding-right: 0
+		padding-bottom: 0
+		margin-top: 0
+		margin-bottom: 0
+		border-bottom: none
+		flex-direction: column
+		justify-content: flex-start
+
+.add-photo__buttons-wrapper
+	+md-block()
+		+fw()
+		margin-top: auto
+	+lg-block()
+		justify-content: space-between
+
+.add-photo__button
+	margin-bottom: 12px
+	&:last-child
+		margin-bottom: 0
+	+md-block()
+		margin-bottom: 24px
+		width: 260px
+	+lg-block()
+		margin-bottom: 0
+		width: 183px
+
+.add-photo__button.add-photo__button--red
+	color: $c-site-red
+	border: 3px solid $c-site-red
+	&:hover
+		color: $c-white
+		background-color: $c-site-red
+		transition: 0.2s
+	&:active
+		color: $c-white-03
+		background-color: $c-site-red
+		transition: 0.1s
+
+.add-photo__button.add-photo__button--gray
+	color: $c-text-01
+	border: 3px solid $c-text-01
+	&:hover
+		color: $c-text-03
+		transition: 0.2s
+	&:active
+		color: $c-white-03
+		background-color: $c-text-03
+		transition: 0.1s

@@ -1,0 +1,52 @@
+.page-header
+	display: flex
+	flex-wrap: wrap
+	width: 320px
+	min-height: 65px
+	margin: 0 auto
+	+md-block()
+		width: 768px
+		min-height: 80px
+		padding: 0 30px
+		box-sizing: border-box
+		padding-bottom: 26px
+	+lg-block()
+		width: 1440px
+		min-height: 113px
+		padding: 0 110px
+		justify-content: space-between
+
+.page-header__logo
+	display: flex
+	flex-wrap: wrap
+	cursor: pointer
+	text-decoration: none
+	line-height: 0
+	font-size: 0
+	&:hover
+		opacity: 0.8
+	&:active
+		opacity: 0.3
+	+md-block()
+		padding-top: 24px
+	+lg-block()
+		padding-top: 54px
+
+.page-header__logo-icon
+	width: 33px
+	height: 38px
+	padding: 11px 20px 16px 20px
+	+md-block()
+		width: 173px
+		height: 58px
+		padding: 0
+	+lg-block()
+		width: 202px
+		height: 59px
+
+.page-header__logo-text
+	width: 101px
+	height: 18px
+	padding: 24px 44px 23px 37px
+	+md-block()
+		display: none

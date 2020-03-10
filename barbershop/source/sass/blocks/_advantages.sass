@@ -1,0 +1,101 @@
+.advantages
+	background-color: $c-advantages-bg-mob
+	color: $c-white
+	font-family: PT Sans Narrow, Arial, sans-serif
+	position: relative
+	+md-block()
+		background-color: $c-bg-main
+
+.advantages__list
+	padding-top: 32px
+	+md-block()
+		width: 640px
+		margin: 0 auto
+		padding: 0
+	+lg-block()
+		width: 960px
+		display: flex
+		flex-wrap: wrap
+		padding-top: 70px
+		padding-bottom: 40px
+
+.advantages__item
+	display: flex
+	flex-wrap: wrap
+	padding-top: 127px
+	background-position: 50% 0
+	background-repeat: no-repeat
+	background-size: 95px 95px
+	+md-block()
+		box-sizing: border-box
+		width: 100%
+		padding: 0
+		padding-top: 38px
+		padding-bottom: 38px
+		padding-left: 160px
+		background-position: 5% 50%
+		border-bottom: 1px solid $c-advantages-divider
+		&:last-child
+			border-bottom: none
+	+lg-block()
+		width: calc(100% / 3)
+		padding: 0
+		padding-top: 127px
+		padding-right: 40px
+		padding-left: 40px
+		background-position: 50% 0
+		border: none
+		border-right: 1px solid $c-advantages-divider
+		border-right-top-radius: 50px
+		&:last-child
+			border: none
+	&--fast
+		background-image: url("../img/icon-fast.svg")
+	&--cool
+		background-image: url("../img/icon-cool.svg")
+	&--expensive
+		background-image: url("../img/icon-expensive.svg")
+
+.advantages__title
+	font-family: PT Sans Narrow Bold, Arial, sans-serif
+	font-size: 30px
+	line-height: 30px
+	text-transform: uppercase
+	width: 100%
+	text-align: center
+	margin-bottom: 14px
+	+md-block()
+		text-align: left
+		height: 100%
+		margin-bottom: 20px
+	+lg-block()
+		text-align: center
+		height: auto
+
+.advantages__description
+	width: 240px
+	margin: 0 auto
+	text-align: center
+	font-size: 20px
+	line-height: 27px
+	+md-block()
+		text-align: left
+		margin: 0
+		width: 100%
+	+lg-block()
+		text-align: center
+		width: auto
+		height: auto
+
+.advantages__triangle
+	position: absolute
+	width: 100%
+	height: 20px
+	display: block
+	transform: rotate(180deg)
+	fill: $c-advantages-bg-mob
+	+md-block()
+		fill: $c-bg-main
+		height: 40px
+	+lg-block()
+		height: 60px

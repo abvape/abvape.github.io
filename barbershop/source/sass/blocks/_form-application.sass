@@ -1,0 +1,126 @@
+.form-application
+	display: flex
+	flex-wrap: wrap
+	padding: 0 20px
+	margin: 0 auto
+	+md-block()
+		width: 640px
+		padding: 0
+		padding-top: 28px
+	+lg-block()
+		width: 960px
+
+.form-application__bread
+	margin-top: 25px
+	+md-block()
+		margin-top: 43px
+		padding: 0 15px
+	+lg-block()
+		margin-top: 60px
+
+.form-application__bonus-option
+	margin-top: 28px
+	+md-block()
+		margin-top: 24px
+
+.form-application__subtitle
+	font-family: PT Sans Narrow, Arial, sans-serif
+	font-size: 20px
+	line-height: 27px
+	text-transform: uppercase
+	display: flex
+	position: relative
+	width: 100%
+	justify-content: center
+	margin-bottom: 35px
+	+md-block()
+		font-size: 30px
+		line-height: 37px
+		margin-bottom: 44px
+		&:after
+			content: ""
+			position: absolute
+			display: block
+			width: 100%
+			border: 1px solid $c-form-application-radio
+			top: 19px
+			left: 0
+			z-index: 0
+	+lg-block()
+		margin-bottom: 49px
+
+.form-application__content
+	font-family: PT Sans Narrow, Arial, sans-serif
+	font-size: 18px
+	line-height: 30px
+	+md-block()
+		font-size: 24px
+
+.form-application__field
+	padding: 11px 20px 12px 20px
+	box-sizing: border-box
+	width: 100%
+	+md-block()
+		padding: 17px 24px 18px 24px
+
+.form-application__full-name
+	margin-bottom: 26px
+	+md-block()
+		margin-bottom: 29px
+	+lg-block()
+		display: flex
+		justify-content: space-between
+		margin-bottom: 35px
+	.form-application__field
+		margin-bottom: 6px
+		+md-block()
+			width: calc(100% / 3)
+			margin-right: -5px
+		+lg-block()
+			width: 295px
+			margin: 0
+
+.form-application__contacts
+	margin-bottom: 26px
+	+md-block()
+		margin-bottom: 0
+	+lg-block()
+		display: flex
+		justify-content: space-between
+	.form-application__field
+		margin-bottom: 6px
+		+md-block()
+			margin-bottom: 35px
+		+lg-block()
+			width: 462px
+
+.form-application__field--error
+	box-shadow: 0px 0px 1px 1px $c-error
+	position: relative
+	z-index: 9
+
+.form-application__comment
+	min-height: 112px
+	+md-block()
+		min-height: 211px
+
+.form-application__button
+	font-family: PT Sans Narrow Bold, Arial, sans-serif
+	font-size: 18px
+	line-height: 24px
+	text-transform: uppercase
+	color: $c-white
+	padding: 13px 0
+	background-color: $c-form-application-button
+	border: none
+	width: 100%
+	margin-bottom: 39px
+	+md-block()
+		font-size: 24px
+		line-height: 30px
+		padding: 20px 0
+	&:hover
+		background-color: $c-form-application-button-hover
+	&:active
+		color: $c-white-03
+

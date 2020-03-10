@@ -1,0 +1,48 @@
+.popup-error
+
+
+.popup-error__wrapper
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	position: relative
+	box-sizing: border-box
+	width: 320px
+	background-color: $c-popup-room-bg
+	box-shadow: 0px 30px 50px 0px rgba(0, 1, 1, 0.75)
+	padding: 60px 45px 47px 45px
+	+md-block()
+		width: 460px
+
+.popup-error__title
+	font-family: PT Sans Narrow Bold, Arial, sans-serif
+	font-size: 40px
+	line-height: 40px
+	text-transform: uppercase
+	width: 100%
+	text-align: center
+	margin-bottom: 20px
+
+.popup-error__subtitle
+	font-family: PT Sans Narrow, Arial, sans-serif
+	font-size: 18px
+	line-height: 27px
+	width: 100%
+	text-align: center
+	margin-bottom: 35px
+
+.popup-error__close
+	font-family: PT Sans Narrow Bold, Arial, sans-serif
+	font-size: 18px
+	line-height: 24px
+	text-transform: uppercase
+	width: 180px
+	color: $c-white
+	padding: 13px 0
+	background-color: $c-form-application-button
+	border: none
+	cursor: pointer
+	&:hover
+		background-color: $c-form-application-button-hover
+	&:active
+		color: $c-white-03

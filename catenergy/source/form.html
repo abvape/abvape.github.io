@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Cat energy - функциональное питание для котов - подбор программы">
+	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+	<link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+	<link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+	<link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+	<link rel="preload" as="font" crossorigin="anonymous" href="fonts/Oswald-Medium.woff2">
+	<link rel="preload" as="font" crossorigin="anonymous" href="fonts/Oswald-Regular.woff2">
+	<link rel="stylesheet" href="css/final.css">
+	<title>Cat Energy - form</title>
+	<script>
+		document.createElement( "picture" );
+	</script>
+	<script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js" async></script>
+</head>
+
+<body>
+	<div class="include-svg">
+		<include src="public/img/sprite.svg"></include>
+	</div>
+	<header class="page-header">
+		<a class="page-header__logo" href="index.html">
+			<picture>
+				<source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+				<source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+				<img class="page-header__logo-icon" src="img/logo-mobile.svg" width="202" height="60" alt="Cat Energy">
+			</picture>
+			<svg class="page-header__logo-text" width="100" height="18"><use xlink:href="#logo-mobile-text"></use></svg>
+			Cat Energy - на главную
+		</a>
+
+		<nav class="page-haeder__nav main-nav main-nav--closed main-nav--nojs">
+			<button class="main-nav__toggle" type="button">
+				<span class="visually-hidden">Открыть меню</span>
+			</button>
+			<div class="main-nav__wrapper">
+				<ul class="main-nav__list">
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="index.html">Главная</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+					</li>
+					<li class="main-nav__item main-nav__item--active">
+						<a class="main-nav__link">Подбор программы</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main class="page-content">
+		<section class="page-title">
+			<h1 class="page-title__title">Подбор программы</h1>
+		</section>
+
+		<section class="form-application">
+			<h2 class="form-application__title">Заполните анкету и мы подберем<br> программу питания для вашего кота</h2>
+			<form class="form-application__content" method="post">
+				<div class="form-application__cat-data">
+					<label class="form-application__label">Имя:*<input class="form-application__field" type="text" name="cat-name" id="cat-name" placeholder="Барсик"></input></label>
+					<label class="form-application__label">Вес (кг):*<input class="form-application__field" type="text" name="cat-weight" id="cat-weight" placeholder="7"></input></label>
+					<label class="form-application__label">Возраст (лет):<input class="form-application__field" type="text" name="cat-age" id="cat-age" placeholder="7"></input></label>
+				</div>
+				<div class="form-application__program program-selection">
+					<label class="program-selection__label">
+						<input class="visually-hidden" type="radio" name="cat-program" value="program-1" checked>
+						<span class="program-selection__radio-indicator"></span>
+						Похудение
+					</label>
+					<label class="program-selection__label">
+						<input class="visually-hidden" type="radio" name="cat-program" value="program-2">
+						<span class="program-selection__radio-indicator"></span>
+						Набор массы
+					</label>
+					<label class="program-selection__label">
+						<input class="visually-hidden" type="radio" name="cat-program" value="program-3">
+						<span class="program-selection__radio-indicator"></span>
+						Не знаю (нужен ваш совет)
+					</label>
+				</div>
+				<h3 class="form-application__subtitle title-green">Контактные данные (владельца кота)</h3>
+				<div class="form-application__owner-data">
+					<label class="form-application__label">E-mail:*
+						<input class="form-application__field form-application__field--icon" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com"></input>
+						<svg class="form-application__icon form-application__icon--email" width="17" height="13"><use xlink:href="#icon-email"></use></svg>
+					</label>
+					<label class="form-application__label">Телефон:*
+						<input class="form-application__field form-application__field--icon" type="tel" name="owner-tel" id="owner-tel" placeholder="8 (960) 900-60-90"></input>
+						<svg class="form-application__icon form-application__icon--tel" width="20" height="20"><use xlink:href="#icon-tel"></use></svg>
+					</label>
+				</div>
+				<h3 class="form-application__subtitle title-green">Комментарий</h3>
+				<textarea class="form-application__comment form-application__field" rows="3" id="message" placeholder="Расскажите обо всех повадках кота"></textarea>
+				<h3 class="form-application__subtitle title-green">Дополнительно</h3>
+				<div class="form-application__extra extra-option">
+					<label class="extra-option__item">
+						<input class="visually-hidden" type="checkbox" name="option-1" checked>
+						<span class="extra-option__checkbox-indicator"></span>
+						Сахарозаменитель
+					</label>
+					<label class="extra-option__item">
+						<input class="visually-hidden" type="checkbox" name="option-2">
+						<span class="extra-option__checkbox-indicator"></span>
+						Питьевая вода
+					</label>
+					<label class="extra-option__item">
+						<input class="visually-hidden" type="checkbox" name="option-3">
+						<span class="extra-option__checkbox-indicator"></span>
+						Молоко
+					</label>
+					<label class="extra-option__item">
+						<input class="visually-hidden" type="checkbox" name="option-4">
+						<span class="extra-option__checkbox-indicator"></span>
+						Витамины
+					</label>
+				</div>
+				<div class="form-application__control">
+					<button class="form-application__button button" type="submit">Отправить заявку</button>
+					<span class="form-application__note">* - Обязательные поля</span>
+				</div>
+			</form>
+		</section>
+	</main>
+
+	<footer class="page-footer">
+		<div class="page-footer__contacts">
+			<h2 class="page-footer__title">Приглашаем к сотрудничеству дилеров!</h2>
+			<p class="page-footer__adress">ул. Большая Конюшенная, д. 19/8<span class="page-footer__city">Санкт-Петербург</span></p>
+		</div>
+		<div class="page-footer__map page-footer__map--nojs">
+			<div class="page-footer__map-map"></div>
+			<picture>
+				<source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp">
+				<source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp">
+				<source type="image/webp" srcset="img/map-mobile.webp">
+
+				<source media="(min-width: 1440px)" srcset="img/map-desktop.jpg">
+				<source media="(min-width: 768px)" srcset="img/map-tablet.jpg">
+				<img class="page-footer__map-img" src="img/map-mobile.jpg" width="320" height="362" alt="офис компании по адрусу ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
+			</picture>
+		</div>
+		<div class="page-footer__logo">
+			<a class="page-footer__logo-link" href="index.html">
+				<svg class="page-footer__logo-icon" width="100" height="18"><use xlink:href="#logo-mobile-text"></use></svg>
+			</a>
+		</div>
+		<div class="page-footer__social social">
+			<ul class="social__list">
+				<li class="social__item">
+					<a class="social__link" href="#"><svg class="social__icon social__icon--vk" width="36" height="36"><use xlink:href="#icon-vk"></use></svg>Мы в Вконтакте</a>
+				</li>
+				<li class="social__item">
+					<a class="social__link" href="#"><svg class="social__icon social__icon--in" width="36" height="36"><use xlink:href="#icon-in"></use></svg>Мы в Инстаграме</a>
+				</li>
+				<li class="social__item">
+					<a class="social__link" href="#"><svg class="social__icon social__icon--fb" width="36" height="36"><use xlink:href="#icon-fb"></use></svg>Мы в Фэйсбуке</a>
+				</li>
+			</ul>
+		</div>
+		<div class="page-footer__copyright copyright">
+			<a class="copyright__link" href="#">
+				<p class="copyright__text">HTML Academy</p>
+				<svg class="copyright__icon" width="27" height="34"><use xlink:href="#icon-htmlacademy"></use></svg>
+			</a>
+		</div>
+	</footer>
+
+	<script src="https://maps.google.com/maps/api/js"></script>
+	<script src="js/final.js"></script>
+</body>
+</html>

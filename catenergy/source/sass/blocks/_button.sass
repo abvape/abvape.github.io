@@ -1,0 +1,24 @@
+.button
+	font-family: Oswald Regular, Arial, sans-serif
+	display: flex
+	font-size: 14px
+	line-height: 18px
+	text-transform: uppercase
+	text-decoration: none
+	text-align: center
+	justify-content: center
+	align-items: center
+	border: none
+	padding: 11px 20px
+	box-sizing: border-box
+	color: $c-white
+	background-color: $c-button
+	cursor: pointer
+	+md-block()
+		font-size: 20px
+		line-height: 20px
+		padding: 16px 27px
+	&:hover
+		background-color: $c-button-hover
+	&:active
+		color: $c-white-03

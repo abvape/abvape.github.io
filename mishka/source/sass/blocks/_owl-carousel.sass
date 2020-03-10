@@ -1,0 +1,46 @@
+// Styling owl nav buttons
+.reviews__list.owl-carousel
+	.owl-nav
+		+fw()
+		+md-block()
+			position: relative
+			top: -84px
+			left: 495px
+			width: 170px
+		+lg-block()
+			left: 702px
+		.owl-prev,
+		.owl-next
+			position: relative
+			z-index: 99
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 130px
+			height: 52px
+			box-sizing: border-box
+			border: 1px solid $c-reviews-border
+			outline: none
+			&:after
+				content: ""
+				display: block
+				position: absolute
+				width: 50px
+				height: 26px
+				background-repeat: no-repeat
+				background-size: 50px 26px
+			&:hover
+				opacity: 0.6
+				transition: 0.2s
+			&:active
+				opacity: 0.3
+				transition: 0.1s
+			+md-block()
+				border: none
+				width: 85px
+		.owl-prev
+			&:after
+				background-image: url("../img/arrow-left.svg")
+		.owl-next
+			&:after
+				background-image: url("../img/arrow-right.svg")

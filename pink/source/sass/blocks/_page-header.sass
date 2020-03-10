@@ -1,0 +1,106 @@
+.page-header
+	+fw()
+	width: 320px
+	height: 462px
+	margin: 0 auto
+	box-sizing: border-box
+	background-repeat: no-repeat
+	background-position: center
+	background-image: url("../img/back-mobile.jpg")
+	position: relative
+	flex-direction: column
+	&:before
+		content: ""
+		display: block
+		position: absolute
+		width: 320px
+		height: 66px
+		top: 0
+		left: 0
+		background-color: $c-black-03
+	+md-block()
+		width: 660px
+		height: 729px
+		background-image: url("../img/back-tablet.jpg")
+		&:before
+			width: 660px
+			height: 110px
+	+lg-block()
+		width: 1200px
+		height: 853px
+		flex-direction: row
+		justify-content: space-between
+		background-image: url("../img/back-desktop.jpg")
+		&:before
+			width: 1200px
+			height: 110px
+
+.page-header__logo
+	+fw()
+	font-size: 0
+	cursor: pointer
+	text-decoration: none
+	align-items: center
+	padding-left: 20px
+	height: 66px
+	width: auto
+	margin-right: auto
+	+md-block()
+		height: 110px
+		&:hover
+			.page-header__logo-icon
+				fill: $c-main-nav-hover
+				transition: 0.2s
+		&:active
+			.page-header__logo-icon
+				fill: $c-white-03
+				transition: 0.2s
+	+lg-block()
+		padding-left: 130px
+		width: 280px
+		box-sizing: border-box
+		margin-right: 0
+
+.page-header__logo-wrapper
+	position: relative
+	z-index: 9
+	+lg-block()
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			width: 147px
+			height: 40px
+			top: 0
+			left: 1px
+			background-repeat: no-repeat
+			background-position: center
+			background-size: 147px 40px
+			background: url("../img/logo-white-desktop-bg.svg")
+
+.page-header__logo-icon
+	fill: $c-white
+
+.page-header__logo-icon--mobile
+	width: 75px
+	height: 22px
+	+md-block()
+		display: none
+
+.page-header__logo-icon--tablet
+	display: none
+	+md-block()
+		display: block
+		width: 147px
+		height: 40px
+	+lg-block()
+		display: none
+
+.page-header__logo-icon--desktop
+	display: none
+	+lg-block()
+		display: block
+		width: 147px
+		height: 40px
+
+

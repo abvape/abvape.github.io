@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Mishka - милые штуки ручной
+работы для дома - каталог товаров">
+	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+	<link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+	<link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+	<link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+	<link rel="preload" as="font" crossorigin="anonymous" href="fonts/OpenSans-Bold.woff2">
+	<link rel="preload" as="font" crossorigin="anonymous" href="fonts/OpenSans-Regular.woff2">
+	<link rel="stylesheet" href="css/final.css">
+	<title>Mishka - каталог</title>
+	<script>
+		document.createElement( "picture" );
+	</script>
+	<script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js" async></script>
+</head>
+
+<body>
+	<div class="include-svg">
+		<include src="public/img/sprite.svg"></include>
+	</div>
+	<header class="page-header">
+		<a class="page-header__logo" href="index.html">
+			<picture>
+				<source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
+				<source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+				<img class="page-header__logo-icon" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+			</picture>
+			Mishka - на главную
+		</a>
+
+		<nav class="page-haeder__nav main-nav main-nav--closed main-nav--nojs">
+			<button class="main-nav__toggle" type="button">
+				<span class="visually-hidden">Открыть меню</span>
+			</button>
+			<div class="main-nav__wrapper">
+				<ul class="main-nav__list site-list">
+					<li class="site-list__item">
+						<a class="site-list__link">Каталог товаров</a>
+					</li>
+					<li class="site-list__item">
+						<a class="site-list__link" href="form.html">Вязание на заказ</a>
+					</li>
+				</ul>
+				<ul class="main-nav__list user-list">
+					<li class="user-list__item user-list__item--search user-list__item--search-closed">
+						<a class="user-list__link user-list__link--search" href="#">
+							<svg class="user-list__icon user-list__icon--search" width="18" height="18"><use xlink:href="#icon-search"></use></svg>
+							Поиск по сайту
+						</a>
+						<form class="user-list__form search-form" method="get">
+							<input class="search-form__field" type="text" name="search">
+							<button class="search-form__button" type="button">
+								<svg class="search-form__button-icon" width="18" height="18"><use xlink:href="#icon-search"></use></svg>
+								Поиск
+							</button>
+						</form>
+					</li>
+					<li class="user-list__item">
+						<a class="user-list__link user-list__link--cart" href="#">
+							<svg class="user-list__icon user-list__icon--cart" width="21" height="18"><use xlink:href="#icon-cart"></use></svg>
+							Корзина:&nbsp;<span class=""> пока пуста</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<ul class="page-header__submenu">
+			<li class="page-header__submenu-item">
+				<a class="page-header__submenu-link" href="#">Новые поступления</a>
+			</li>
+			<li class="page-header__submenu-item">
+				<a class="page-header__submenu-link" href="#">Распродажа</a>
+			</li>
+		</ul>
+		<span class="page-header__delivery-info">Бесплатная доставка по России</span>
+	</header>
+
+	<section class="page-title">
+		<h1 class="page-title__title">Каталог товаров</h1>
+	</section>
+
+	<section class="catalog">
+		<h2 class="visually-hidden">Каталог товаров</h2>
+		<ul class="catalog__list">
+			<li class="catalog__item add-to-cart">
+				<picture class="catalog__image-wrapper">
+					<source media="(min-width: 1250px)" srcset="img/photo-1-desktop.jpg">
+					<source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg">
+					<img class="catalog__image" src="img/photo-1-mobile.jpg" width="260" height="195" alt="product-1">
+				</picture>
+				<div class="catalog__data">
+					<h3 class="catalog__title">Зайчик-попрыгайчик</h3>
+					<p class="catalog__description">Рост 30 см, вес 200 г</p>
+					<b class="catalog__price">1 200 руб.
+						<svg class="catalog__price-icon" width="20" height="19"><use xlink:href="#icon-cart"></use></svg>
+					</b>
+				</div>
+			</li>
+			<li class="catalog__item add-to-cart">
+				<picture class="catalog__image-wrapper">
+					<source media="(min-width: 1250px)" srcset="img/photo-2-desktop.jpg">
+					<source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg">
+					<img class="catalog__image" src="img/photo-2-mobile.jpg" width="260" height="195" alt="product-2">
+				</picture>
+				<div class="catalog__data">
+					<h3 class="catalog__title">Корзинка для белья</h3>
+					<p class="catalog__description">Диаметр 15 см, высота 10 см</p>
+					<b class="catalog__price">690 руб.
+						<svg class="catalog__price-icon" width="20" height="19"><use xlink:href="#icon-cart"></use></svg>
+					</b>
+				</div>
+			</li>
+			<li class="catalog__item add-to-cart">
+				<picture class="catalog__image-wrapper">
+					<source media="(min-width: 1250px)" srcset="img/photo-3-desktop.jpg">
+					<source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg">
+					<img class="catalog__image" src="img/photo-3-mobile.jpg" width="260" height="195" alt="product-3">
+				</picture>
+				<div class="catalog__data">
+					<h3 class="catalog__title">Большая корзинка для игрушек</h3>
+					<p class="catalog__description">Диаметр 30 см, высота 30 см</p>
+					<b class="catalog__price">1 500 руб.
+						<svg class="catalog__price-icon" width="20" height="19"><use xlink:href="#icon-cart"></use></svg>
+					</b>
+				</div>
+			</li>
+		</ul>
+	</section>
+
+	<section class="manufacture">
+		<div class="manufacture__wrapper">
+			<h2 class="manufacture__title">Процесс производства</h2>
+			<picture class="manufacture__image-wrapper">
+				<source media="(min-width: 1250px)" srcset="img/video-desktop.jpg">
+				<source media="(min-width: 768px)" srcset="img/video-tablet.jpg">
+				<img class="manufacture__image" src="img/video-mobile.jpg" width="260" height="150" alt="product-3">
+			</picture>
+			<p class="manufacture__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+			<a class="manufacture__button button" href="form.html">Сделать заказ</a>
+		</div>
+	</section>
+
+	<footer class="page-footer">
+		<div class="page-footer__logo">
+			<a href="index.html" class="page-footer__logo-link">
+				<svg class="page-footer__logo-img" width="102" height="34"><use xlink:href="#logo-footer"></use></svg>
+				ссылка на главную страницу
+			</a>
+		</div>
+		<div class="page-footer__social social">
+			<ul class="social__list">
+				<li class="social__item">
+					<a class="social__link" href="#"><svg class="social__icon" width="22" height="21"><use xlink:href="#icon-in"></use></svg>Мы в Инстаграме</a>
+				</li>
+				<li class="social__item">
+					<a class="social__link" href="#"><svg class="social__icon" width="15" height="28"><use xlink:href="#icon-fb"></use></svg>Мы в Фэйсбуке</a>
+				</li>
+				<li class="social__item">
+					<a class="social__link" href="#"><svg class="social__icon" width="23" height="20"><use xlink:href="#icon-tw"></use></svg>Мы в Твиттере</a>
+				</li>
+			</ul>
+		</div>
+		<div class="page-footer__copyright copyright">
+			<a class="copyright__link" href="#">
+				<p class="copyright__text">Разработано</p>
+				<svg class="copyright__icon" width="27" height="34"><use xlink:href="#icon-html"></use></svg>
+			</a>
+		</div>
+	</footer>
+
+	<section class="popup-cart modal">
+		<div class="popup-cart__wrapper modal__wrapper">
+			<h2 class="popup-cart__title">Добавить в корзину</h2>
+			<p class="popup-cart__subtitle">Выберите размер:</p>
+			<form class="popup-cart__form" method="post">
+				<div class="popup-cart__size check-size">
+					<label class="check-size__label">
+						<input class="visually-hidden" type="radio" name="size" value="size-1" checked>
+						<span class="check-size__radio-indicator"></span>
+						<span class="check-size__legend">s</span>
+					</label>
+					<label class="check-size__label">
+						<input class="visually-hidden" type="radio" name="size" value="size-2">
+						<span class="check-size__radio-indicator"></span>
+						<span class="check-size__legend">m</span>
+					</label>
+					<label class="check-size__label">
+						<input class="visually-hidden" type="radio" name="size" value="size-3">
+						<span class="check-size__radio-indicator"></span>
+						<span class="check-size__legend">l</span>
+					</label>
+				</div>
+				<button class="popup-cart__button" type="submit">Добавить</button>
+			</form>
+		</div>
+		<div class="modal-overlay"></div>
+	</section>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"></script>
+	<script src="js/final.js"></script>
+</body>
+</html>

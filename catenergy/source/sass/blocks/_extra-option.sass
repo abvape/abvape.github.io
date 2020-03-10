@@ -1,0 +1,61 @@
+.extra-option
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+
+.extra-option__item
+	display: flex
+	position: relative
+	align-items: center
+	width: 100%
+	line-height: 30px
+	margin-bottom: 13px
+	padding-left: 45px
+	&:active
+		opacity: 0.3
+		transition: 0.1s
+	+md-block()
+		box-sizing: border-box
+		line-height: 40px
+		width: 50%
+		padding-left: 58px
+		margin-bottom: 32px
+	+lg-block()
+		width: 245px
+
+.extra-option__checkbox-indicator
+	display: block
+	position: absolute
+	top: 0
+	left: 0
+	width: 30px
+	height: 30px
+	background-color: $c-white
+	border: 1px solid $c-form-application-input-border
+	+md-block()
+		width: 40px
+		height: 40px
+
+.extra-option__item input[type="checkbox"]:focus + .extra-option__checkbox-indicator
+	outline: thin dotted
+	outline: 5px auto -webkit-focus-ring-color
+
+.extra-option__item input[type="checkbox"]:checked + .extra-option__checkbox-indicator:after
+	content: ""
+	display: block
+	position: absolute
+	width: 20px
+	height: 11px
+	top: 5px
+	left: 5px
+	z-index: 20
+	border-left: 2px solid $c-form-application-green
+	border-bottom: 2px solid $c-form-application-green
+	transform: rotate(-45deg)
+	transition: 0.2s
+	+md-block()
+		top: 8px
+		left: 9px
+
+.extra-option__item input[type="checkbox"]:hover + .extra-option__checkbox-indicator
+	border: 1px solid $c-form-application-input-border-hover

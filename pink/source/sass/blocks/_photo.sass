@@ -1,0 +1,205 @@
+.photo
+	width: 320px
+	margin: 0 auto
+	position: relative
+	z-index: 5
+	margin-bottom: 24px
+	+md-block()
+		width: 660px
+		margin-bottom: 45px
+	+lg-block()
+		width: 1200px
+		margin-bottom: 5px
+
+.photo__subtitle
+	font-family: OpenSans-Regular, Arial, sans-serif
+	font-size: 14px
+	line-height: 30px
+	color: $c-text
+	text-align: center
+	background-color: $c-white
+	padding-top: 45px
+	padding-right: 20px
+	padding-bottom: 49px
+	padding-left: 20px
+	+md-block()
+		font-size: 18px
+		padding-top: 92px
+		padding-right: 45px
+		padding-left: 45px
+		padding-bottom: 76px
+		br
+			display: none
+	+lg-block()
+		font-size: 18px
+		padding-left: 130px
+		padding-right: 130px
+		padding-bottom: 88px
+		br
+			display: block
+
+.photo__list
+	+fw()
+	width: 320px
+	box-sizing: border-box
+	padding-left: 20px
+	padding-right: 20px
+	+md-block()
+		width: 660px
+		justify-content: space-between
+	+lg-block()
+		width: 1200px
+		padding-left: 130px
+		padding-right: 130px
+
+.photo__item
+	+fw()
+	width: 100%
+	margin-bottom: 19px
+	+md-block()
+		width: 300px
+		flex-direction: column
+	+lg-block()
+		margin-bottom: 53px
+
+.photo__item--panorama
+	+md-block()
+		width: 620px
+		margin-bottom: 49px
+	+lg-block()
+		width: 940px
+		margin-bottom: 48px
+
+.photo__image
+
+.photo__image--panorama
+	position: relative
+	min-width: 320px
+	left: -20px
+	&:after
+		content: "панорама дня"
+		display: block
+		position: absolute
+		width: 140px
+		font-family: OpenSans-Bold, Arial, sans-serif
+		font-size: 12px
+		line-height: 24px
+		color: $c-white
+		text-transform: uppercase
+		text-align: center
+		background-color: $c-site-red
+		padding-top: 6px
+		padding-bottom: 6px
+		top: 0
+		right: 20px
+	+md-block()
+		min-width: 660px
+		&:after
+			top: 57px
+	+lg-block()
+		min-width: 1200px
+		left: -130px
+		&:after
+			top: 54px
+
+.photo__data
+	+fw()
+	width: 100%
+	box-sizing: border-box
+	padding-top: 18px
+	padding-right: 17px
+	padding-bottom: 20px
+	padding-left: 17px
+	background-color: $c-photo-item-bg
+	+md-block()
+		padding-top: 24px
+		padding-right: 27px
+		padding-left: 27px
+		padding-bottom: 25px
+		flex-grow: 1
+		flex-direction: column
+
+.photo__data--panorama
+	+md-block()
+		flex-direction: row
+
+.photo__author
+	font-family: OpenSans-Bold, Arial, sans-serif
+	font-size: 14px
+	line-height: 24px
+
+.photo__time
+	font-family: OpenSans-Light, Arial, sans-serif
+	font-size: 12px
+	line-height: 24px
+	text-transform: uppercase
+	color: $c-text
+	padding-left: 4px
+
+.photo__comment
+	font-family: OpenSans-Regular, Arial, sans-serif
+	font-size: 14px
+	line-height: 24px
+	color: $c-text
+	width: 100%
+	margin-bottom: 10px
+
+.photo__comment--panorama
+	+md-block()
+		margin-bottom: 0
+		order: 1
+
+.photo__like
+	font-family: OpenSans-Regular, Arial, sans-serif
+	font-size: 12px
+	line-height: 24px
+	color: $c-site-red
+	text-transform: uppercase
+	background-color: transparent
+	border: none
+	outline: none
+	cursor: pointer
+	display: flex
+	align-items: center
+	position: relative
+	padding-left: 32px
+	margin: 0
+	&:before
+		content: "нравится:"
+		padding-right: 3px
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		width: 13px
+		height: 12px
+		left: 1px
+		right: auto
+		top: 0
+		bottom: 0
+		margin: auto
+		background-repeat: no-repeat
+		background-size: 13px 12px
+		background-image: url("../img/icon-heart.svg")
+	&:hover:after
+		background-image: url("../img/icon-heart-fill.svg")
+		transition: 0.2s
+	+md-block()
+		width: 100%
+		padding-left: 0
+		margin-top: auto
+		&:after
+			left: 92%
+
+.photo__like--like
+	&:after
+		background-image: url("../img/icon-heart-fill.svg")
+
+.photo__like--panorama
+	+md-block()
+		width: auto
+		margin-left: auto
+		margin-top: 0
+		padding-right: 32px
+		&:after
+			left: 88%

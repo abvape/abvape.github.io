@@ -1,0 +1,7 @@
+@keyframes bounce {
+  0% {
+    transform: translateX(-2000px); }
+  70% {
+    transform: translateX(-30px); }
+  100% {
+    transform: translateX(0px); } }

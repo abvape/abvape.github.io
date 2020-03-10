@@ -1,0 +1,114 @@
+.catalog
+	width: 320px
+	padding-right: 30px
+	padding-left: 30px
+	margin: 0 auto
+	margin-top: 30px
+	box-sizing: border-box
+	+md-block()
+		width: 768px
+		padding-right: 50px
+		padding-left: 50px
+		margin-top: 83px
+	+lg-block()
+		width: 1250px
+		padding-right: 100px
+		padding-left: 100px
+		margin-top: 132px
+
+.catalog__list
+	+lg-block()
+		+fw()
+		justify-content: space-between
+
+.catalog__item
+	+fw()
+	margin-bottom: 30px
+	+md-block()
+		cursor: pointer
+		margin-bottom: 54px
+		&:hover
+			box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1)
+			transition: 0.2s
+			.catalog__title
+				opacity: 0.6
+				transition: 0.2s
+			.catalog__price-icon
+				fill: $c-site-green
+				transition: 0.2s
+		&:active
+			box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1)
+			transition: 0.2s
+			.catalog__title
+				opacity: 0.3
+				transition: 0.2s
+			.catalog__price-icon
+				opacity: 0.3
+				transition: 0.2s
+	+lg-block()
+		width: 316px
+		flex-direction: column
+
+.catalog__image-wrapper
+	display: flex
+
+.catalog__image
+	+md-block()
+		width: 334px
+	+lg-block()
+		width: 316px
+		height: 462px
+
+.catalog__data
+	+fw()
+	padding-top: 26px
+	padding-bottom: 27px
+	padding-right: 28px
+	padding-left: 28px
+	box-sizing: border-box
+	border: 1px solid $c-catalog-border
+	+md-block()
+		width: 334px
+		flex-direction: column
+	+lg-block()
+		width: 316px
+		flex-grow: 1
+		padding-bottom: 25px
+
+.catalog__title
+	font-family: OpenSans-Bold, Arial, sans-serif
+	font-size: 17px
+	line-height: 24px
+	width: 100%
+	margin-bottom: 5px
+	+md-block()
+		font-size: 20px
+
+.catalog__description
+	font-family: OpenSans-Regular, Arial, sans-serif
+	font-size: 13px
+	line-height: 30px
+	color: $c-text
+	width: 100%
+	margin-bottom: 21px
+	+md-block()
+		font-size: 15px
+
+.catalog__price
+	font-family: OpenSans-Bold, Arial, sans-serif
+	font-size: 15px
+	line-height: 24px
+	display: flex
+	width: 100%
+	padding-top: 19px
+	border-top: 1px solid $c-catalog-border
+	justify-content: space-between
+	+md-block()
+		font-size: 17px
+		padding-top: 21px
+		margin-top: auto
+	+lg-block()
+		padding-top: 15px
+
+.catalog__price-icon
+	fill: $c-catalog-icon

@@ -1,0 +1,420 @@
+.form-application
+	width: 320px
+	margin: 0 auto
+	position: relative
+	z-index: 5
+	margin-bottom: 14px
+	+md-block()
+		width: 660px
+		box-sizing: border-box
+		padding-left: 20px
+		padding-right: 20px
+		background-color: $c-white
+		margin-bottom: 50px
+	+lg-block()
+		width: 1200px
+		padding-left: 130px
+		padding-right: 130px
+		margin-bottom: 0
+
+.form-application__title
+	font-family: OpenSans-Regular, Arial, sans-serif
+	font-size: 14px
+	line-height: 30px
+	color: $c-text
+	text-align: center
+	background-color: $c-white
+	padding-top: 45px
+	padding-right: 20px
+	padding-bottom: 34px
+	padding-left: 20px
+	+md-block()
+		font-size: 18px
+		padding-top: 92px
+		padding-right: 40px
+		padding-left: 40px
+		padding-bottom: 71px
+	+lg-block()
+		font-size: 18px
+		padding-left: 80px
+		padding-right: 80px
+		padding-bottom: 84px
+
+.form-application__title--note
+	display: none
+	+md-block()
+		display: inline-block
+
+.form-application__content
+	+fw()
+	+lg-block()
+		justify-content: space-between
+
+.form-application__full-name
+	box-sizing: border-box
+	padding-left: 20px
+	padding-right: 20px
+	background-color: $c-white
+	margin-bottom: 42px
+	order: 0
+	+md-block()
+		width: 620px
+		padding-left: 0
+		padding-right: 0
+	+lg-block()
+		width: 435px
+
+.form-application__label
+	font-family: OpenSans-Regular, Arial, sans-serif
+	font-size: 14px
+	line-height: 30px
+	text-transform: uppercase
+	color: $c-site-red
+	+fw()
+	margin-bottom: 17px
+	&:last-child
+		margin-bottom: 0
+	+md-block()
+		align-items: center
+		width: 100%
+		margin-bottom: 52px
+		&:hover
+			.form-application__field
+				border: 2px solid $c-text
+				transition: 0.2s
+		&:active
+			.form-application__field
+				border: 2px solid $c-site-red
+				transition: 0.2s
+	+lg-block()
+		margin-bottom: 53px
+
+.form-application__label--icon
+	+md-block()
+		position: relative
+		margin-bottom: 29px
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			width: 60px
+			height: 59px
+			top: 2px
+			right: 2px
+			z-index: 2
+			background-color: $c-form-application-border
+		&:hover
+			.form-application__icon
+				fill: $c-text
+				transition: 0.2s
+	+lg-block()
+		width: 375px
+		margin-bottom: 0
+
+.form-application__label-title
+	padding-left: 22px
+	margin-bottom: 5px
+	+md-block()
+		padding-left: 0
+		padding-right: 18px
+		margin-bottom: 0
+
+.form-application__label-title--icon
+	+md-block()
+		padding-right: 0
+		padding-left: 20px
+		margin-top: 10px
+
+.form-application__field
+	font-family: OpenSans-Regular, Arial, sans-serif
+	font-size: 18px
+	line-height: 30px
+	padding-top: 15px
+	padding-bottom: 14px
+	padding-left: 20px
+	padding-right: 20px
+	box-sizing: border-box
+	border: 2px solid $c-form-application-input
+	width: 280px
+	+md-block()
+		display: flex
+		flex-grow: 1
+		&:focus
+			border: 2px solid $c-site-red
+			outline: none
+			transition: 0.2s
+
+.form-application__field--icon
+	+md-block()
+		order: -1
+		width: 100%
+		padding-right: 80px
+
+.form-application__field--comment
+	height: 201px
+	+md-block()
+		width: 100%
+		height: 193px
+		&:hover
+			border: 2px solid $c-text
+			transition: 0.2s
+		&:active
+			border: 2px solid $c-site-red
+			transition: 0.2s
+	+lg-block()
+		height: 128px
+
+.form-application__field--error
+	border: 2px solid $c-site-red
+
+.form-application__progress
+	background-color: $c-form-application-bg
+	box-sizing: border-box
+	padding-left: 20px
+	padding-right: 20px
+	padding-top: 38px
+	padding-bottom: 42px
+	margin-bottom: 32px
+	order: 1
+	+md-block()
+		width: 620px
+		padding-left: 0
+		padding-right: 0
+		background-color: $c-white
+		margin-bottom: 9px
+		order: 3
+	+lg-block()
+		width: 940px
+
+.form-application__subtitle
+	font-family: OpenSans-Regular, Arial, sans-serif
+	font-size: 14px
+	line-height: 18px
+	text-transform: uppercase
+	color: $c-site-red
+	text-align: center
+	width: 280px
+	margin-bottom: 39px
+	+md-block()
+		line-height: 30px
+		width: auto
+		padding-left: 30px
+		padding-right: 30px
+		margin: 0 auto
+		br
+			display: none
+
+.form-application__subtitle--contacts
+	display: none
+	+md-block()
+		display: block
+
+.form-application__subtitle--application
+	margin-bottom: 35px
+	+lg-block()
+		white-space: nowrap
+
+.form-application__subtitle--comment
+	margin-bottom: 16px
+
+.form-application__contacts
+	box-sizing: border-box
+	padding-left: 20px
+	padding-right: 20px
+	margin-bottom: 42px
+	order: 2
+	+md-block()
+		width: 620px
+		padding-left: 0
+		padding-right: 0
+		margin-bottom: 13px
+	+lg-block()
+		width: 940px
+
+.form-application__group
+	+lg-block()
+		+fw()
+		justify-content: space-between
+		width: 100%
+
+.form-application__icon
+	display: none
+	+md-block()
+		display: block
+		position: absolute
+		fill: $c-site-red
+		z-index: 99
+
+.form-application__icon--tel
+	+md-block()
+		top: 22px
+		right: 22px
+
+.form-application__icon--email
+	+md-block()
+		top: 25px
+		right: 23px
+
+.form-application__application
+	background-color: $c-form-application-bg
+	box-sizing: border-box
+	padding-left: 20px
+	padding-right: 20px
+	padding-top: 38px
+	padding-bottom: 42px
+	margin-bottom: 38px
+	order: 3
+	+md-block()
+		width: 620px
+		background-color: $c-white
+		padding-left: 0
+		padding-right: 0
+		padding-top: 10px
+		margin-bottom: 9px
+		order: 1
+	+lg-block()
+		width: 435px
+		padding-top: 0
+		margin-top: -20px
+
+.form-application__contacts-wrapper
+	border: none
+	+md-block()
+		width: 620px
+		border: 2px solid $c-form-application-border
+		box-sizing: border-box
+		padding-left: 58px
+		padding-right: 58px
+		padding-top: 31px
+		padding-bottom: 26px
+	+lg-block()
+		width: 940px
+		padding-top: 28px
+		padding-bottom: 13px
+
+.form-application__application-wrapper
+	border: none
+	+md-block()
+		width: 620px
+		border: 2px solid $c-form-application-border
+		box-sizing: border-box
+		padding-left: 58px
+		padding-right: 58px
+		padding-top: 38px
+		padding-bottom: 54px
+	+lg-block()
+		width: 435px
+		min-width: 0
+		padding-left: 74px
+		padding-top: 41px
+		padding-bottom: 55px
+
+.form-application__progress-wrapper
+	border: none
+	+md-block()
+		width: 620px
+		border: 2px solid $c-form-application-border
+		box-sizing: border-box
+		padding-left: 58px
+		padding-right: 58px
+		padding-top: 38px
+		padding-bottom: 48px
+	+lg-block()
+		width: 940px
+		padding-right: 40px
+		padding-bottom: 55px
+
+.form-application__comment-wrapper
+	border: none
+	+md-block()
+		width: 620px
+		border: 2px solid $c-form-application-border
+		box-sizing: border-box
+		padding-left: 58px
+		padding-right: 58px
+		padding-top: 31px
+		padding-bottom: 51px
+	+lg-block()
+		width: 940px
+		padding-top: 28px
+		padding-bottom: 43px
+
+.form-application__comment
+	box-sizing: border-box
+	padding-left: 20px
+	padding-right: 20px
+	margin-bottom: 44px
+	order: 4
+	+md-block()
+		width: 620px
+		padding-left: 0
+		padding-right: 0
+		margin-bottom: 67px
+	+lg-block()
+		width: 940px
+		margin-bottom: 65px
+
+.form-application__control
+	+fw()
+	justify-content: center
+	box-sizing: border-box
+	padding-left: 20px
+	padding-right: 20px
+	order: 5
+	+md-block()
+		width: 620px
+		padding-left: 0
+		padding-right: 0
+		align-items: center
+		justify-content: space-between
+	+lg-block()
+		width: 940px
+
+.form-application__button
+	font-family: OpenSans-Bold, Arial, sans-serif
+	font-size: 18px
+	line-height: 30px
+	text-transform: uppercase
+	color: $c-white
+	display: flex
+	width: 100%
+	background-color: $c-form-application-button
+	border: none
+	padding: 16px 20px 17px 20px
+	box-sizing: border-box
+	border-radius: 3px
+	justify-content: center
+	cursor: pointer
+	margin-bottom: 35px
+	+md-block()
+		width: 300px
+		margin-bottom: 0
+		&:hover
+			background-color: $c-form-application-button-hover
+			transition: 0.2s
+		&:active
+			background-color: $c-form-application-button-hover
+			color: $c-white-03
+			transition: 0.2s
+
+.form-application__note
+	font-family: OpenSans-Regular, Arial, sans-serif
+	font-size: 14px
+	line-height: 30px
+	text-transform: uppercase
+	color: $c-text
+	position: relative
+	&:before
+		content: "*"
+		display: block
+		position: absolute
+		top: 0
+		left: -10px
+		color: $c-site-red
+	+md-block()
+		margin-left: 20px
+
+.form-application__note--lg
+	display: none
+	+lg-block()
+		display: inline-block

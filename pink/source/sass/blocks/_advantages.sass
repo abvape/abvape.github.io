@@ -1,0 +1,192 @@
+.advantages
+	+fw()
+	width: 320px
+	margin: 0 auto
+	box-sizing: border-box
+	padding-top: 40px
+	+md-block()
+		width: 660px
+		padding-top: 49px
+	+lg-block()
+		width: 1200px
+		padding-top: 67px
+
+.advantages__title
+	font-family: OpenSans-Light, Arial, sans-serif
+	font-size: 24px
+	line-height: 29px
+	text-align: center
+	color: $c-text
+	width: 100%
+	position: relative
+	padding-right: 20px
+	padding-left: 20px
+	padding-bottom: 32px
+	+md-block()
+		font-size: 40px
+		line-height: 48px
+		padding-right: 36px
+		padding-left: 36px
+		padding-bottom: 50px
+	+lg-block()
+		font-size: 50px
+		line-height: 60px
+		padding-bottom: 77px
+
+.advantages__title-section
+	display: block
+	margin-top: 28px
+	+md-block()
+		margin-top: 0
+
+.advantages__triangle
+	fill: $c-white
+
+.advantages__wrapper
+	padding-top: 82px
+	padding-right: 20px
+	padding-left: 20px
+	background-color: $c-advantages-bg
+	+md-block()
+		+fw()
+		justify-content: space-between
+		width: 660px
+		padding-top: 0
+	+lg-block()
+		width: 1200px
+		padding-right: 130px
+		padding-left: 130px
+
+.advantages__list
+	+md-block()
+		width: 310px
+		padding-top: 71px
+		order: 1
+	+lg-block()
+		+fw()
+		width: 100%
+		justify-content: space-between
+		padding-top: 0
+
+.advantages__item
+	margin-bottom: 31px
+	+md-block()
+		margin-bottom: 34px
+	+lg-block()
+		width: 300px
+		position: relative
+		z-index: 9
+		padding-top: 390px
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			width: 186px
+			height: 382px
+			top: 0
+			left: 55px
+			background-repeat: no-repeat
+			background-image: url("../img/iphone-desktop.png")
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			width: 165px
+			height: 293px
+			top: 40px
+			left: 65px
+			background-repeat: no-repeat
+
+.advantages__item--1
+	&:after
+		background-image: url("../img/iphone-screen1-desktop.jpg")
+
+.advantages__item--2
+	&:after
+		background-image: url("../img/iphone-screen2-desktop.jpg")
+
+.advantages__item--3
+	&:after
+		background-image: url("../img/iphone-screen3-desktop.jpg")
+
+.advantages__item-title
+	font-family: OpenSans-Bold, Arial, sans-serif
+	font-size: 18px
+	line-height: 24px
+	text-align: center
+	margin-bottom: 12px
+	+md-block()
+		text-align: left
+	+lg-block()
+		font-size: 30px
+		line-height: 30px
+		text-align: center
+		position: relative
+		background-color: $c-advantages-bg
+		box-shadow: 0px -13px 14px -15px rgba(0, 0, 0, 0.3)
+		padding-top: 56px
+		padding-right: 30px
+		padding-left: 30px
+		margin-top: -90px
+		margin-bottom: 25px
+		z-index: 99
+
+.advantages__item-description
+	font-family: OpenSans-Regular, Arial, sans-serif
+	font-size: 14px
+	line-height: 24px
+	color: $c-text
+	text-align: center
+	+md-block()
+		text-align: left
+	+lg-block()
+		font-size: 18px
+		line-height: 30px
+		text-align: center
+		padding-right: 30px
+		padding-left: 30px
+
+.advantages__preview
+	display: flex
+	justify-content: center
+	padding-top: 10px
+	+md-block()
+		position: relative
+		width: 268px
+		padding-top: 0
+		z-index: 9
+		order: 0
+	+lg-block()
+		display: none
+
+.advantages__img
+	+md-block()
+		display: none
+
+.advantages__slider-wrapper
+	display: none
+	+md-block()
+		display: block
+	+lg-block()
+		display: none
+
+.advantages__slider
+	+md-block()
+		overflow: hidden
+
+.advantages__slider-img
+	+md-block()
+		cursor: pointer
+
+.advantages .advantages__preview	//add style specificity
+	.advantages__slider
+		display: none
+		+md-block()
+			display: block
+			position: absolute
+			width: 237px
+			height: 421px
+			top: 61px
+			left: 15px
+		+lg-block()
+			display: none

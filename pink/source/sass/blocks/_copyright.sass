@@ -1,0 +1,32 @@
+.copyright
+
+.copyright__link
+	text-decoration: none
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+	+md-block()
+		justify-content: flex-end
+		&:hover
+			.copyright__icon
+				fill: $c-text
+				transition: 0.2s
+		&:active
+			.copyright__icon
+				opacity: 0.3
+				transition: 0.2s
+
+.copyright__text
+	font-family: OpenSans-Regular, Arial, sans-serif
+	font-size: 14px
+	line-height: 18px
+	color: $c-text
+	padding-right: 15px
+	+lg-block()
+		font-size: 18px
+
+.copyright__icon
+	width: 27px
+	height: 34px
+	fill: $c-footer-icon

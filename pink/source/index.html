@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Pink - позитивное приложение">
+	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+	<link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+	<link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+	<link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+	<link rel="preload" as="font" crossorigin="anonymous" href="fonts/OpenSans-Bold.woff2">
+	<link rel="preload" as="font" crossorigin="anonymous" href="fonts/OpenSans-Regular.woff2">
+	<link rel="preload" as="font" crossorigin="anonymous" href="fonts/OpenSans-Light.woff2">
+	<link rel="stylesheet" href="css/final.css">
+	<title>Pink</title>
+	<script>
+		document.createElement( "picture" );
+	</script>
+	<script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js" async></script>
+</head>
+
+<body>
+	<div class="include-svg">
+		<include src="public/img/sprite.svg"></include>
+	</div>
+
+	<header class="page-header">
+		<a class="page-header__logo" href="index.html">
+			<div class="page-header__logo-wrapper">
+				<svg class="page-header__logo-icon page-header__logo-icon--mobile" width="75" height="22"><use xlink:href="#logo-white-mobile"></use></svg>
+				<svg class="page-header__logo-icon page-header__logo-icon--tablet" width="147" height="40"><use xlink:href="#logo-white-tablet"></use></svg>
+				<svg class="page-header__logo-icon page-header__logo-icon--desktop" width="147" height="40"><use xlink:href="#logo-white-desktop"></use></svg>
+			</div>
+			Pink - на главную
+		</a>
+
+		<nav class="page-haeder__nav main-nav main-nav--closed main-nav--nojs">
+			<button class="main-nav__toggle" type="button">
+				<span class="visually-hidden">Открыть меню</span>
+			</button>
+			<div class="main-nav__wrapper">
+				<ul class="main-nav__list">
+					<li class="main-nav__item main-nav__item--active">
+						<a class="main-nav__link">Главная</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="photo.html">Фотографии</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="form.html">Конкурс</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="#">HTML Academy</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<section class="intro">
+		<div class="intro__bg"></div>
+		<div class="intro__wrapper">
+			<h1 class="intro__title">Взгляните на жизнь иначе!</h1>
+			<button class="intro__button button" type="button">Скачать приложение</button>
+			<ul class="intro__support-list">
+				<li class="intro__support-item">
+					<svg class="social__icon" width="47" height="56"><use xlink:href="#icon-apple"></use></svg>
+					iOS
+				</li>
+				<li class="intro__support-item">
+					<svg class="social__icon" width="43" height="47"><use xlink:href="#icon-android"></use></svg>
+					Andriod
+				</li>
+				<li class="intro__support-item">
+					<svg class="social__icon" width="44" height="41"><use xlink:href="#icon-ms"></use></svg>
+					Windows
+				</li>
+			</ul>
+			<p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+		</div>
+	</section>
+
+	<section class="advantages">
+		<h2 class="visually-hidden">Приемущества использования приложения Pink</h2>
+		<p class="advantages__title">Устали от серости мегаполиса?
+			<span class="advantages__title-section">Нам есть, что вам<br> предложить!</span>
+			<svg class="advantages__triangle triangle" width="100%" height="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon points="0,100 0,0 100,0"/></svg>
+		</p>
+		<div class="advantages__wrapper">
+			<ul class="advantages__list">
+				<li class="advantages__item advantages__item--1">
+					<h3 class="advantages__item-title">Поднимает настроение</h3>
+					<p class="advantages__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+				</li>
+				<li class="advantages__item advantages__item--2">
+					<h3 class="advantages__item-title">Меняет мир вокруг</h3>
+					<p class="advantages__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+				</li>
+				<li class="advantages__item advantages__item--3">
+					<h3 class="advantages__item-title">Заводит новых друзей</h3>
+					<p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+				</li>
+			</ul>
+			<div class="advantages__preview">
+				<img class="advantages__img" src="img/screen-mobile.png" width="157" height="320" alt="IPhone screen" loading="lazy">
+				<img class="advantages__slider-wrapper" src="img/iphone-tablet.png" width="268" height="558" alt="IPhone screen" loading="lazy">
+				<div class="advantages__slider owl-carousel">
+					<img class="advantages__slider-img" src="img/iphone-screen1-tablet.jpg" width="237" height="421" alt="smartphone screen" loading="lazy">
+					<img class="advantages__slider-img" src="img/iphone-screen2-tablet.jpg" width="237" height="421" alt="smartphone screen" loading="lazy">
+					<img class="advantages__slider-img" src="img/iphone-screen3-tablet.jpg" width="237" height="421" alt="smartphone screen" loading="lazy">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="effect">
+		<div class="effect__image"></div>
+		<div class="effect__data">
+			<h2 class="effect__title">Эффект<br> на 24 часа!</h2>
+			<p class="effect__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+			<a class="effect__link link" href="#">Узнать больше об исследовании</a>
+		</div>
+	</section>
+
+	<section class="reviews">
+		<h2 class="visually-hidden">Отзывы о приложении Pink</h2>
+		<div class="reviews__slider owl-carousel">
+			<blockquote class="reviews__item">
+				<p class="reviews__author">Николай Петров</p>
+				<p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+				<span class="reviews__author-info">25 лет, водитель трамвая</span>
+			</blockquote>
+			<blockquote class="reviews__item">
+				<p class="reviews__author">Николай Петров</p>
+				<p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+				<span class="reviews__author-info">25 лет, водитель трамвая</span>
+			</blockquote>
+			<blockquote class="reviews__item">
+				<p class="reviews__author">Николай Петров</p>
+				<p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+				<span class="reviews__author-info">25 лет, водитель трамвая</span>
+			</blockquote>
+		</div>
+		<svg class="reviews__triangle triangle" width="100%" height="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon points="0,100 0,0 100,0"/></svg>
+	</section>
+
+	<section class="package">
+		<h2 class="visually-hidden">Доступные пакеты приложения Pink</h2>
+		<div class="package__slider owl-carousel">
+			<table class="package__table">
+				<thead class="package__table-head">
+					<tr class="package__table-top">
+						<th class="package__table-title package__table-title--bestseller">Стандарт</th>
+						<th class="package__table-price">3,99 USD</th>
+					</tr>
+				</thead>
+				<tbody class="package__table-body">
+					<tr class="package__table-row">
+						<td class="package__table-field">Розовый фильтр</td>
+						<td class="package__table-value package__table-value--true">есть</td>
+					</tr>
+					<tr class="package__table-row">
+						<td class="package__table-field">Смайлики</td>
+						<td class="package__table-value package__table-value--true">есть</td>
+					</tr>
+					<tr class="package__table-row">
+						<td class="package__table-field">Комментарии</td>
+						<td class="package__table-value package__table-value--false">нет</td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="package__table">
+				<thead class="package__table-head">
+					<tr class="package__table-top">
+						<th class="package__table-title">База</th>
+						<th class="package__table-price">1,99 USD</th>
+					</tr>
+				</thead>
+				<tbody class="package__table-body">
+					<tr class="package__table-row">
+						<td class="package__table-field">Розовый фильтр</td>
+						<td class="package__table-value package__table-value--true">есть</td>
+					</tr>
+					<tr class="package__table-row">
+						<td class="package__table-field">Смайлики</td>
+						<td class="package__table-value package__table-value--false">нет</td>
+					</tr>
+					<tr class="package__table-row">
+						<td class="package__table-field">Комментарии</td>
+						<td class="package__table-value package__table-value--false">нет</td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="package__table">
+				<thead class="package__table-head">
+					<tr class="package__table-top">
+						<th class="package__table-title">Анлим</th>
+						<th class="package__table-price">9,99 USD</th>
+					</tr>
+				</thead>
+				<tbody class="package__table-body">
+					<tr class="package__table-row">
+						<td class="package__table-field">Розовый фильтр</td>
+						<td class="package__table-value package__table-value--true">есть</td>
+					</tr>
+					<tr class="package__table-row">
+						<td class="package__table-field">Смайлики</td>
+						<td class="package__table-value package__table-value--true">есть</td>
+					</tr>
+					<tr class="package__table-row">
+						<td class="package__table-field">Комментарии</td>
+						<td class="package__table-value package__table-value--true">есть</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="package__data">
+			<table class="package__table">
+				<thead class="package__table-head">
+					<tr class="package__table-top">
+						<th class="package__table-title package__table-title--null"></th>
+						<th class="package__table-title">База
+							<span class="package__table-price">1,99 USD</span>
+						</th>
+						<th class="package__table-title package__table-title--bestseller">Стандарт
+							<span class="package__table-price">3,99 USD</span>
+						</th>
+						<th class="package__table-title">Анлим
+							<span class="package__table-price">9,99 USD</span>
+						</th>
+					</tr>
+				</thead>
+				<tbody class="package__table-body">
+					<tr class="package__table-row">
+						<td class="package__table-field">Розовый фильтр</td>
+						<td class="package__table-value package__table-value--true">есть</td>
+						<td class="package__table-value package__table-value--true">есть</td>
+						<td class="package__table-value package__table-value--true">есть</td>
+					</tr>
+					<tr class="package__table-row">
+						<td class="package__table-field">Смайлики</td>
+						<td class="package__table-value package__table-value--false">нет</td>
+						<td class="package__table-value package__table-value--true">есть</td>
+						<td class="package__table-value package__table-value--true">есть</td>
+					</tr>
+					<tr class="package__table-row">
+						<td class="package__table-field">Комментарии</td>
+						<td class="package__table-value package__table-value--false">нет</td>
+						<td class="package__table-value package__table-value--false">нет</td>
+						<td class="package__table-value package__table-value--true">есть</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<section class="contacts">
+		<h2 class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
+		<div class="contacts__wrapper">
+			<div class="contacts__data">
+				<p class="contacts__data-caption">Звоните:</p>
+				<a class="contacts__data-value" href="tel:+78125556666">+7 (812) 555-66-66</a>
+			</div>
+			<div class="contacts__data">
+				<p class="contacts__data-caption">Пишите:</p>
+				<a class="contacts__data-value contacts__data-value--link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+			</div>
+			<div class="contacts__data">
+				<p class="contacts__data-caption">Приезжайте в гости:</p>
+				<p class="contacts__data-value">ул. Большая<br> Конюшенная, 19/8</p>
+			</div>
+		</div>
+		<svg class="contacts__triangle" width="100%" height="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" ><polygon points="0,100 50,0 100,100"/></svg>
+		<div class="contacts__map contacts__map--nojs">
+			<div class="contacts__map-map"></div>
+			<picture>
+				<source type="image/webp" media="(min-width: 1200px)" srcset="img/map-desktop.webp">
+				<source type="image/webp" media="(min-width: 660px)" srcset="img/map-tablet.webp">
+				<source type="image/webp" srcset="img/map-mobile.webp">
+
+				<source media="(min-width: 1200px)" srcset="img/map-desktop.jpg">
+				<source media="(min-width: 660px)" srcset="img/map-tablet.jpg">
+				<img class="contacts__map-img" src="img/map-mobile.jpg" alt="офис компании по адрусу ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" width="320" height="200" loading="lazy">
+			</picture>
+		</div>
+	</section>
+
+	<footer class="page-footer">
+		<div class="page-footer__logo">
+			<a href="index.html" class="page-footer__logo-link">
+				<picture>
+					<source media="(min-width: 1200px)" srcset="img/logo-blue-desktop.svg">
+					<img class="page-footer__logo-img" src="img/logo-blue-tablet.svg" width="147" height="40" alt="Pink - главная">
+				</picture>
+				ссылка на главную страницу
+			</a>
+		</div>
+		<div class="page-footer__social social">
+			<ul class="social__list">
+				<li class="social__item">
+					<a class="social__link" href="#"><svg class="social__icon" width="18" height="14"><use xlink:href="#icon-tw"></use></svg>Мы в Твиттере</a>
+				</li>
+				<li class="social__item">
+					<a class="social__link" href="#"><svg class="social__icon" width="9" height="18"><use xlink:href="#icon-fb"></use></svg>Мы в Фэйсбуке</a>
+				</li>
+				<li class="social__item">
+					<a class="social__link" href="#"><svg class="social__icon" width="15" height="13"><use xlink:href="#icon-yt"></use></svg>Мы на Ютубе</a>
+				</li>
+			</ul>
+		</div>
+		<div class="page-footer__copyright copyright">
+			<a class="copyright__link" href="#">
+				<p class="copyright__text">Разработано</p>
+				<svg class="copyright__icon" width="27" height="34"><use xlink:href="#icon-html"></use></svg>
+			</a>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://maps.google.com/maps/api/js"></script>
+	<script src="js/final.js"></script>
+</body>
+</html>

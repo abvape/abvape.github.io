@@ -1,0 +1,112 @@
+.intro
+	position: relative
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	+md-block()
+		justify-content: flex-start
+	+lg-block()
+		width: 610px
+
+.intro__bg
+	position: absolute
+	z-index: -1
+	top: 0
+	left: -20px
+	width: 320px
+	height: 305px
+	background-position: cover
+	background-repeat: no-repeat
+	background-size: 320px 305px
+	background-image: url("../img/index-background-mobile.jpg")
+	+md-block()
+		display: none
+	+lg-block()
+		display: block
+		width: 720px
+		height: 696px
+		top: -113px
+		left: 610px
+		background-size: 720px 696px
+		background-image: url("../img/index-background-desktop.jpg")
+
+
+.intro__title
+	font-family: Oswald Regular, Arial, sans-serif
+	font-size: 36px
+	line-height: 36px
+	text-align: center
+	color: $c-white
+	padding: 28px 0 25px 0
+	+md-block()
+		font-size: 60px
+		line-height: 60px
+		color: $c-text-black
+		width: 70%
+		text-align: left
+		padding-left: 87px
+		padding-bottom: 42px
+		order: 1
+	+lg-block()
+		width: 420px
+		padding-top: 109px
+		padding-left: 80px
+
+.intro__subtitle
+	font-family: Oswald Regular, Arial, sans-serif
+	font-size: 14px
+	line-height: 14px
+	text-align: center
+	text-transform: uppercase
+	color: $c-white
+	margin-bottom: 29px
+	+md-block()
+		font-size: 20px
+		line-height: 20px
+		color: $c-text-black
+		width: 100%
+		text-align: left
+		padding-left: 88px
+		margin-bottom: 47px
+		order: 2
+	+lg-block()
+		width: 420px
+		padding-left: 80px
+		margin-bottom: 52px
+
+.intro__product
+	+md-block()
+		position: relative
+		width: 708px
+		height: 609px
+		order: 4
+		margin-bottom: -80px
+	+lg-block()
+		width: 552px
+		height: 269px
+		margin: 0
+
+.intro__product-img
+	+md-block()
+		position: absolute
+		width: 708px
+		height: 609px
+		top: -80px
+	+lg-block()
+		width: 552px
+		height: 499px
+		top: -366px
+		left: 450px
+
+.intro__button
+	width: 100%
+	margin-bottom: 22px
+	+md-block()
+		position: relative
+		width: auto
+		margin: 0
+		margin-left: 88px
+		z-index: 9
+		order: 3
+	+lg-block()
+		margin-left: 80px

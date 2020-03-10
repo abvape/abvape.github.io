@@ -1,0 +1,177 @@
+.works
+	display: flex
+	flex-wrap: wrap
+	padding: 0 20px
+	margin: 0 auto
+	margin-bottom: 14px
+	+md-block()
+		width: 640px
+		padding: 0
+		margin-bottom: 25px
+	+lg-block()
+		width: 960px
+		margin-bottom: 45px
+
+.works__list
+	+lg-block()
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		width: 960px
+
+.works__item
+	display: flex
+	flex-wrap: wrap
+	position: relative
+	width: 100%
+	margin-bottom: 20px
+	+md-block()
+		flex-wrap: nowrap
+		margin-bottom: 40px
+	+lg-block()
+		flex-direction: column
+		flex-wrap: wrap
+		width: 294px
+		margin-bottom: 40px
+
+.works__image
+	display: flex
+	justify-content: center
+	width: 100%
+	line-height: 0
+	background-color: $c-works-items-border
+	+md-block()
+		min-width: 270px
+		width: 270px
+	+lg-block()
+		width: auto
+
+.works__review
+	display: flex
+	flex-wrap: wrap
+	padding: 20px
+	padding-top: 17px
+	border: 1px solid $c-works-items-border
+	border-top: none
+	box-sizing: border-box
+	width: 100%
+	+md-block()
+		flex-direction: column
+		padding: 40px 40px 25px 50px
+		border: 1px solid $c-works-items-border
+		border-left: none
+	+lg-block()
+		padding: 30px 35px 20px 35px
+		border: 1px solid $c-works-items-border
+		border-top: none
+		flex-grow: 1
+
+.works__item--work-of-month.works__item
+	+lg-block()
+		flex-direction: row
+		width: 100%
+		flex-wrap: nowrap
+
+.works__item--work-of-month
+	.works__image
+		min-height: 480px
+		+lg-block()
+			min-width: 480px
+	.works__review
+		+lg-block()
+			border: 1px solid $c-works-items-border
+			border-left: none
+			padding: 130px 40px 15px 40px
+
+
+.works__review-title
+	font-family: PT Sans Narrow Bold, Arial, sans-serif
+	font-size: 24px
+	line-height: 27px
+	width: 100%
+	margin-bottom: 16px
+	+md-block()
+		margin-bottom: 24px
+
+.works__review-text
+	font-family: PT Sans Narrow, Arial, sans-serif
+	font-size: 18px
+	line-height: 27px
+	width: 100%
+	margin-bottom: 16px
+	+lg-block()
+		margin-bottom: 30px
+
+.works__parameter-list
+	display: flex
+	flex-wrap: wrap
+	width: 100%
+	+md-block()
+		margin-top: auto
+
+.works__parameter-item
+	font-family: PT Sans Narrow, Arial, sans-serif
+	font-size: 16px
+	line-height: 27px
+	text-transform: uppercase
+	box-sizing: border-box
+	padding-left: 33px
+	background-position: 0 50%
+	background-repeat: no-repeat
+	background-size: 22px 22px
+	margin-right: 35px
+	margin-bottom: 10px
+	+md-block()
+		margin-right: 40px
+		padding-left: 40px
+	+lg-block()
+		margin-right: 30px
+	&--haircut
+		background-image: url("../img/icon-scissors.svg")
+	&--beard
+		background-image: url("../img/icon-beard.svg")
+	&--mustache
+		background-image: url("../img/icon-mustache.svg")
+		background-size: 45px 12px
+		padding-left: 55px
+
+.works__item--work-of-month
+	&:before
+		content: "Работа месяца"
+		position: absolute
+		z-index: 99
+		text-transform: uppercase
+		color: $c-white
+		background-color: $c-works-items
+		font-family: PT Sans Narrow Bold, Arial, sans-serif
+		font-size: 20px
+		line-height: 26px
+		text-align: center
+		width: 160px
+		padding-top: 12px
+		padding-bottom: 12px
+		box-sizing: border-box
+		left: 0
+		top: 401px
+		+md-block()
+			top: 35px
+		+lg-block()
+			top: 26px
+			right: 0
+			left: auto
+	&:after
+		content: ""
+		position: absolute
+		top: 401px
+		left: 160px
+		z-index: 99
+		width: 16px
+		height: 50px
+		background-image: linear-gradient(to top left,transparent 50%,$c-works-items 50%),linear-gradient(to top right,$c-works-items 50%,transparent 50%)
+		+md-block()
+			top: 35px
+		+lg-block()
+			top: 26px
+			right: 160px
+			left: auto
+			background-image: linear-gradient(to top left,$c-works-items 50%,transparent 50%),linear-gradient(to top right,transparent 50%,$c-works-items 50%)

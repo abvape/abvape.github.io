@@ -1,0 +1,50 @@
+// fix for ie
+// xs-block
+@media all and (-ms-high-contrast: none) and (min-width: $break_xs)
+	.page-footer
+		.page-footer__copyright
+			width: auto
+		.page-footer__logo
+			width: auto
+
+	.package__table-field
+		width: 180px
+
+	.package__slider
+		.package__table-top
+			&:before
+				left: 20px
+			&:after
+				right: -20px
+
+	.photo__like
+		&:after
+			left: 5px
+			top: 6px
+
+	.form-application__label
+		width: 280px
+
+	.form-application__label.form-application__label--icon
+		&:after
+			height: 54px
+
+// md-block
+@media all and (-ms-high-contrast: none) and (min-width: $break_md)
+	.package__table-field
+		width: 153px
+
+	.contacts__triangle
+		margin-top: -1px
+
+	.photo
+		overflow: hidden
+
+	.photo__image
+		img
+			width: 100%
+
+// lg-block
+@media all and (-ms-high-contrast: none) and (min-width: $break_lg)
+	.package__table-field
+		width: 233px

@@ -1,0 +1,84 @@
+.tabs
+	position: relative
+
+.tabs__item
+	+md-block()
+		width: 100%
+		position: relative
+		padding-top: 23px
+		padding-bottom: 23px
+		border-bottom: 1px solid $c-text-01
+		&:first-child
+			margin-top: -14px
+	+lg-block()
+		&:first-child
+			margin-top: -18px
+
+.tabs__label
+	display: flex
+	width: 100%
+	height: 100%
+	cursor: pointer
+	fill: $c-text-03
+	+md-block()
+		height: 24px
+		align-items: center
+		fill: $c-site-red
+	+lg-block()
+		height: 25px
+
+.tabs__icon--crop
+	+md-block()
+		width: 24px
+		height: 24px
+	+lg-block()
+		width: 48px
+		height: 48px
+
+.tabs__icon--fill
+	+md-block()
+		width: 24px
+		height: 24px
+	+lg-block()
+		width: 48px
+		height: 48px
+
+.tabs__icon--contrast
+	+md-block()
+		width: 16px
+		height: 16px
+		margin-left: 4px
+	+lg-block()
+		width: 32px
+		height: 32px
+
+.tabs__controller
+	display: none
+	position: absolute
+	width: 280px
+	left: 0
+	top: 73px
+	box-sizing: border-box
+	padding-left: 20px
+	padding-right: 20px
+	+md-block()
+		display: block
+		width: 202px
+		left: 53px
+		top: 22px
+		padding: 0
+	+lg-block()
+		width: 288px
+		left: 92px
+
+.tabs__item input[type="radio"]:checked ~ .tabs__controller
+	display: block
+
+.tabs__item input[type="radio"]:checked ~ .tabs__label
+	fill: $c-site-red
+	transition: 0.2s
+
+.tabs__label
+	&:hover
+		fill: $c-text-06
+		transition: 0.2s

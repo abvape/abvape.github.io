@@ -1,0 +1,58 @@
+// fix for ie
+// xs-block
+@media all and (-ms-high-contrast: none) and (min-width: $break_xs)
+	.example__data-desc
+		left: 10px
+
+	.image-comparison__scale
+		left: 10px
+		top: 1px
+
+	.product__item-plus
+		&:after
+			left: 45%
+		&:before
+			position: absolute
+
+	.social__icon--in
+		width: 17px
+
+	.social__icon--fb
+		height: 18px
+
+	.form-application__icon--email
+		top: 16px
+
+	.form-application__icon--tel
+		top: 12px
+
+// md-block
+@media all and (-ms-high-contrast: none) and (min-width: $break_md)
+	.image-comparison__scale
+		left: 25px
+		top: 8px
+
+	.product__item-plus
+		&:after
+			left: 41%
+
+	.product__item--more
+		padding-bottom: 57px
+
+	.social__icon--in
+		height: 22px
+
+	.form-application__icon--email
+		top: 21px
+
+	.form-application__icon--tel
+		top: 15px
+
+// lg-block
+@media all and (-ms-high-contrast: none) and (min-width: $break_lg)
+	.product__item-plus
+		&:after
+			left: 38%
+
+	.product__item--more
+		padding-bottom: 59px

@@ -1,0 +1,142 @@
+.main-nav
+	position: relative
+	width: 320px
+	min-height: 51px
+	margin: 0 auto
+	+md-block()
+		width: 100%
+		min-height: 72px
+		background-color: $c-black
+
+.main-nav__wrapper
+	+md-block()
+		width: 640px
+		margin: 0 auto
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	+lg-block()
+		width: 960px
+
+.main-nav__list
+	+md-block()
+		display: flex
+		flex-wrap: wrap
+
+.main-nav__toggle
+	position: absolute
+	top: 0
+	right: 0
+	z-index: 2
+	display: block
+	width: 70px
+	height: 50px
+	background-color: $c-bg-menu-toggle
+	cursor: pointer
+	border: none
+	&:hover,
+	&:active
+		background-color: $c-bg-menu-toggle-hover
+	+md-block()
+		display: none
+
+// main menu closed
+.main-nav--closed
+	.main-nav__toggle:before
+		content: ""
+		position: absolute
+		top: 15px
+		left: 17px
+		width: 36px
+		height: 2px
+		background-color: $c-white
+		box-shadow: 0 8px 0 0 $c-white, 0 16px 0 0 $c-white
+	.main-nav__toggle
+		&:active:before,
+		&:active:after
+			background-color: $c-bg-menu-toggle-t
+			box-shadow: 0 8px 0 0 $c-bg-menu-toggle-t, 0 16px 0 0 $c-bg-menu-toggle-t
+	.site-list__item--active a
+		padding-right: 70px
+		padding-left: 70px
+		text-align: center
+		+md-block()
+			padding: 0
+		+lg-block()
+			padding-right: 31px
+			padding-left: 31px
+
+// main menu opened
+.main-nav--opened
+	.main-nav__toggle
+		top: 0
+		right: auto
+		left: 0
+		&:before,
+		&:after
+			content: ""
+			position: absolute
+			top: 24px
+			left: 18px
+			width: 36px
+			height: 2px
+			background-color: $c-white
+		&:before
+			transform: rotate(45deg)
+		&:after
+			transform: rotate(-45deg)
+		&:active:before,
+		&:active:after
+			background-color: $c-bg-menu-toggle-t
+
+	.main-nav__wrapper
+		position: absolute
+		top: 0
+		right: 0
+		left: 70px
+		z-index: 99
+		min-height: 80vh
+		background-color: $c-bg-menu-toggle
+		+md-block()
+			min-height: 72px
+			background-color: transparent
+
+	.main-nav__wrapper:before
+		position: absolute
+		content: ""
+		top: 0
+		left: 0
+		z-index: 2
+		width: 7px
+		height: 100%
+		box-shadow: inset 4px 0 7px -2px rgba(0, 0, 0, 0.4)
+
+// main menu if js is not supported
+.main-nav.main-nav--nojs
+	.main-nav__toggle
+		display: none
+
+	.main-nav__wrapper
+		position: static
+		min-height: 0
+
+	.site-list__item
+		display: block
+
+	.user-list__item--active a
+		padding-right: 21px
+		padding-left: 21px
+		text-align: left
+
+	.user-list__item
+		display: block
+		background-color: $c-bg-menu-toggle
+
+@media screen and (max-width: $mobile-width-only)
+	.main-nav--closed .site-list__item
+		display: none
+		&--active
+			display: block
+
+	.main-nav--closed .user-list__item
+		display: none
