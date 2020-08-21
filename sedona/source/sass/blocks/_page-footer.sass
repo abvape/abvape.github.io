@@ -1,0 +1,59 @@
+.page-footer
+	+fw()
+	background-color: $c-white
+	box-sizing: border-box
+	margin: 0 auto
+	padding-top: 36px
+	padding-right: 20px
+	padding-bottom: 20px
+	padding-left: 20px
+	+md-block()
+		padding-top: 35px
+		padding-right: 0
+		padding-left: 0
+		padding-bottom: 37px
+	+lg-block()
+		width: 1200px
+		margin: 0 auto
+
+.page-footer__logo
+	display: block
+	width: 100%
+	font-family: $ff-b
+	font-size: 21px
+	line-height: 26px
+	text-transform: uppercase
+	color: $c-black
+	text-decoration: none
+	text-align: center
+	margin-bottom: 36px
+	&:hover
+		color: $c-main-blue-07
+		transition: 0.3s
+	&:active
+		color: $c-black-03
+		transition: 0.2s
+	+md-block()
+		display: flex
+		justify-content: center
+		align-items: center
+		width: calc(100% / 3)
+		margin: 0
+
+.page-footer__social
+	display: block
+	width: 100%
+	margin-bottom: 40px
+	+md-block()
+		width: calc(100% / 3)
+		margin: 0
+
+.page-footer__copyright
+	display: block
+	width: 100%
+	+md-block()
+		display: flex
+		justify-content: center
+		align-items: center
+		width: calc(100% / 3)
+		margin: 0

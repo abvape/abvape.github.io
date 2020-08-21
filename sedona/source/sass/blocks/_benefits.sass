@@ -1,0 +1,253 @@
+.benefits
+	background-color: $c-white
+	box-sizing: border-box
+	margin: 0 auto
+	padding-top: 38px
+	+md-block()
+		padding-top: 49px
+	+lg-block()
+		width: 1200px
+		margin: 0 auto
+
+.benefits__title
+	box-sizing: border-box
+	padding-left: 25px
+	padding-right: 25px
+	margin-bottom: 24px
+	+md-block()
+		margin-bottom: 26px
+	br
+		+md-block()
+			&:first-child
+				display: none
+
+.benefits__subtitle
+	box-sizing: border-box
+	padding-left: 25px
+	padding-right: 25px
+	margin-bottom: 20px
+	+md-block()
+		margin-bottom: 50px
+	br
+		+md-block()
+			display: none
+
+.benefits__wrapper
+	+fw()
+
+.benefits__item
+	+fw()
+	box-sizing: border-box
+	width: 100%
+	+md-block()
+		width: calc(100% / 3)
+
+.benefits__item-triangle
+	display: block
+	position: absolute
+	width: 100%
+	fill: $c-white
+	transform: rotate(180deg)
+	+md-block()
+		display: none
+
+.benefits__item--img
+	+md-block()
+		width: 100%
+		flex-wrap: nowrap
+
+.benefits__item--triangle
+	position: relative
+
+.benefits__item--border
+	position: relative
+	&:after
+		content: ""
+		display: flex
+		position: absolute
+		width: 90%
+		height: 1px
+		bottom: 0
+		left: 0
+		right: 0
+		margin: auto
+		background-color: $c-black-01
+		+md-block()
+			display: none
+
+.benefits__item-data
+	+fw()
+	width: 100%
+	box-sizing: border-box
+	padding-left: 20px
+	padding-right: 20px
+	padding-top: 27px
+	padding-bottom: 26px
+	+md-block()
+		padding-top: 44px
+		padding-bottom: 0
+		flex-direction: column
+	+lg-block()
+		padding-top: 50px
+
+.benefits__item-data--bg
+	padding-top: 40px
+	padding-bottom: 39px
+	background-color: $c-main-blue
+	+md-block()
+		width: calc(100% / 3)
+
+.benefits__item-data--triangle
+	padding-top: 62px
+
+.benefits__item-data--reverse
+	+md-block()
+		order: 2
+
+.benefits__item-data--gray
+	background-color: $c-benefits-gray
+	+md-block()
+		padding-bottom: 42px
+	+lg-block()
+		padding-top: 45px
+		padding-bottom: 62px
+
+.benefits__item-title
+	font-family: $ff-b
+	font-size: 18px
+	line-height: 26px
+	text-transform: uppercase
+	color: $c-black
+	display: block
+	text-align: center
+	width: 100%
+	margin-bottom: 6px
+	+md-block()
+		font-size: 21px
+	br
+		display: none
+		+md-block()
+			display: block
+
+.benefits__item-title--white
+	color: $c-white
+
+.benefits__item-number
+	font-family: $ff-r
+	font-size: 16px
+	line-height: 26px
+	color: $c-black
+	display: block
+	text-align: center
+	width: 100%
+	margin-bottom: 12px
+	+md-block()
+		margin-bottom: 20px
+
+.benefits__item-number--white
+	color: $c-white
+
+.benefits__item-description
+	font-family: $ff-r
+	font-size: 14px
+	line-height: 22px
+	text-transform: uppercase
+	color: $c-black
+	display: block
+	text-align: center
+	width: 100%
+	box-sizing: border-box
+	+md-block()
+		padding-left: 30px
+		padding-right: 30px
+	br
+		+md-block()
+			display: none
+		+lg-block()
+			display: block
+
+.benefits__item-description--white
+	color: $c-white
+
+.benefits__item-image-wrap
+	display: block
+	width: 100%
+	+md-block()
+		width: calc((100% / 3)*2)
+
+.benefits__item-image
+	width: 100%
+
+.benefits__list
+	+fw()
+	width: 100%
+	box-sizing: border-box
+	padding-top: 26px
+	margin-bottom: 38px
+	+md-block()
+		padding-top: 60px
+		margin-bottom: 62px
+	+lg-block()
+		margin-bottom: 83px
+
+.benefits__list-item
+	width: 100%
+	position: relative
+	box-sizing: border-box
+	padding-left: 22px
+	padding-right: 22px
+	margin-bottom: 20px
+	&:last-child
+		margin-bottom: 0
+	+md-block()
+		+fw()
+		flex-direction: column
+		width: calc(100% / 3)
+		margin-bottom: 0
+		&:nth-child(2)
+			display: flex
+			order: 3
+
+.benefits__list-item-img
+	position: absolute
+	display: block
+	fill: $c-main-blue
+	+md-block()
+		position: static
+		width: 75px
+		height: 72px
+		margin: 0 auto
+		margin-bottom: 25px
+
+.benefits__list-item-title
+	font-family: $ff-b
+	font-size: 18px
+	line-height: 27px
+	text-transform: uppercase
+	color: $c-black
+	display: block
+	width: 100%
+	box-sizing: border-box
+	padding-top: 9px
+	padding-left: 47px
+	margin-bottom: 12px
+	+md-block()
+		font-size: 21px
+		line-height: 28px
+		text-align: center
+		padding: 0
+		margin: 0
+		margin-bottom: 20px
+
+.benefits__list-item-description
+	font-family: $ff-r
+	font-size: 14px
+	line-height: 21px
+	text-transform: uppercase
+	box-sizing: border-box
+	padding-left: 47px
+	+md-block()
+		text-align: center
+		padding: 0
+		padding-left: 20px
+		padding-right: 20px

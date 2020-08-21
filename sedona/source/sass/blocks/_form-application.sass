@@ -1,0 +1,311 @@
+.form-application
+	background-color: $c-white
+	box-sizing: border-box
+	padding-top: 37px
+	padding-bottom: 36px
+	+md-block()
+		padding-top: 68px
+		padding-bottom: 62px
+	+lg-block()
+		padding-top: 105px
+		padding-bottom: 67px
+		width: 1200px
+		margin: 0 auto
+
+.form-application__title
+	padding-left: 20px
+	padding-right: 20px
+	margin-bottom: 25px
+	+md-block()
+		padding-left: 60px
+		padding-right: 60px
+	+lg-block()
+		padding-left: 120px
+		padding-right: 120px
+
+.form-application__subtitle
+	padding-left: 20px
+	padding-right: 20px
+	margin-bottom: 13px
+	+md-block()
+		padding-left: 60px
+		padding-right: 60px
+	+lg-block()
+		padding-left: 120px
+		padding-right: 120px
+	br
+		display: none
+		+md-block()
+			display: block
+
+.form-application__content
+	+fw()
+	+md-block()
+		box-sizing: border-box
+		padding-top: 60px
+		margin-right: 60px
+		margin-left: 60px
+		overflow: hidden
+	+lg-block()
+		padding-top: 45px
+		margin-left: 120px
+		margin-right: 120px
+
+.form-application__block
+	+fw()
+	width: 100%
+	box-sizing: border-box
+	padding-top: 18px
+	padding-left: 20px
+	padding-right: 20px
+	padding-bottom: 25px
+	border-top: 1px solid $c-black-01
+	&:last-child
+		border-top: none
+	+md-block()
+		border-top: none
+		padding-right: 0
+		padding-left: 0
+		padding-top: 68px
+		padding-bottom: 0
+
+.form-application__block--full-name
+	order: 1
+	+md-block()
+		order: 2
+		width: 30%
+		flex-grow: 1
+		padding: 0
+		padding-left: 55px
+		margin-bottom: auto
+	+lg-block()
+		padding-left: 80px
+
+.form-application__block--data
+	order: 2
+	+md-block()
+		order: 3
+
+.form-application__block--impression
+	order: 3
+	+md-block()
+		order: 1
+		width: 30%
+		flex-grow: 1
+		border-right: 1px solid $c-black-01
+		padding: 0
+		margin-bottom: auto
+
+.form-application__block--attractions
+	order: 4
+	+md-block()
+		padding-top: 53px
+
+.form-application__block--message
+	order: 5
+	+md-block()
+
+.form-application__block--control
+	order: 6
+	+md-block()
+		justify-content: space-between
+		align-items: center
+		padding-top: 58px
+	+lg-block()
+		padding-top: 56px
+
+.form-application__block--line
+	+md-block()
+		position: relative
+		&:after
+			content: ""
+			position: absolute
+			display: block
+			width: 100%
+			top: 80px
+			height: 1px
+			z-index: 0
+			background-color: $c-black-01
+
+.form-application__block-title
+	font-family: $ff-b
+	font-size: 18px
+	line-height: 26px
+	text-transform: uppercase
+	color: $c-black
+	text-align: center
+	width: 100%
+	box-sizing: border-box
+	padding-left: 20px
+	padding-right: 20px
+	margin-bottom: 21px
+	+md-block()
+		font-size: 21px
+		text-align: left
+		padding-right: 0
+		padding-left: 0
+		margin-bottom: 24px
+
+.form-application__block-title--half
+	+md-block()
+		margin-bottom: 59px
+
+.form-application__block-title--center
+	+md-block()
+		display: block
+		position: relative
+		text-align: center
+		background-color: $c-white
+		width: auto
+		margin-right: auto
+		margin-left: auto
+		padding-left: 60px
+		padding-right: 60px
+		z-index: 9
+
+.form-application__block-title--attractions
+	+md-block()
+		margin-bottom: 42px
+
+.form-application__block-title--message
+	+md-block()
+		margin-bottom: 58px
+
+.form-application__block-wpapper
+	+fw()
+	width: 100%
+	+lg-block()
+		padding-top: 48px
+
+.form-application__label
+	+fw()
+	width: 100%
+	align-items: center
+	margin-bottom: 20px
+	&:last-child
+		margin-bottom: 0
+	&:hover
+		.form-application__field
+			background-color: $c-input-hover
+			transition: 0.3s
+	&:active
+		.form-application__field
+			box-sizing: border-box
+			background-color: $c-white
+			border: 4px solid $c-input-hover
+			transition: 0.3s
+
+.form-application__label--fixed
+	flex-wrap: nowrap
+
+.form-application__label--icon
+	margin-bottom: 13px
+	position: relative
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		width: 58px
+		height: 58px
+		bottom: 0
+		right: 0
+		z-index: 2
+		background-color: $c-input-icon-bg
+	+md-block()
+		margin-bottom: 25px
+	+lg-block()
+		width: auto
+		flex-wrap: nowrap
+		margin-bottom: 0
+		&:first-child
+			margin-right: auto
+
+.form-application__label-title
+	font-family: $ff-r
+	font-size: 14px
+	line-height: 26px
+	text-transform: uppercase
+	color: $c-black
+	padding-right: 14px
+
+.form-application__label-title--long
+	display: flex
+	width: 100%
+	padding-left: 20px
+	margin-bottom: 6px
+	+lg-block()
+		width: auto
+		white-space: nowrap
+		padding-left: 0
+		margin-bottom: 0
+
+.form-application__label-note
+	+lg-block()
+		display: none
+
+.form-application__field
+	display: flex
+	width: 100%
+	flex-grow: 1
+	font-family: $ff-b
+	font-size: 18px
+	line-height: 26px
+	color: $c-black
+	box-sizing: border-box
+	border: 4px solid transparent
+	background-color: $c-input-bg
+	padding-top: 12px
+	padding-right: 20px
+	padding-bottom: 12px
+	padding-left: 20px
+	&:focus
+		background-color: $c-white
+		border: 4px solid $c-input-hover
+		outline: none
+		transition: 0.2s
+
+.form-application__field--icon
+	width: 100%
+	padding-right: 78px
+	+lg-block()
+		width: 315px
+
+.form-application__field--comment
+	height: 160px
+
+.form-application__field--error
+	border: 4px solid $c-input-error
+	position: relative
+	z-index: 3
+
+.form-application__icon
+	display: flex
+	position: absolute
+	bottom: 20px
+	right: 18px
+	z-index: 3
+
+.form-application__icon--tel
+	width: 18px
+	height: 18px
+
+.form-application__icon--email
+	width: 20px
+	height: 15px
+
+.form-application__button
+	width: 100%
+	+md-block()
+		width: 324px
+	+lg-block()
+		width: 480px
+
+.form-application__note
+	display: none
+	+md-block()
+		display: flex
+		font-family: $ff-r
+		font-size: 14px
+		line-height: 26px
+		text-transform: uppercase
+		color: $c-black

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Седона - небольшой городок в Аризоне, заслуживающий большего - фото и видео">
+	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+	<link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+	<link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+	<link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+	<link rel="preload" as="font" crossorigin="anonymous" href="fonts/PTSans-Bold.woff2">
+	<link rel="preload" as="font" crossorigin="anonymous" href="fonts/PTSans-Regular.woff2">
+	<link rel="stylesheet" href="css/final.css">
+	<title>Sedona - photo</title>
+	<script>
+		document.createElement( "picture" );
+	</script>
+	<script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js" async></script>
+</head>
+
+<body>
+	<div class="include-svg">
+		<include src="public/img/sprite.svg"></include>
+	</div>
+
+	<header class="page-header">
+		<div class="page-header__bg"></div>
+		<a href="index.html" class="page-haeder__logo">
+			<picture>
+				<source media="(min-width: 1280px)" srcset="img/logo-desktop.svg">
+				<source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+				<img class="page-haeder__logo-img" src="img/logo-mobile.svg" width="102" height="83" alt="Sedona">
+			</picture>
+			Sedona - на главную
+		</a>
+
+		<nav class="page-haeder__nav main-nav main-nav--closed main-nav--nojs">
+			<button class="main-nav__toggle" type="button">
+				<span class="visually-hidden">Открыть меню</span>
+			</button>
+			<div class="main-nav__wrapper">
+				<ul class="main-nav__list">
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="index.html">Главная</a>
+					</li>
+					<li class="main-nav__item main-nav__item--active">
+						<a class="main-nav__link">Фото и видео</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="form.html">Форма отзыва</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="#">HTML Academy</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<svg class="page-header__intro" width="229" height="39"><use xlink:href="#intro-text-lite"></use></svg>
+	</header>
+
+	<section class="photo">
+		<h1 class="photo__title page-title">Фото и видео</h1>
+		<h2 class="photo__subtitle page-title__subtitle">Не можете решиться на путешествие из-за курса?<br> Фотографии помогут Вам заыбть о политике и экономике.</h2>
+		<ul class="photo__list">
+			<li class="photo__item photo__item--top">
+				<picture class="photo__image-wrap">
+					<source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop.webp">
+					<source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp">
+					<source type="image/webp" srcset="img/photo-1-mobile.webp">
+
+					<source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg">
+					<source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg">
+					<img class="photo__image" src="img/photo-1-mobile.jpg" alt="Аризона, дорога к городу Седона">
+				</picture>
+				<div class="photo__data">
+					<h3 class="photo__image-title">Неродные просторы</h3>
+					<p class="photo__author">Автор фото: Борис</p>
+					<button class="photo__like">
+						<svg class="photo__like-icon" width="24" height="22"><use xlink:href="#icon-like"></use></svg>
+						1350
+					</button>
+				</div>
+			</li>
+			<li class="photo__item">
+				<picture class="photo__image-wrap">
+					<source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop.webp">
+					<source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet.webp">
+					<source type="image/webp" srcset="img/photo-2-mobile.webp">
+
+					<source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg">
+					<source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg">
+					<img class="photo__image" src="img/photo-2-mobile.jpg" alt="Кактусы на фоне гор">
+				</picture>
+				<div class="photo__data">
+					<h3 class="photo__image-title">Местная растительность</h3>
+					<p class="photo__author">Автор фото: Сергей</p>
+					<button class="photo__like">
+						<svg class="photo__like-icon" width="24" height="22"><use xlink:href="#icon-like"></use></svg>
+						143
+					</button>
+				</div>
+			</li>
+			<li class="photo__item photo__item--even">
+				<picture class="photo__image-wrap">
+					<source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-3-desktop.webp">
+					<source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet.webp">
+					<source type="image/webp" srcset="img/photo-3-mobile.webp">
+
+					<source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg">
+					<source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg">
+					<img class="photo__image" src="img/photo-3-mobile.jpg" alt="Аризона, серпантин к северу от Седоны">
+				</picture>
+				<div class="photo__data">
+					<h3 class="photo__image-title">Дорога на север</h3>
+					<p class="photo__author">Автор фото: Пётр</p>
+					<button class="photo__like">
+						<svg class="photo__like-icon" width="24" height="22"><use xlink:href="#icon-like"></use></svg>
+						96
+					</button>
+				</div>
+			</li>
+			<li class="photo__item">
+				<picture class="photo__image-wrap">
+					<source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-4-desktop.webp">
+					<source type="image/webp" media="(min-width: 768px)" srcset="img/photo-4-tablet.webp">
+					<source type="image/webp" srcset="img/photo-4-mobile.webp">
+
+					<source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg">
+					<source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg">
+					<img class="photo__image" src="img/photo-4-mobile.jpg" alt="Аризона, дорога к городу Седона">
+				</picture>
+				<div class="photo__data">
+					<h3 class="photo__image-title">Мост Дьявола</h3>
+					<p class="photo__author">Автор фото: Антон</p>
+					<button class="photo__like">
+						<svg class="photo__like-icon" width="24" height="22"><use xlink:href="#icon-like"></use></svg>
+						254
+					</button>
+				</div>
+			</li>
+		</ul>
+	</section>
+
+	<section class="video">
+		<h1 class="video__title">Всё ещё сомневаетесь?</h1>
+		<p class="video__subtitle">Смотрите видеопрезентацию и скорее за билетами,<br> пока они не подорожали в очередной раз!</p>
+
+		<div class="video__wrapper">
+			<video class="video__video" width="320" height="200" controls="controls" poster="img/video-mobile.jpg">
+				<source src="#" type="video/mp4">
+				Your browser doesn't support HTML5 video tag.
+			</video>
+			<div class="video__controls"></div>
+		</div>
+	</section>
+
+	<footer class="page-footer">
+		<a href="#" class="page-footer__logo">#VisitSedona</a>
+		<div class="page-footer__social social">
+			<ul class="social__list">
+				<li class="social__item">
+					<a class="social__link" href="#"><svg class="social__icon" width="18" height="14"><use xlink:href="#icon-tw"></use></svg>Мы в Твиттере</a>
+				</li>
+				<li class="social__item">
+					<a class="social__link" href="#"><svg class="social__icon" width="9" height="18"><use xlink:href="#icon-fb"></use></svg>Мы в Фэйсбуке</a>
+				</li>
+				<li class="social__item">
+					<a class="social__link" href="#"><svg class="social__icon" width="20" height="14"><use xlink:href="#icon-yt"></use></svg>Мы на Ютубе</a>
+				</li>
+			</ul>
+		</div>
+		<div class="page-footer__copyright copyright">
+			<a class="copyright__link" href="#">
+				<p class="copyright__text">Разработано</p>
+				<svg class="copyright__icon" width="27" height="34"><use xlink:href="#icon-html"></use></svg>
+			</a>
+		</div>
+	</footer>
+
+	<script src="js/final.js"></script>
+</body>
+</html>

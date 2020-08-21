@@ -1,0 +1,58 @@
+.video
+	background-color: $c-white
+	box-sizing: border-box
+	padding-top: 33px
+	padding-bottom: 55px
+	+md-block()
+		padding-top: 60px
+	+lg-block()
+		padding-top: 64px
+		width: 1200px
+		margin: 0 auto
+
+.video__title
+	font-family: $ff-b
+	font-size: 18px
+	line-height: 27px
+	text-transform: uppercase
+	color: $c-black
+	text-align: center
+	box-sizing: border-box
+	padding-left: 20px
+	padding-right: 20px
+	margin-bottom: 24px
+	+md-block()
+		font-size: 30px
+		line-height: 37px
+
+.video__subtitle
+	font-family: $ff-r
+	font-size: 14px
+	line-height: 25px
+	text-transform: uppercase
+	color: $c-black
+	text-align: center
+	box-sizing: border-box
+	padding-left: 30px
+	padding-right: 30px
+	margin-bottom: 30px
+	+md-block()
+		margin-bottom: 70px
+	br
+		display: none
+		+md-block()
+			display: block
+
+.video__wrapper
+	+fw()
+	justify-content: center
+
+.video__video
+	width: 320px
+	height: 180px
+	+md-block()
+		width: 648px
+		height: 365px
+	+lg-block()
+		width: 800px
+		height: 450px

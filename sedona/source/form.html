@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Седона - небольшой городок в Аризоне, заслуживающий большего - форма отзывов">
+	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+	<link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+	<link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+	<link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+	<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+	<link rel="preload" as="font" crossorigin="anonymous" href="fonts/PTSans-Bold.woff2">
+	<link rel="preload" as="font" crossorigin="anonymous" href="fonts/PTSans-Regular.woff2">
+	<link rel="stylesheet" href="css/final.css">
+	<title>Sedona - review</title>
+	<script>
+		document.createElement( "picture" );
+	</script>
+	<script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js" async></script>
+</head>
+
+<body>
+	<div class="include-svg">
+		<include src="public/img/sprite.svg"></include>
+	</div>
+
+	<header class="page-header">
+		<div class="page-header__bg"></div>
+		<a href="index.html" class="page-haeder__logo">
+			<picture>
+				<source media="(min-width: 1280px)" srcset="img/logo-desktop.svg">
+				<source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+				<img class="page-haeder__logo-img" src="img/logo-mobile.svg" width="102" height="83" alt="Sedona">
+			</picture>
+			Sedona - на главную
+		</a>
+
+		<nav class="page-haeder__nav main-nav main-nav--closed main-nav--nojs">
+			<button class="main-nav__toggle" type="button">
+				<span class="visually-hidden">Открыть меню</span>
+			</button>
+			<div class="main-nav__wrapper">
+				<ul class="main-nav__list">
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="index.html">Главная</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="photo.html">Фото и видео</a>
+					</li>
+					<li class="main-nav__item main-nav__item--active">
+						<a class="main-nav__link">Форма отзыва</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="#">HTML Academy</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<svg class="page-header__intro" width="229" height="39"><use xlink:href="#intro-text-lite"></use></svg>
+	</header>
+
+	<section class="form-application">
+		<h1 class="form-application__title page-title">Оставьте свой отзыв</h1>
+		<h2 class="form-application__subtitle page-title__subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br> также о песещённых вами достопримечательностях</h2>
+
+		<form class="form-application__content" method="post">
+
+			<div class="form-application__block form-application__block--impression impression-select">
+				<h3 class="form-application__block-title form-application__block-title--half impression-select__title">Ваше общее впечатление:</h3>
+				<label class="impression-select__label">
+					<input class="visually-hidden" type="radio" name="check-impression" value="impression-1" checked>
+					<span class="impression-select__radio-indicator"></span>
+					Скорее положительное
+				</label>
+				<label class="impression-select__label">
+					<input class="visually-hidden" type="radio" name="check-impression" value="impression-2">
+					<span class="impression-select__radio-indicator"></span>
+					Скорее отрицательное
+				</label>
+				<label class="impression-select__label">
+					<input class="visually-hidden" type="radio" name="check-impression" value="impression-3">
+					<span class="impression-select__radio-indicator"></span>
+					Затрудняюсь ответить
+				</label>
+			</div>
+
+			<div class="form-application__block form-application__block--full-name">
+				<h3 class="form-application__block-title form-application__block-title--half">Представьтесь:</h3>
+				<label class="form-application__label form-application__label--fixed">
+					<span class="form-application__label-title">Имя*:</span>
+					<input class="form-application__field" type="text" name="user-name" id="user-name" placeholder="Пётр"></input>
+				</label>
+				<label class="form-application__label form-application__label--fixed">
+					<span class="form-application__label-title">Фамилия*:</span>
+					<input class="form-application__field" type="text" name="user-surname" id="user-surname" placeholder="Иванов"></input>
+				</label>
+				<label class="form-application__label form-application__label--fixed">
+					<span class="form-application__label-title">Отчество:</span>
+					<input class="form-application__field" type="text" name="user-patronymic" id="user-patronymic" placeholder="Александрович"></input>
+				</label>
+			</div>
+
+			<div class="form-application__block form-application__block--data form-application__block--line">
+				<h3 class="form-application__block-title form-application__block-title--center">Контактная информация:</h3>
+				<div class="form-application__block-wpapper">
+					<label class="form-application__label form-application__label--icon">
+						<span class="form-application__label-title form-application__label-title--long"><span class="form-application__label-note">Контактный</span> телефон*:</span>
+						<input class="form-application__field form-application__field--icon" type="tel" name="user-tel" id="user-tel" placeholder="Введите телефон"></input>
+						<svg class="form-application__icon form-application__icon--tel" width="18" height="18"><use xlink:href="#icon-tel"></use></svg>
+					</label>
+					<label class="form-application__label form-application__label--icon">
+						<span class="form-application__label-title form-application__label-title--long">Электронная почта*:</span>
+						<input class="form-application__field form-application__field--icon" type="email" name="user-email" id="user-email" placeholder="Введите e-mail"></input>
+						<svg class="form-application__icon form-application__icon--email" width="20" height="15"><use xlink:href="#icon-mail"></use></svg>
+					</label>
+				</div>
+			</div>
+
+			<div class="form-application__block form-application__block--attractions form-application__block--line attractions-select">
+				<h3 class="form-application__block-title form-application__block-title--attractions attractions-select__title form-application__block-title--center">Посещённые<br> достопримечательности:</h3>
+				<div class="attractions-select__wparrer">
+					<label class="attractions-select__item">
+						<input class="visually-hidden" type="checkbox" name="attractions-1" checked>
+						<span class="attractions-select__checkbox-indicator"></span>
+						Мост Дьявола
+					</label>
+					<label class="attractions-select__item">
+						<input class="visually-hidden" type="checkbox" name="attractions-2" checked>
+						<span class="attractions-select__checkbox-indicator"></span>
+						Гора-Колокол
+					</label>
+					<label class="attractions-select__item">
+						<input class="visually-hidden" type="checkbox" name="attractions-3" checked>
+						<span class="attractions-select__checkbox-indicator"></span>
+						Слайд-парк
+					</label>
+					<label class="attractions-select__item">
+						<input class="visually-hidden" type="checkbox" name="attractions-4">
+						<span class="attractions-select__checkbox-indicator"></span>
+						Красные скалы
+					</label>
+				</div>
+			</div>
+
+			<div class="form-application__block form-application__block--message form-application__block--line">
+				<h3 class="form-application__block-title form-application__block-title--message form-application__block-title--center">Опишите свои эмоции:</h3>
+				<textarea class="form-application__field form-application__field--comment" rows="3" id="user-message" placeholder="Опишите подробно все свои восторги"></textarea>
+			</div>
+
+			<div class="form-application__block form-application__block--control">
+				<button class="form-application__button button" type="submit">Отправить отзыв</button>
+				<span class="form-application__note">* &#8211; Обязательные поля</span>
+			</div>
+
+		</form>
+	</section>
+
+	<footer class="page-footer">
+		<a href="#" class="page-footer__logo">#VisitSedona</a>
+		<div class="page-footer__social social">
+			<ul class="social__list">
+				<li class="social__item">
+					<a class="social__link" href="#"><svg class="social__icon" width="18" height="14"><use xlink:href="#icon-tw"></use></svg>Мы в Твиттере</a>
+				</li>
+				<li class="social__item">
+					<a class="social__link" href="#"><svg class="social__icon" width="9" height="18"><use xlink:href="#icon-fb"></use></svg>Мы в Фэйсбуке</a>
+				</li>
+				<li class="social__item">
+					<a class="social__link" href="#"><svg class="social__icon" width="20" height="14"><use xlink:href="#icon-yt"></use></svg>Мы на Ютубе</a>
+				</li>
+			</ul>
+		</div>
+		<div class="page-footer__copyright copyright">
+			<a class="copyright__link" href="#">
+				<p class="copyright__text">Разработано</p>
+				<svg class="copyright__icon" width="27" height="34"><use xlink:href="#icon-html"></use></svg>
+			</a>
+		</div>
+	</footer>
+
+	<section class="popup-success modal">
+		<div class="popup-success__wrapper modal__wrapper">
+			<div class="popup-success__data">
+				<h2 class="popup-success__title">Ваш отзыв отправлен!</h2>
+				<p class="popup-success__subtitle">Спасибо за Ваше участие, Ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+			</div>
+			<div class="popup-success__control">
+				<button class="popup-success__close button" type="button">Закрыть окно</button>
+			</div>
+		</div>
+		<div class="modal-overlay"></div>
+	</section>
+
+	<section class="popup-error modal">
+		<div class="popup-error__wrapper modal__wrapper">
+			<h2 class="popup-error__title">Что-то пошло<br> не так!</h2>
+			<p class="popup-error__subtitle">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+			<button class="popup-error__close button" type="button">Ok</button>
+		</div>
+		<div class="modal-overlay"></div>
+	</section>
+
+	<script src="js/final.js"></script>
+</body>
+</html>

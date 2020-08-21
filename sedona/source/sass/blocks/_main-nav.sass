@@ -1,0 +1,201 @@
+.main-nav
+	position: relative
+	width: 100%
+	margin: 0 auto
+	height: auto
+	min-height: 56px
+	background-color: $c-white
+	+lg-block()
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		box-sizing: border-box
+		width: 1200px
+		margin: 0
+		padding-right: 40px
+		padding-left: 40px
+		margin-bottom: auto
+
+.main-nav__wrapper
+	background-color: $c-main-blue
+	position: relative
+	display: none
+	+md-block()
+		display: flex
+		width: 100%
+		background-color: $c-white
+
+.main-nav__toggle
+	position: absolute
+	top: 0
+	right: 0
+	z-index: 11
+	display: block
+	width: 66px
+	height: 56px
+	box-sizing: border-box
+	cursor: pointer
+	border: none
+	background-color: transparent
+	+md-block()
+		top: -110px
+		height: 110px
+	+lg-block()
+		display: none
+
+// main menu closed
+.main-nav--closed
+	.main-nav__toggle:before
+		content: ""
+		position: absolute
+		top: 18px
+		left: 20px
+		width: 25px
+		height: 4px
+		background-color: $c-main-blue
+		box-shadow: 0 8px 0 0 $c-main-blue, 0 16px 0 0 $c-main-blue
+		+md-block()
+			top: 44px
+	.main-nav__toggle
+		&:hover:before
+			opacity: 0.7
+			transition: 0.2s
+		&:active:before
+			background-color: $c-black
+			box-shadow: 0 8px 0 0 $c-black, 0 16px 0 0 $c-black
+			opacity: 0.3
+			transition: 0.2s
+
+// main menu opened
+.main-nav--opened
+	&:before
+		content: ""
+		display: block
+		position: absolute
+		background-color: transparent
+		width: 66px
+		height: 54px
+		top: 0
+		right: 0
+		z-index: 11
+	.main-nav__toggle
+		height: 54px
+		background-color: $c-main-blue
+		&:before,
+		&:after
+			content: ""
+			position: absolute
+			top: 25px
+			left: 20px
+			width: 30px
+			height: 4px
+			background-color: $c-white
+		&:before
+			transform: rotate(45deg)
+		&:after
+			transform: rotate(-45deg)
+		&:hover:before,
+		&:hover:after,
+			background-color: $c-white
+			opacity: 0.7
+			transition: 0.2s
+		&:active:before,
+		&:active:after,
+			background-color: $c-black
+			opacity: 0.3
+			transition: 0.1s
+	.main-nav__wrapper
+		display: block
+		position: absolute
+		width: 100%
+		z-index: 10
+		+lg-block()
+			position: relative
+			display: flex
+			width: 100%
+
+.main-nav__list
+	+md-block()
+		+fw()
+		width: 100%
+		box-sizing: border-box
+
+.main-nav__item
+	display: flex
+	width: 100%
+	+md-block()
+		width: auto
+		box-sizing: border-box
+		padding-left: 30px
+		padding-right: 30px
+		&:nth-child(3)
+			margin-left: auto
+	+lg-block()
+		padding-left: 70px
+		padding-right: 70px
+
+.main-nav__item--active a
+	+lg-block()
+		position: relative
+		&:after
+			content: ""
+			position: absolute
+			right: 0
+			bottom: 3px
+			left: 0
+			height: 2px
+			background-color: $c-white
+
+.main-nav__link
+	font-family: $ff-b
+	font-size: 18px
+	line-height: 40px
+	text-transform: uppercase
+	text-decoration: none
+	text-align: center
+	display: block
+	width: 100%
+	color: $c-white
+	padding-top: 7px
+	padding-bottom: 7px
+	box-sizing: border-box
+	border-top: 1px solid $c-white-02
+	border-bottom: 1px solid $c-black-02
+	&[href]
+		&:hover
+			background-color: $c-menu-hover
+			transition: 0.2s
+		&:active
+			background-color: $c-menu-active
+			color: $c-white-03
+			transition: 0.1s
+	+md-block()
+		font-size: 14px
+		line-height: 26px
+		padding-top: 15px
+		padding-bottom: 15px
+		color: $c-black
+		border: none
+		&[href]
+			&:hover
+				background-color: $c-white
+				color: $c-main-blue
+				transition: 0.2s
+			&:active
+				color: $c-black
+				opacity: 0.3
+				transition: 0.1s
+
+// main menu if js is not supported
+.main-nav.main-nav--nojs
+	z-index: 9
+	.main-nav__toggle
+		display: none
+
+	.main-nav__wrapper
+		position: static
+		display: block
+
+// @media screen and (max-width: $mobile-and-tablet-width)
+// 	.main-nav--closed .main-nav__wrapper
+// 		display: none

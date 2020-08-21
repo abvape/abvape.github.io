@@ -1,0 +1,33 @@
+.social__list
+	+fw()
+	justify-content: center
+
+.social__item
+	display: flex
+	width: 46px
+	height: 48px
+	margin-right: 6px
+	&:last-child
+		margin-right: 0
+
+.social__link
+	display: flex
+	width: 100%
+	height: 100%
+	justify-content: center
+	align-items: center
+	background-color: $c-main-blue
+	font-size: 0
+	text-decoration: none
+	&:hover
+		background-color: $c-menu-hover
+		transition: 0.2s
+	&:active
+		background-color: $c-menu-active
+		transition: 0.2s
+		.social__icon
+			fill: $c-white-03
+			transition: 0.2s
+
+.social__icon
+	fill: $c-white

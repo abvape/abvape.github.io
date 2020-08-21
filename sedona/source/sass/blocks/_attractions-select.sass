@@ -1,0 +1,89 @@
+.attractions-select__wparrer
+	+fw()
+	width: 100%
+	+md-block()
+		justify-content: center
+	+lg-block()
+		justify-content: space-between
+
+.attractions-select__item
+	font-family: $ff-b
+	font-size: 18px
+	line-height: 26px
+	display: flex
+	align-items: center
+	color: $c-black
+	width: 100%
+	margin-bottom: 25px
+	&:last-child
+		margin-bottom: 0
+	+md-block()
+		width: 40%
+		margin-bottom: 33px
+		box-sizing: border-box
+		padding-right: 40px
+		&:nth-last-child(-n+2)
+			margin-bottom: 0
+	+lg-block()
+		width: 21%
+		padding-right: 0
+		margin-bottom: 0
+		&:first-child
+			margin-left: 5px
+
+.attractions-select__checkbox-indicator
+	display: block
+	position: relative
+	flex: 0 0 auto
+	top: 0
+	left: 0
+	width: 55px
+	height: 55px
+	box-sizing: border-box
+	border-radius: 4px
+	background-color: $c-input-bg
+	margin-right: 23px
+
+.attractions-select__item input[type="checkbox"]:focus + .attractions-select__checkbox-indicator
+	outline: thin dotted
+	outline: 5px auto -webkit-focus-ring-color
+
+.attractions-select__item input[type="checkbox"]:checked + .attractions-select__checkbox-indicator:after
+	content: ""
+	display: block
+	position: absolute
+	width: 18px
+	height: 8px
+	top: 18px
+	left: 18px
+	z-index: 9
+	border-left: 4px solid $c-input-check
+	border-bottom: 4px solid $c-input-check
+	transform: rotate(-45deg)
+	transition: 0.2s
+
+.attractions-select__item input[type="checkbox"]:hover + .attractions-select__checkbox-indicator
+	background-color: $c-input-hover
+	transition: 0.2s
+
+.attractions-select__item input[type="checkbox"]:active + .attractions-select__checkbox-indicator
+	background-color: $c-input-active
+	transition: 0.2s
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		width: 18px
+		height: 8px
+		top: 18px
+		left: 18px
+		z-index: 9
+		border-left: 4px solid $c-input-check
+		border-bottom: 4px solid $c-input-check
+		transform: rotate(-45deg)
+		opacity: 0.3
+		transition: 0.2s
+
+.attractions-select__item input[type="checkbox"]:checked:active + .attractions-select__checkbox-indicator
+	&:after
+		display: none

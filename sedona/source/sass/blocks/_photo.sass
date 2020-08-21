@@ -1,0 +1,153 @@
+.photo
+	background-color: $c-white
+	box-sizing: border-box
+	padding-top: 36px
+	margin: 0 auto
+	+md-block()
+		padding-top: 68px
+	+lg-block()
+		width: 1200px
+		padding-top: 105px
+
+.photo__title
+	box-sizing: border-box
+	padding-left: 20px
+	padding-right: 20px
+	margin-bottom: 25px
+	+md-block()
+		margin-bottom: 27px
+
+.photo__subtitle
+	box-sizing: border-box
+	padding-left: 20px
+	padding-right: 20px
+	margin-bottom: 25px
+	+md-block()
+		margin-bottom: 65px
+	+lg-block()
+		margin-bottom: 67px
+	br
+		display: none
+		+md-block()
+			display: block
+
+.photo__list
+	+md-block()
+		+fw()
+		box-sizing: border-box
+		padding-left: 60px
+		padding-right: 60px
+	+lg-block()
+		padding: 0
+
+.photo__item
+	box-sizing: border-box
+	padding-top: 21px
+	padding-right: 20px
+	padding-bottom: 14px
+	padding-left: 20px
+	border-bottom: 1px solid $c-black-01
+	&:first-child
+		border-top: 1px solid $c-black-01
+	+md-block()
+		+fw()
+		width: 50%
+		padding: 0
+		border: none
+		background-color: $c-body-gray
+	+lg-block()
+		position: relative
+		width: calc(100% / 3)
+
+.photo__item--top
+	+md-block()
+		width: 100%
+	+lg-block()
+		width: 100%
+
+.photo__item--even
+	+md-block()
+		background-color: $c-body-gray2
+
+.photo__image-wrap
+	margin-bottom: 13px
+	+md-block()
+		margin-bottom: 0
+		width: 100%
+
+.photo__image
+	width: 100%
+
+.photo__data
+	+md-block()
+		+fw()
+		position: relative
+		width: 100%
+		box-sizing: border-box
+		padding-top: 15px
+		padding-left: 20px
+		padding-right: 20px
+		padding-bottom: 14px
+	+lg-block()
+		position: absolute
+		background-color: $c-black-03
+		left: 0
+		bottom: 0
+
+.photo__image-title
+	font-family: $ff-b
+	font-size: 14px
+	line-height: 25px
+	text-transform: uppercase
+	+md-block()
+		display: flex
+		width: 80%
+	+lg-block()
+		color: $c-white
+
+.photo__author
+	font-family: $ff-r
+	font-size: 14px
+	line-height: 26px
+	margin-bottom: 3px
+	+md-block()
+		display: flex
+		width: 80%
+		margin-bottom: 0
+	+lg-block()
+		color: $c-white
+
+.photo__like
+	display: flex
+	position: relative
+	font-family: $ff-b
+	font-size: 14px
+	line-height: 30px
+	background-color: transparent
+	border: none
+	outline: none
+	cursor: pointer
+	padding: 0
+	fill: $c-black-03
+	&:hover
+		.photo__like-icon
+			opacity: 0.7
+			transition: 0.3s
+	fill: $c-black-03
+	&:active
+		.photo__like-icon
+			opacity: 0.5
+			transition: 0.2s
+	+md-block()
+		align-items: center
+		position: absolute
+		top: 0
+		right: 20px
+		bottom: 0
+		margin: auto
+	+lg-block()
+		fill: $c-white
+		color: $c-white
+
+.photo__like-icon
+	margin-right: 13px
